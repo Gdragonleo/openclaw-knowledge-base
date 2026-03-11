@@ -5,8 +5,43 @@
       "status": "completed",
       "tentacles": 15,
       "newSkills": ["weekly-report-generator", "notification-hub", "project-management-2"],
-      "reportSaved": "/知识库/小八爪/2026-03/早间学习简报_2026-03-11.md"
+      "reportSaved": "知识库/小八爪/2026-03/ClawHub技能探索/早间学习_2026-03-11.md"
+    },
+    "error_review": {
+      "lastRun": "2026-03-11T06:00:00+08:00",
+      "status": "completed",
+      "errorsFound": 4,
+      "reportSaved": "memory/今日提醒.md"
+    },
+    "daily_report": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b543fbf3fc880b292da850559438"
+    },
+    "tender_report": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "projects": 10,
+      "matched": 1,
+      "messageId": "om_x100b543841bb1c44b35bfef3299632f"
+    },
+    "news_summary": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b543fb5d294acb34248719069cdc"
+    },
+    "study_plan_query": {
+      "lastRun": "2026-03-11T17:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b5426bdc6a0a0b365a0a37d2904e"
+    },
+    "self_study": {
+      "lastRun": "2026-03-11T22:00:00+08:00",
+      "status": "completed",
+      "topic": "周报生成器实战",
+      "reportSaved": "知识库/小八爪/2026-03/团队管理/周报生成器实战_2026-03-11.md",
+      "messageId": "om_x100b54232dbb24a8b24bef1d7f58eea"
     }
   },
-  "notes": "2026-03-11 早间学习完成：新增3只触手，提前9个月完成年底目标"
+  "notes": "2026-03-11 所有定时任务已完成，触手15只，今晚无更多任务"
 }
