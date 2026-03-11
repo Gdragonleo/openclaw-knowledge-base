@@ -49,7 +49,7 @@ feishu_bitable_list_records({
 
 **发现新任务后立即在群里通知**：
 
-**群ID**：`oc_9d12c307146d181b75363326d47c48a2`（刘氏集团交流群）
+**群ID**：`oc_eab876d73f2ffb6f89697181a232f130`（双机器人协作群）
 
 **通知内容**：
 ```markdown
