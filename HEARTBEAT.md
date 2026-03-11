@@ -209,28 +209,29 @@
 **触发条件**：每30分钟（每小时00分和30分）
 
 **任务内容**：
-1. **查询多维表格协作中心**：
-   - App Token: `EHhIblp0va1NlvshBNHclHRynRb`
-   - Table ID: `tblXFQ67LNLRmmGU`
-   - 查询条件：任务状态 = "⏳ 待处理" AND 接收者 IN ("🐙 小八爪", "👥 双方")
+1. **查询GitHub Issues协作中心**：
+   - 仓库：`Gdragonleo/openclaw-knowledge-base`
+   - URL：https://github.com/Gdragonleo/openclaw-knowledge-base/issues
+   - 查询条件：状态 = Open AND 标题包含 `[BOT_TASK]`
 
 2. **处理任务**：
-   - 按优先级排序（5→1）
+   - 按优先级排序（[P5]→[P1]）
    - 逐个执行任务
-   - 执行后更新状态为"✅ 已完成"
-   - 记录完成时间
+   - 完成后在Issue下评论说明结果
+   - 关闭Issue
 
 3. **任务类型处理**：
    - [BOT_TASK]：执行任务指令
-   - 💬 日常交流：回复消息
-   - 🔔 紧急通知：立即处理
-   - 📊 状态更新：记录信息
+   - [CHAT]：日常交流，评论回复
+   - [P5]：紧急任务，立即处理
 
 **通知方式**：
-- 完成任务后更新多维表格状态
+- 完成任务后在Issue中评论
 - 重要任务私聊通知小刘
 
 **配置文件**：`cron_tasks/half_hourly_task_query.md`
+
+**协作中心**：`知识库/GitHub协作中心.md`
 
 ---
 
