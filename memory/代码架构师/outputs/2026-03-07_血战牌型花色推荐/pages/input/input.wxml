@@ -1,0 +1,252 @@
+<!-- 麻将算命 - 信息输入页 -->
+<view class="page-container">
+  <!-- 顶部装饰 -->
+  <view class="header-decoration">
+    <view class="deco-line"></view>
+    <view class="header-title-wrap">
+      <text class="header-icon">🀄</text>
+      <text class="header-title">麻将命盘测算</text>
+      <text class="header-icon">🀄</text>
+    </view>
+    <view class="header-subtitle">输入生辰，揭示您的牌型命运</view>
+    <view class="deco-line"></view>
+  </view>
+
+  <!-- 表单卡片 -->
+  <view class="form-card">
+    <view class="form-section-title">
+      <text class="section-icon">✦</text>
+      <text>生辰信息</text>
+      <text class="section-icon">✦</text>
+    </view>
+
+    <!-- 输入方式切换 -->
+    <view class="input-mode-switch">
+      <view class="mode-btn {{inputMode === 'picker' ? 'active' : ''}}" bindtap="switchInputMode" data-mode="picker">
+        <text>选择器输入</text>
+      </view>
+      <view class="mode-btn {{inputMode === 'manual' ? 'active' : ''}}" bindtap="switchInputMode" data-mode="manual">
+        <text>手动输入</text>
+      </view>
+    </view>
+
+    <!-- 选择器模式 -->
+    <view wx:if="{{inputMode === 'picker'}}">
+      <!-- 年份选择器 -->
+      <view class="form-item">
+        <view class="form-label">
+          <text class="label-required">*</text>
+          <text>出生年份</text>
+        </view>
+        <picker mode="selector" range="{{yearList}}" bindchange="onYearChange" value="{{yearIndex}}">
+          <view class="picker-input {{errors.year ? 'input-error' : ''}}">
+            <text class="picker-value">{{yearList[yearIndex] || '选择年份'}}</text>
+            <text class="picker-arrow">▼</text>
+          </view>
+        </picker>
+        <text class="error-msg" wx:if="{{errors.year}}">{{errors.year}}</text>
+      </view>
+
+      <!-- 月份选择器 -->
+      <view class="form-item">
+        <view class="form-label">
+          <text class="label-required">*</text>
+          <text>出生月份</text>
+        </view>
+        <picker mode="selector" range="{{monthList}}" bindchange="onMonthChange" value="{{monthIndex}}">
+          <view class="picker-input {{errors.month ? 'input-error' : ''}}">
+            <text class="picker-value">{{monthList[monthIndex] || '选择月份'}}</text>
+            <text class="picker-arrow">▼</text>
+          </view>
+        </picker>
+        <text class="error-msg" wx:if="{{errors.month}}">{{errors.month}}</text>
+      </view>
+
+      <!-- 日期选择器 -->
+      <view class="form-item">
+        <view class="form-label">
+          <text class="label-required">*</text>
+          <text>出生日期</text>
+        </view>
+        <picker mode="selector" range="{{dayList}}" bindchange="onDayChange" value="{{dayIndex}}">
+          <view class="picker-input {{errors.day ? 'input-error' : ''}}">
+            <text class="picker-value">{{dayList[dayIndex] || '选择日期'}}</text>
+            <text class="picker-arrow">▼</text>
+          </view>
+        </picker>
+        <text class="error-msg" wx:if="{{errors.day}}">{{errors.day}}</text>
+      </view>
+
+      <!-- 时辰选择器 -->
+      <view class="form-item">
+        <view class="form-label">
+          <text class="label-required">*</text>
+          <text>出生时辰</text>
+        </view>
+        <picker mode="selector" range="{{hourList}}" bindchange="onHourChange" value="{{hourIndex}}">
+          <view class="picker-input {{errors.hour ? 'input-error' : ''}}">
+            <text class="picker-value">{{hourList[hourIndex] || '选择时辰'}}</text>
+            <text class="picker-arrow">▼</text>
+          </view>
+        </picker>
+        <text class="error-msg" wx:if="{{errors.hour}}">{{errors.hour}}</text>
+      </view>
+    </view>
+
+    <!-- 手动输入模式 -->
+    <view wx:if="{{inputMode === 'manual'}}">
+      <!-- 出生年份 -->
+    <view class="form-item">
+      <view class="form-label">
+        <text class="label-required">*</text>
+        <text>出生年份</text>
+      </view>
+      <view class="input-wrapper {{errors.year ? 'input-error' : ''}}">
+        <input
+          class="form-input"
+          type="number"
+          placeholder="1900 - 2026"
+          placeholder-class="input-placeholder"
+          value="{{formData.year}}"
+          bindinput="onYearInput"
+          maxlength="4"
+        />
+        <text class="input-unit">年</text>
+      </view>
+      <text class="error-msg" wx:if="{{errors.year}}">{{errors.year}}</text>
+    </view>
+
+    <!-- 出生月份 -->
+    <view class="form-item">
+      <view class="form-label">
+        <text class="label-required">*</text>
+        <text>出生月份</text>
+      </view>
+      <view class="input-wrapper {{errors.month ? 'input-error' : ''}}">
+        <input
+          class="form-input"
+          type="number"
+          placeholder="1 - 12"
+          placeholder-class="input-placeholder"
+          value="{{formData.month}}"
+          bindinput="onMonthInput"
+          maxlength="2"
+        />
+        <text class="input-unit">月</text>
+      </view>
+      <text class="error-msg" wx:if="{{errors.month}}">{{errors.month}}</text>
+    </view>
+
+    <!-- 出生日期 -->
+    <view class="form-item">
+      <view class="form-label">
+        <text class="label-required">*</text>
+        <text>出生日期</text>
+      </view>
+      <view class="input-wrapper {{errors.day ? 'input-error' : ''}}">
+        <input
+          class="form-input"
+          type="number"
+          placeholder="1 - 31"
+          placeholder-class="input-placeholder"
+          value="{{formData.day}}"
+          bindinput="onDayInput"
+          maxlength="2"
+        />
+        <text class="input-unit">日</text>
+      </view>
+      <text class="error-msg" wx:if="{{errors.day}}">{{errors.day}}</text>
+    </view>
+
+    <!-- 出生时辰 -->
+    <view class="form-item">
+      <view class="form-label">
+        <text class="label-required">*</text>
+        <text>出生时辰</text>
+      </view>
+      <view class="input-wrapper {{errors.hour ? 'input-error' : ''}}">
+        <input
+          class="form-input"
+          type="number"
+          placeholder="0 - 23（24小时制）"
+          placeholder-class="input-placeholder"
+          value="{{formData.hour}}"
+          bindinput="onHourInput"
+          maxlength="2"
+        />
+        <text class="input-unit">时</text>
+      </view>
+      <text class="error-msg" wx:if="{{errors.hour}}">{{errors.hour}}</text>
+      <!-- 时辰对照 -->
+      <view class="time-reference">
+        <text class="ref-title">时辰对照：</text>
+        <scroll-view scroll-x class="ref-scroll">
+          <view class="ref-list">
+            <view class="ref-item" wx:for="{{timeMap}}" wx:key="index">
+              <text class="ref-hour">{{item.hour}}</text>
+              <text class="ref-name">{{item.name}}</text>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    </view>
+
+    <!-- 星座（可选） -->
+    <view class="form-section-title" style="margin-top: 48rpx;">
+      <text class="section-icon">✦</text>
+      <text>星座信息（选填）</text>
+      <text class="section-icon">✦</text>
+    </view>
+
+    <view class="form-item">
+      <view class="form-label">
+        <text class="label-optional">选填</text>
+        <text>您的星座</text>
+      </view>
+      <view class="picker-wrapper" bindtap="onZodiacTap">
+        <text class="picker-text {{formData.zodiac ? '' : 'picker-placeholder'}}">
+          {{formData.zodiac || '点击选择星座'}}
+        </text>
+        <text class="picker-arrow">▼</text>
+      </view>
+    </view>
+
+    <!-- 星座选择面板 -->
+    <view class="zodiac-panel" wx:if="{{showZodiacPanel}}">
+      <view class="zodiac-grid">
+        <view
+          class="zodiac-item {{formData.zodiac === item ? 'zodiac-selected' : ''}}"
+          wx:for="{{zodiacList}}"
+          wx:key="index"
+          bindtap="selectZodiac"
+          data-zodiac="{{item}}"
+        >{{item}}</view>
+      </view>
+      <view class="zodiac-clear" bindtap="clearZodiac">
+        <text>不选择星座</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 说明文字 -->
+  <view class="tips-box">
+    <text class="tips-icon">💡</text>
+    <text class="tips-text">本测算仅供娱乐参考，结合生辰八字推算最佳牌型与花色，愿您好运连连。</text>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="submit-area">
+    <button
+      class="submit-btn {{loading ? 'btn-loading' : ''}}"
+      bindtap="onSubmit"
+      disabled="{{loading}}"
+    >
+      <text wx:if="{{!loading}}">🀄 查看我的牌型命盘</text>
+      <text wx:if="{{loading}}">⏳ 命盘推算中...</text>
+    </button>
+    <view class="submit-deco">
+      <text>— 愿牌运亨通，财源广进 —</text>
+    </view>
+  </view>
+</view>

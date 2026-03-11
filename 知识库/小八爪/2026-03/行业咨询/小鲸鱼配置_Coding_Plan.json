@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.8",
+    "lastTouchedAt": "2026-03-11T03:40:00.000Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-10T16:37:59.492Z",
+    "lastRunVersion": "2026.3.8",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "volcengine-plan:default": {
+        "provider": "volcengine-plan",
+        "mode": "api_key"
+      }
+    }
+  },
+  "providers": {
+    "volcengine-plan": {
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+      "models": [
+        "doubao-seed-2.0-code",
+        "doubao-seed-2.0-pro",
+        "glm-4.7",
+        "ark-code-latest"
+      ]
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "volcengine-plan/doubao-seed-2.0-code",
+        "fallback": "volcengine-plan/ark-code-latest"
+      },
+      "models": {
+        "volcengine-plan/doubao-seed-2.0-code": {
+          "temperature": 0.7,
+          "maxTokens": 4096
+        },
+        "volcengine-plan/doubao-seed-2.0-pro": {
+          "temperature": 0.7,
+          "maxTokens": 8192
+        },
+        "volcengine-plan/glm-4.7": {
+          "temperature": 0.7,
+          "maxTokens": 4096
+        },
+        "volcengine-plan/ark-code-latest": {}
+      },
+      "workspace": "C:\\Users\\Administrator\\.openclaw\\workspace"
+    }
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a92059b1f3389bc7",
+      "appSecret": "MY1SFjakQPsL2ZEqREoGahjC7xlZeCld",
+      "connectionMode": "websocket",
+      "domain": "feishu",
+      "groupPolicy": "open"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "17632172bfb18b71c3a47caa2665c5c4ea71a6747e57f9d1"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}

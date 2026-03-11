@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit">
+	<meta name="SiteName" content="网站名称">
+	<meta name="SiteDomain" content="网站域名">
+	<meta name="SiteIDCode" content="政府网站标识码">
+	<meta name="description" content="重庆联交所集团是全国首个实行“政府强监管、市场化运行、企业化管理”的省级公共资源交易平台。业务涵盖务涵盖国有产权、工程招投标、政府采购、土地与矿业权出让、药品器械采购、环境权交易、司法拍卖、农村产权等八大类30多个品种。"/>
+    <meta name="Keywords" content="重庆联交所,重庆市公共资源交易中心,重交所,重庆市公共资源交易网,重庆市公共资源,重庆市公共资源交易服务平台,重庆市公共资源服务,重庆市招投标,重庆市政府采购,重庆市土地转让,重庆市矿业权,重庆产权交易,重庆市碳排放,重庆联合产权交易所,重庆产权交易所,重庆产权交易网,产权交易所,产权交易,司法拍卖,股权交易"/>
+	<!-- 页面css -->
+	<link rel="stylesheet" href="/js/lib/pagination/chosen/chosen.css">
+	<!-- <link rel="stylesheet" href="/js/lib/pagination/pagination/mricode.pagination.css"> -->
+	<link rel="stylesheet" href="/css/pagination.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/transaction_detail.css">
+	<!-- jquery -->
+	<script src="/js/lib/jquery.min.js"></script>
+	<script src="/js/webBuilderCommon.js?v=8.0"></script>
+	<script src="/js/js.cookie.min.js"></script>
+	<script src="/js/Common.min.js"></script>
+	<script src="/js/pageView.js"></script>
+	<!-- 页面标题 -->
+	<title>重庆市公共资源交易网_重庆市公共资源交易中心</title>
+
+   <link rel="stylesheet" href="/css/webBuilderCommonGray.css"></head>
+
+<body class="bg">
+	<div id="head"></div>
+    <script type="text/javascript">
+        $("#head").load("/pagehead.html");
+    </script>
+	<!-- 正文 -->
+	<div class="main-part main">
+		<div class="main-bg clearfix">
+		<!-- 位置 -->
+		<div class="location" style="line-height: 20px;">
+			<a>
+				您当前的位置：
+			</a>
+			
+						<a href="/">首页</a> &gt; <a href="/xxhz/transaction_detail.html" target="_blank">信息汇总</a> &gt; <a href="/xxhz/014001/bidding.html" target="_blank">工程招投标</a> &gt; 
+						<a id="viewGuid" value="cms_014001001" style="color: #3e96d6;">招标公告</a>
+						<input type="hidden" id="categorynum" value="014001001" />
+						<input type="hidden" id="catefirstNew" value="" />
+					</div>
+		<div class="tra-header">
+			<div class="date header-item clearfix">
+				<div class="label l">
+					发布时间：
+				</div>
+				<div class="items  l" id="day">
+					<a href="javascript:void(0);" class="label-item" value="0">
+						当天
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="2">
+						近三天
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="9">
+						近十天
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="30">
+						近一月
+					</a>
+					<a href="javascript:void(0);" class="label-item active" value="90">
+						近三月
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="06">
+						时间区间
+					</a>
+					<div class="select-date l hidden">
+						<!-- <span>时间区间</span> -->
+						<input type="text" class="ewb-datetime" id="dateSel1" readonly="readonly" placeholder="请选择" />
+						<span>至</span>
+						<input type="text" class="ewb-datetime" id="dateSel2" readonly="readonly" placeholder="请选择"/>
+					</div>
+					<div class="r">
+				<div class="label l" style="height: 30px;line-height: 30px;margin-top: 6px;">
+					行政区域：
+				</div>
+				<div class="chosen-wrap l">
+					<select class="ewb-sel" id="ewb-sel">
+						<option value="">不限</option>
+						<option value="市级">市级</option>
+						<option value="万州区">万州区</option>
+						<option value="涪陵区">涪陵区</option>
+						<option value="渝中区">渝中区</option>
+						<option value="大渡口区">大渡口区</option>
+						<option value="江北区">江北区</option>
+						<option value="沙坪坝区">沙坪坝区</option>
+						<option value="九龙坡区">九龙坡区</option>
+						<option value="南岸区">南岸区</option>
+						<option value="北碚区">北碚区</option>
+						<option value="綦江区">綦江区</option>
+						<option value="大足区">大足区</option>
+						<option value="渝北区">渝北区</option>
+						<option value="黔江区">黔江区</option>
+						<option value="巴南区">巴南区</option>
+						<option value="长寿区">长寿区</option>
+						<option value="江津区">江津区</option>
+						<option value="合川区">合川区</option>
+						<option value="永川区">永川区</option>
+						<option value="南川区">南川区</option>
+						<option value="铜梁区">铜梁区</option>
+						<option value="璧山区">璧山区</option>
+						<option value="潼南区">潼南区</option>
+						<option value="荣昌区">荣昌区</option>
+						<option value="开州区">开州区</option>
+						<option value="梁平区">梁平区</option>
+						<option value="武隆区">武隆区</option>
+						<option value="城口县">城口县</option>
+						<option value="丰都县">丰都县</option>
+						<option value="垫江县">垫江县</option>
+						<option value="忠县">忠县</option>
+						<option value="云阳县">云阳县</option>
+						<option value="奉节县">奉节县</option>
+						<option value="巫山县">巫山县</option>
+						<option value="巫溪县">巫溪县</option>
+						<option value="石柱县">石柱县</option>
+						<option value="秀山县">秀山县</option>
+						<option value="酉阳县">酉阳县</option>
+						<option value="彭水县">彭水县</option>
+						<option value="万盛区">万盛区</option>
+						<option value="两江新区">两江新区</option>
+						<option value="市外">市外</option>
+					</select>
+				</div>
+			</div>
+				</div>
+			</div>
+			
+			<div class="business-type header-item clearfix">
+				<div class="label l">
+					业务类型：
+				</div>
+				<div class="items l" id="catefirst">
+					<a href="javascript:void(0);" class="label-item active" value="014">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001">
+						工程招投标
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005">
+						政府采购
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012">
+						国企物资采购
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008">
+						其他采购
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014010">
+						中介超市
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002">
+						产权交易
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014">
+						农村产权
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004">
+						土地及矿业权
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014011">
+						药械交易
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014006">
+						碳排放权交易
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014009">
+						排污权交易
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014003">
+						机电设备
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014013">
+						诉讼资产交易
+					</a>
+				</div>
+			</div>
+			<div class="infor-type header-item clearfix">
+				<div class="label l">
+					信息类型：
+				</div>
+				<div class="items catesec l" id="alljylx" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="004">
+						交易信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="005">
+						交易结果
+					</a>
+				</div>
+				<div class="items catesec l" id="gcjs" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001019">
+						招标计划
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001">
+						招标公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014">
+						邀标信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002">
+						答疑补遗
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003">
+						中标候选人公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004">
+						中标结果公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020">
+						合同签订基本信息公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023">
+						合同变更基本信息公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016">
+						相关公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021">
+						终止公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001018">
+						保证金退还
+					</a>
+				</div>
+				<div class="items catesec l" id="zfcg" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014005">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005001">
+						采购公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005008">
+						单一来源公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005002">
+						答疑变更
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005004">
+						采购结果公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014005014">
+						保证金退款
+					</a>
+				</div>
+				<div class="items catesec l" id="gqwzcg" style="display:none;">
+					<a href="javascript:void(0);" class="label-item" value="014012">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012005">
+						招标计划
+					</a>
+					<a href="javascript:void(0);" class="label-item active" value="014012001">
+						招标采购公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012006">
+						答疑补遗
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012003">
+						中标候选人公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012004">
+						中标结果公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014012002">
+						其他公告
+					</a>
+				</div>
+				<div class="items catesec l" id="qtcg" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014008">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008001">
+						招标采购公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008012">
+						邀标信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008002">
+						答疑补遗
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008013">
+						中标候选人公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008003">
+						中标结果公示
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008014">
+						相关公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008015">
+						终止公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014008011">
+						保证金退还
+					</a>
+				</div>
+				<div class="items catesec l" id="zjcs" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014010">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014010003">
+						通知公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014010001">
+						采购公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014010002">
+						中选公告
+					</a>
+				</div>
+				<div class="items catesec l" id="cqjy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014002">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001">
+						交易公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002002">
+						变更补充公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002004">
+						成交结果公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002013">
+						预公告
+					</a>
+				</div>
+				<div class="items catesec l" id="nccq" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014014">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014001">
+						交易信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014002">
+						交易结果
+					</a>
+				</div>
+				<div class="items catesec l" id="tdky" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014004">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004001">
+						交易公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004011">
+						其他通告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004004">
+						成交公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004012">
+						预公告
+					</a>
+				</div>
+				<div class="items catesec l" id="yxjy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014011">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014011001">
+						交易公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014011002">
+						其他公告
+					</a>
+				</div>
+				<div class="items catesec l" id="tpfqjy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014006">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014006004">
+						成交信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014006016">
+						通知公告
+					</a>
+				</div>
+				<div class="items catesec l" id="pwqjy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014009">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014009004">
+						成交信息
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014009012">
+						通知公告
+					</a>
+				</div>
+				<div class="items catesec l" id="jdsb" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014003">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014003001">
+						招标公告
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014003002">
+						答疑变更
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014003003">
+						中标候选人
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014003004">
+						中标公示
+					</a>
+				</div>
+				<div class="items catesec l" id="sszcjy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014013">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014013001">
+						破产拍卖
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014013002">
+						司法拍卖
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014013003">
+						破产重整投资人招募
+					</a>
+				</div>
+			</div>
+			<div class="industry header-item clearfix">
+				<div class="label l cqjylb">
+					行业：
+				</div>
+				<div class="items catethird l" id="gcjsall" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="010">
+						其他
+					</a>
+				</div>
+				
+				<div class="items catethird l" id="gcztbhy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001001">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001001010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="ybxx" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001014">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001014010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="dyby" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001002">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001002010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="zbhyrgs" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001003">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001003010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="zbjggs" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001004">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001004010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="htlxqk" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001020">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001020010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="htbgqk" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001023">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001023010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="xggsgg" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001016">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001016010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="zzzbgg" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014001021">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021001">
+						房屋建设
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021002">
+						市政
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021003">
+						公路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021004">
+						铁路
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021005">
+						民航
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021006">
+						水运
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021007">
+						水利
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021008">
+						能源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021009">
+						邮电通信
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014001021010">
+						其他
+					</a>
+				</div>
+				<div class="items catethird l" id="cqjyhy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014002001">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001008">
+						产权转让
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001009">
+						企业增资
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001010">
+						资产转让
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001011">
+						租赁
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014002001012">
+						其他
+					</a>
+						
+				</div>
+				<div class="items catethird l" id="tdkyhy" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014004001">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004001001">
+						土地
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014004001002">
+						矿业权
+					</a>
+				</div>
+				<div class="items catethird l" id="nccqjyxx" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014014001">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014001001">
+						地票
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014001002">
+						农村资源资产
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014001003">
+						林资源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014001004">
+						自然资源资产
+					</a>
+				</div>
+				<div class="items catethird l" id="nccqjgxx" style="display:none;">
+					<a href="javascript:void(0);" class="label-item active" value="014014002">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014002001">
+						地票
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014002002">
+						农村资源资产
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014002003">
+						林资源
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="014014002004">
+						自然资源资产
+					</a>
+				</div>
+			</div>
+			<div class="biaoduan-type header-item clearfix" style="display:none;">
+				<div class="label l biaoduantype" style="width: 120px;">
+					标段（包）分类：
+				</div>
+				<div class="items biaoduantypethird l" id="biaoduantype" style="width: calc(100% - 120px);">
+					<a href="javascript:void(0);" class="label-item active" value="">
+						不限
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="工程">
+						工程
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="货物">
+						货物
+					</a>
+					<a href="javascript:void(0);" class="label-item" value="服务">
+						服务
+					</a>
+				</div>
+			</div>
+			<div class="search clearfix">
+				<div class="input-tips l">
+					<label class="input-placeholder" for="search">请输入标题</label>
+					<input class="input-box" type="text" id="search" />
+				</div>
+				<div class="search-btn l" id="search-btn">
+					搜索
+				</div>
+			</div>
+		</div>
+		<ul class="info-list" id="showList">
+			
+		</ul>
+		<!-- 分页 -->
+		<!-- <div class="pager" id="pager"></div> -->
+		<div class="paging mt30">
+			<div id="divInfoReportPage" class="pagination" style="display:none;margin-top: 30px;margin-right:auto;margin-left:auto;"></div>
+		</div>
+		</div>
+		<div id="foot"></div>
+	    <script type="text/javascript">
+	        $("#foot").load("/pagefoot.html");
+	    </script>
+	</div>
+	
+	<!-- footer -->
+	<!-- 工具js -->
+	<script src="/js/ServiceUtil.js"></script>
+	<script src="/js/lib/placeholder.min.js"></script>
+	<script src="/js/lib/chosen/chosen.min.js"></script>
+	<script src="/js/lib/jquery-tab.js"></script>
+	<script src="/js/lib/util.f9x.js"></script>
+	<script src="/js/lib/laydate/laydate.js"></script>
+	<script src="/js/lib/pagination/chosen/chosen.jquery.min.js"></script>
+	<script type="text/javascript">
+	 	document.write('<script type="text/javascript" src="/js/jquery.paginationjynew.js?v=' + Math.random() + '"><\/script>');	
+	</script>
+	<script src="/js/currentMenu.js?v=8.0"></script>
+	<!-- <script src="/js/lib/pagination/pagination/mricode.pagination.js"></script> -->
+	<!-- <script src="js/common.js"></script> -->
+	<!-- 页面js -->
+	<script type="text/javascript">
+	 	document.write('<script type="text/javascript" src="/js/transaction_detail.js?v=' + Math.random() + '"><\/script>');	
+	</script>
+</body>
+
+</html>

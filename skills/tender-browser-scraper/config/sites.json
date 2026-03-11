@@ -1,0 +1,32 @@
+{
+  "cqggzy": {
+    "name": "重庆市公共资源交易中心",
+    "url": "https://www.cqggzy.com",
+    "enabled": true,
+    "selectors": {
+      "announcementLink": "a[href*='014001001']",
+      "listContainer": ".list-container, ul.list, .tender-list",
+      "itemTitle": "a, .title, .tender-title",
+      "itemDate": ".date, .time, span.time",
+      "itemAmount": ".amount, .money, .budget",
+      "detailPage": {
+        "title": "h1, .title, .tender-title",
+        "content": ".content, .detail-content, .tender-detail, .main-content",
+        "amount": ".amount, .money, .budget, .project-amount",
+        "deadline": ".deadline, .date, .end-date, .bid-deadline",
+        "contact": ".contact, .phone, .contact-person"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next, .page-next, a[rel='next']",
+      "maxPages": 10
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  }
+}

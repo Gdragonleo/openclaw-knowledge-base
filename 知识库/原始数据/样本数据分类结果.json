@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "sampleSize": 40,
+    "reportDate": "2026-03-09",
+    "note": "基于前2页样本数据的分类分析"
+  },
+  "statistics": {
+    "total": 40,
+    "survey": 2,
+    "mapping": 0,
+    "monitoring": 1,
+    "engineering": 3,
+    "other": 34
+  },
+  "classified": {
+    "survey": [
+      {
+        "title": "【忠县】 忠县石宝、黄金镇等片区特色农业节水灌溉保障工程勘察设计",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/c6623745-a614-49b7-96ee-7d27e9b961ba.html",
+        "priority": 1,
+        "category": "勘察",
+        "keyword": "勘察",
+        "region": "忠县"
+      },
+      {
+        "title": "【忠县】 忠县乌杨、复兴镇等片区特色农业节水灌溉保障工程勘察设计",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260304/41f1fbfa-280b-407c-a5fb-3c32056083f7.html",
+        "priority": 1,
+        "category": "勘察",
+        "keyword": "勘察",
+        "region": "忠县"
+      }
+    ],
+    "mapping": [],
+    "monitoring": [
+      {
+        "title": "【自主招标】 九龙坡区大溪河全域综合治理工程─重庆枢纽港·九龙园汽摩轻量化配套产业城B、C区项目检测",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260304/6146d8e1-8255-448f-a38b-79ac7b088298.html",
+        "priority": 1,
+        "category": "监测",
+        "keyword": "检测",
+        "region": "自主招标"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "【九龙坡区】 重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/dfb6f955-c4e5-42fe-ab4e-44d90d888228.html",
+        "priority": 2,
+        "category": "其他工程",
+        "keyword": "管网",
+        "region": "九龙坡区"
+      },
+      {
+        "title": "【彭水县】 彭水县靛水街道建筑垃圾消纳场及资源化利用项目（监理）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/1339ce8b-976a-4f85-bbcb-1022cb663579.html",
+        "priority": 2,
+        "category": "其他工程",
+        "keyword": "建筑",
+        "region": "彭水县"
+      },
+      {
+        "title": "【沙坪坝区】 物流园土主片区道路管网及地块平场整治工程（横九路、纵八线北段、纵九路交通工程）（第二次）",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260305/89057945-cce4-4c22-a429-05d1b1c3f1f3.html",
+        "priority": 2,
+        "category": "其他工程",
+        "keyword": "道路",
+        "region": "沙坪坝区"
+      }
+    ],
+    "other": [
+      {
+        "title": "【自主招标】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/5d0f5b9a-63c7-4bd6-b9b1-2f767cf39e72.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【沙坪坝区】 重庆农药化工（集团）有限公司原址局部(A／B／C／D地块)土壤污染修复管控工程项目监理",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/320e86fe-c0b6-44fe-b29e-20149c23e18e.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "沙坪坝区"
+      },
+      {
+        "title": "【九龙坡区】 西城映画项目改造工程",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/f57cb6e1-f820-4b8f-8807-ad5cae2911fd.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "九龙坡区"
+      },
+      {
+        "title": "【巫溪县】 巫溪县2025年度其他国土绿化项目",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/a315535b-e56a-41f7-a41d-281962444f01.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "巫溪县"
+      },
+      {
+        "title": "【北碚区】 北碚区麻柳河山洪沟治理工程（二期）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/c49e2818-e62f-4c01-bc6b-5d0a22648bab.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "北碚区"
+      },
+      {
+        "title": "【两江新区】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/495a2222-ddf7-426a-9b02-f489cae343b2.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【两江新区】 协同创新区-五期创新空间、孵化加速器能源站供配电采购及安装项目（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/1a18097f-4fb1-4f64-8960-483397d6e15f.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【两江新区】 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/76cb1ff9-29bb-45c9-8d15-ac5cf54ae65b.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【两江新区】 C标准分区路网三期工程（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/fba4ec2b-7665-4063-aed2-241bc2a5afdb.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【两江新区】 12英寸功率半导体芯片制造及封装测试生产基地项目（生产调度及研发楼）EPC总承包（第二次）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/32fcbf37-fc50-42b2-ba1b-34fc4c47b4f4.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【石柱县】 石柱县城镇生活垃圾治理项目（二期）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/745b8d03-9b97-4d9c-aca6-6158a1e4f661.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "石柱县"
+      },
+      {
+        "title": "【永川区】 重庆永川区云谷大数据产业园F区保障性租赁住房及重庆市永川高新区数字经济融合创新示范产业园项目EPC总承包",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/4ba5b0c2-e5b3-4e57-982b-56d5ef22cadc.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "永川区"
+      },
+      {
+        "title": "【永川区】 重庆永川区云谷大数据产业园F区保障性租赁住房及重庆市永川高新区数字经济融合创新示范产业园项目EPC总承包监理",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/9c8a7ff1-43fa-41c7-8b52-488bd59a307b.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "永川区"
+      },
+      {
+        "title": "【涪陵区】 重庆港龙头作业区二期工程5#、6#多用途泊位后方陆域堆场（一期）第二次",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/21293ee6-78aa-4d59-aa43-6fe6106ad1ae.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "涪陵区"
+      },
+      {
+        "title": "【合川区】 合川区2026年补家项目区小流域综合治理提质增效项目",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/87951221-bbfa-423b-96ed-a733c73a6ce7.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "合川区"
+      },
+      {
+        "title": "【自主招标】 垫江县牡丹湖智能化农贸市场建设项目EPC铝镁锰屋面瓦采购（第二次）竞争性比选公告",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/99fafebd-38a2-4826-b43b-c801f0409759.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【酉阳县】 酉阳县保障性住房（一期）项目—山水云境监理",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/a45029f5-67bb-437d-9dbd-5af28c22de96.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "酉阳县"
+      },
+      {
+        "title": "【江津区】 江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目（项目编号AA202600271）",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/6b2c7659-254c-4726-bbf9-dc275b810a94.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "江津区"
+      },
+      {
+        "title": "【巫山县】 巫山县大昌、双龙等乡镇农业面源污染综合治理工程设计",
+        "date": "2026-03-06",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/ee472532-df70-412f-9c5d-8eb45ae0b2e4.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "巫山县"
+      },
+      {
+        "title": "【高新区】 重庆科技大学正式用电外线工程",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/0ba57fe3-5fd1-47a8-b972-a9de44503d69.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "高新区"
+      },
+      {
+        "title": "【市级】 重庆市璧山区2025年超长期特别国债资金支持设施农业更新改造项目（二期）",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/86987221-53f4-44d5-ab1c-c510e5a0e74f.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "市级"
+      },
+      {
+        "title": "【两江新区】 礼嘉A09-2-1地块产业大厦建设项目配电工程",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/1b05c3cd-032e-427d-87ef-e42ff7644967.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "两江新区"
+      },
+      {
+        "title": "【开州区】 开州区厚坝镇群联村2026年度市级美丽移民村项目",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260305/5f2de195-2f20-4f4e-b04c-ce21d15d7008.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "开州区"
+      },
+      {
+        "title": "【城口县】 S301线白芷山隧道整治工程",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/88051611-a0d9-4437-a80c-893a74bc44a7.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "城口县"
+      },
+      {
+        "title": "【黔江区】 重庆市黔江区诸佛江治理工程（一期）",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260305/f264e707-6869-40ef-97a5-cf25d36a2127.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "黔江区"
+      },
+      {
+        "title": "【江津区】 重庆市江津区第二人民医院双宝院区医养建设项目设计",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/e4687a79-2793-4043-a84f-7dff00bd4487.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "江津区"
+      },
+      {
+        "title": "【自主招标】 重庆市长寿区生活垃圾分类及餐厨（余）垃圾一体化项目",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260305/7a5543d4-bd7e-4d84-884a-583147c0eb3c.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【潼南区】 潼南区中小学清凉工程EPC",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260305/fdd7169c-6f0d-4ff3-8a2d-13eb54396d3e.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "潼南区"
+      },
+      {
+        "title": "【奉节县】 奉节县2025年高标准农田建设项目(十四标段)监理",
+        "date": "2026-03-05",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260305/39ac531d-4caf-4403-bd47-1818f39c3b92.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "奉节县"
+      },
+      {
+        "title": "【自主招标】 重庆市农业投资集团有限公司分布式光伏项目投资开发社会投资人招标（第二次）",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260304/ce57df59-b54b-4f68-a32c-7fbea0c7e4b1.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【自主招标】 重庆邮电大学2025年度维修改造工程（四标段）—坪邮线局部维修及中心配电房加固工程（分包一）（第二次）",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260304/9652de66-f176-4cd4-9c6a-5ee8f9734446.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【自主招标】 永川区陈食街道朱龙花村市级农村土地综合整治项目",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260304/d084cfac-7c9d-41dd-bb99-a562fe632a99.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      },
+      {
+        "title": "【市级】 忠县拔山镇五星村市级农村土地整治项目",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260304/eca0b03d-3314-49f6-8402-52fe10a7ed54.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "市级"
+      },
+      {
+        "title": "【自主招标】 重庆医药高等专科学校标准化遗体捐献接受站建设项目",
+        "date": "2026-03-04",
+        "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260304/01174783-2813-43b6-ae47-45cec3d8eae2.html",
+        "priority": 3,
+        "category": "其他",
+        "keyword": null,
+        "region": "自主招标"
+      }
+    ]
+  }
+}

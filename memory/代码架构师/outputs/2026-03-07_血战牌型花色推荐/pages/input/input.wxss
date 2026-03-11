@@ -1,0 +1,398 @@
+/* pages/input/input.wxss — 国潮麻将风输入页样式 */
+
+/* ===== 变量 ===== */
+/* 主色：麻将绿 #2E8B57 | 背景：宣纸黄 #FAF9DE | 强调：流光金 #D4AF37 */
+
+/* ===== 基础布局 ===== */
+.page-container {
+  min-height: 100vh;
+  background-color: #FAF9DE;
+  padding: 0 0 80rpx 0;
+}
+
+/* ===== 顶部装饰区 ===== */
+.header-decoration {
+  background: linear-gradient(180deg, #2E8B57 0%, #1E6B47 100%);
+  padding: 60rpx 40rpx 48rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deco-line {
+  width: 100%;
+  height: 2rpx;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  margin: 16rpx 0;
+}
+
+.header-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin: 8rpx 0;
+}
+
+.header-icon {
+  font-size: 44rpx;
+}
+
+.header-title {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #FFFEF0;
+  letter-spacing: 6rpx;
+  text-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.3);
+}
+
+.header-subtitle {
+  font-size: 26rpx;
+  color: #E8D9A9;
+  margin-top: 8rpx;
+  letter-spacing: 2rpx;
+}
+
+/* ===== 表单卡片 ===== */
+.form-card {
+  margin: 32rpx 24rpx 0;
+  background: #FFFEF0;
+  border-radius: 20rpx;
+  padding: 40rpx 36rpx;
+  box-shadow: 0 4rpx 20rpx rgba(46, 139, 87, 0.12);
+  border: 2rpx solid #E8D9A9;
+}
+
+/* ===== 区块标题 ===== */
+.form-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #2E8B57;
+  margin-bottom: 36rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #E8D9A9;
+}
+
+/* ===== 问题2：输入方式切换 ===== */
+.input-mode-switch {
+  display: flex;
+  gap: 16rpx;
+  margin-bottom: 32rpx;
+  background: #f0f8f4;
+  border-radius: 12rpx;
+  padding: 8rpx;
+}
+
+.mode-btn {
+  flex: 1;
+  text-align: center;
+  padding: 16rpx 0;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  color: #888888;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.mode-btn.active {
+  background: #2E8B57;
+  color: #FFFEF0;
+  font-weight: 600;
+}
+
+/* ===== 问题2：选择器输入框 ===== */
+.picker-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2rpx solid #D4AF37;
+  border-radius: 12rpx;
+  background: #FAF9DE;
+  padding: 0 24rpx;
+  height: 96rpx;
+  transition: border-color 0.2s;
+}
+
+.picker-input:active {
+  border-color: #2E8B57;
+}
+
+.picker-value {
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.picker-arrow {
+  font-size: 22rpx;
+  color: #D4AF37;
+}
+
+.section-icon {
+  color: #D4AF37;
+  font-size: 24rpx;
+}
+
+/* ===== 表单项 ===== */
+.form-item {
+  margin-bottom: 36rpx;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  margin-bottom: 12rpx;
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.label-required {
+  color: #B22222;
+  font-size: 30rpx;
+  line-height: 1;
+}
+
+.label-optional {
+  background: #E8D9A9;
+  color: #888;
+  font-size: 20rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 20rpx;
+  font-weight: 400;
+}
+
+/* ===== 输入框 ===== */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #D4AF37;
+  border-radius: 12rpx;
+  background: #FAF9DE;
+  padding: 0 24rpx;
+  height: 96rpx;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper:active {
+  border-color: #2E8B57;
+}
+
+.input-error {
+  border-color: #B22222 !important;
+  background: #fff5f5;
+}
+
+.form-input {
+  flex: 1;
+  height: 96rpx;
+  font-size: 32rpx;
+  color: #333333;
+  background: transparent;
+}
+
+.input-placeholder {
+  color: #BBBBBB;
+  font-size: 28rpx;
+}
+
+.input-unit {
+  font-size: 28rpx;
+  color: #2E8B57;
+  font-weight: 600;
+  margin-left: 8rpx;
+}
+
+.error-msg {
+  display: block;
+  color: #B22222;
+  font-size: 24rpx;
+  margin-top: 8rpx;
+  padding-left: 4rpx;
+}
+
+/* ===== 时辰对照 ===== */
+.time-reference {
+  margin-top: 20rpx;
+  background: #f0f8f4;
+  border-radius: 10rpx;
+  padding: 16rpx 20rpx;
+}
+
+.ref-title {
+  display: block;
+  font-size: 22rpx;
+  color: #666666;
+  margin-bottom: 12rpx;
+}
+
+.ref-scroll {
+  white-space: nowrap;
+}
+
+.ref-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16rpx;
+}
+
+.ref-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFEF0;
+  border: 1rpx solid #E8D9A9;
+  border-radius: 8rpx;
+  padding: 8rpx 12rpx;
+  min-width: 88rpx;
+  flex-shrink: 0;
+}
+
+.ref-hour {
+  font-size: 18rpx;
+  color: #999999;
+  line-height: 1.4;
+}
+
+.ref-name {
+  font-size: 22rpx;
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+/* ===== 星座选择 ===== */
+.picker-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2rpx solid #D4AF37;
+  border-radius: 12rpx;
+  background: #FAF9DE;
+  padding: 0 24rpx;
+  height: 96rpx;
+}
+
+.picker-text {
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.picker-placeholder {
+  color: #BBBBBB;
+  font-size: 28rpx;
+}
+
+.picker-arrow {
+  font-size: 22rpx;
+  color: #D4AF37;
+}
+
+/* ===== 星座面板 ===== */
+.zodiac-panel {
+  margin-top: 16rpx;
+  background: #FFFEF0;
+  border: 2rpx solid #E8D9A9;
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+
+.zodiac-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.zodiac-item {
+  width: calc(25% - 12rpx);
+  text-align: center;
+  padding: 16rpx 0;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  color: #333333;
+  background: #f5f5f5;
+  border: 2rpx solid transparent;
+  transition: all 0.2s;
+}
+
+.zodiac-selected {
+  background: #2E8B57;
+  color: #FFFEF0;
+  border-color: #D4AF37;
+  font-weight: 600;
+}
+
+.zodiac-clear {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #999999;
+  padding: 12rpx;
+  border-top: 1rpx solid #E8D9A9;
+}
+
+/* ===== 提示文字 ===== */
+.tips-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12rpx;
+  margin: 24rpx 24rpx 0;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1rpx solid #E8D9A9;
+  border-radius: 12rpx;
+  padding: 20rpx 24rpx;
+}
+
+.tips-icon {
+  font-size: 28rpx;
+  flex-shrink: 0;
+}
+
+.tips-text {
+  font-size: 24rpx;
+  color: #888888;
+  line-height: 1.6;
+}
+
+/* ===== 提交按钮区 ===== */
+.submit-area {
+  margin: 40rpx 24rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 104rpx;
+  background: linear-gradient(135deg, #2E8B57, #1E6B47);
+  color: #FFFEF0;
+  font-size: 34rpx;
+  font-weight: 700;
+  border-radius: 52rpx;
+  letter-spacing: 4rpx;
+  border: 3rpx solid #D4AF37;
+  box-shadow: 0 6rpx 20rpx rgba(46, 139, 87, 0.4), inset 0 1rpx 0 rgba(255, 255, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.submit-btn::after {
+  border: none;
+}
+
+.submit-btn[disabled],
+.btn-loading {
+  opacity: 0.65;
+}
+
+.submit-deco {
+  font-size: 24rpx;
+  color: #B8A070;
+  letter-spacing: 2rpx;
+}
