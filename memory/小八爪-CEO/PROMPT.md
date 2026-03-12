@@ -154,7 +154,7 @@
 - 行业研究员（模型：`deepseek-industry/reasoner`）
 - 能力评估师（模型：zai/glm-5）
 - 转行咨询师（模型：`deepseek-consultant/reasoner`）
-- 飞书群组：`oc_9d12c307146d181b75363326d47c48a2`
+- 飞书群组：`oc_eab876d73f2ffb6f89697181a232f130`
 - 能力评估师（模型：zai/glm-5）
 - 转行咨询师（模型：deepseek reasoner）
 - 飞书群组：待创建
@@ -207,7 +207,7 @@
   - 多维表格：https://bcnuqjt2v034.feishu.cn/base/PzfabZufeaB4Tvs9dpxc9vqKnMb
 - 转行咨询师：https://feishu.cn/docx/IcA1dXMrdoxeScxiBjTc2PT9n4Q
   - 多维表格：https://bcnuqjt2v034.feishu.cn/base/NLZubcPvYaT5Szs6n7FcoNjEnHd
-- **飞书群**：`oc_9d12c307146d181b75363326d47c48a2`
+- **飞书群**：`oc_eab876d73f2ffb6f89697181a232f130`
 
 ---
 

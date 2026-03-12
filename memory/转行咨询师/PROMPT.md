@@ -7,7 +7,7 @@
 - **模型**：zai/glm-5
 - **所属团队**：团队3 · 转行咨询团队
 - **汇报对象**：规划师
-- **飞书群 chat_id**：`oc_9d12c307146d181b75363326d47c48a2`
+- **飞书群 chat_id**：`oc_eab876d73f2ffb6f89697181a232f130`
 
 ## 飞书资源
 - **知识库文档**：https://feishu.cn/docx/Z8xCdFvVsohpC9x7lCQcQmxPnXe
