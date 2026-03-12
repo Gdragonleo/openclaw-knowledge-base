@@ -105,6 +105,30 @@
       "recommendedSkills": ["n8n-workflow-automation", "agentic-workflow-automation", "zcloak-ai-agent"],
       "messageId": "om_x100b54187dcbe0a4c2c046086e8134b",
       "completedTime": "2026-03-12T21:45:00+08:00"
+    },
+    "github_sync": {
+      "startTime": "2026-03-12T22:45:00+08:00",
+      "status": "partial",
+      "commitSuccess": true,
+      "pushSuccess": false,
+      "filesChanged": 32,
+      "insertions": 6667,
+      "error": "Git push失败：GitHub Token认证问题",
+      "messageId": "om_x100b54187dcbe0a4c2c046086e8134c",
+      "completedTime": "2026-03-12T22:46:00+08:00"
+    },
+    "collaboration_center_query": {
+      "startTime": "2026-03-12T23:00:00+08:00",
+      "status": "completed",
+      "pendingTasks": 0,
+      "completedTime": "2026-03-12T23:00:30+08:00"
+    },
+    "collaboration_center_query_2330": {
+      "startTime": "2026-03-12T23:30:00+08:00",
+      "status": "completed",
+      "pendingTasks": 0,
+      "note": "无待处理任务（所有任务接收者为小鲸鱼）",
+      "completedTime": "2026-03-12T23:30:30+08:00"
     }
   }
 }
