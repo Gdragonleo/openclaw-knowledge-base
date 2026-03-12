@@ -1,0 +1,37 @@
+{
+  "execution": {
+    "time": "0 9 * * *",
+    "timezone": "Asia/Shanghai",
+    "mode": "daily"
+  },
+  "output": {
+    "reportType": "detailed",
+    "format": "markdown",
+    "saveTo": "./output/",
+    "uploadToFeishu": true,
+    "feishuConfig": {
+      "folderToken": "【填写飞书文件夹token】",
+      "chatId": "【填写飞书群ID】"
+    }
+  },
+  "notification": {
+    "channels": ["feishu"],
+    "priority": {
+      "urgent": {
+        "condition": "amount >= 1000 && matchScore >= 90",
+        "channels": ["feishu"]
+      },
+      "important": {
+        "condition": "amount >= 500 || matchScore >= 70",
+        "channels": ["feishu"]
+      }
+    }
+  },
+  "advanced": {
+    "parallel": true,
+    "maxConcurrent": 3,
+    "timeout": 300,
+    "retry": 3,
+    "delay": [3, 8]
+  }
+}

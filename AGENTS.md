@@ -14,8 +14,58 @@ Before doing anything else:
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+5. **Check error lessons** — Query `skills/error-lessons/lessons/` for relevant past mistakes
 
 Don't ask permission. Just do it.
+
+---
+
+## ⚠️ NEW: Error Prevention & Verification (2026-03-12)
+
+### **Before Answering ANY Question**:
+
+#### **Step 1: Check Error Lessons** (MANDATORY)
+```bash
+# Extract keywords from user's message
+# Search error lessons
+grep -r "关键词" ~/.openclaw/workspace/skills/error-lessons/lessons/
+
+# If matches found:
+# - Apply prevention rules
+# - Adjust approach accordingly
+```
+
+#### **Step 2: Verify Information** (MANDATORY for technical/config questions)
+```
+Priority order:
+1. Official documentation (highest confidence)
+2. Baidu/Google search (medium confidence)
+3. Existing knowledge base (reference only)
+
+Always cite sources and confidence level:
+- "根据官方文档[链接]..." (95-100% confidence)
+- "根据百度搜索结果..." (60-80% confidence)
+- "根据我的理解..." (40-60% confidence)
+- "需要确认，建议查阅..." (< 40% confidence)
+```
+
+#### **Step 3: Answer with Confidence**
+Always state confidence level to help user understand risk.
+
+### **Example**:
+```
+User: "如何配置飞书知识库权限？"
+
+OLD (risky):
+→ 凭记忆回答 "右上角设置"
+→ 可能错误 ❌
+
+NEW (verified):
+→ 查错误库（发现教训5）
+→ 查飞书官方文档
+→ 回答："根据飞书开放平台文档[链接]，步骤是...
+         ✅ 已验证，置信度95%"
+```
 
 ## Memory
 
