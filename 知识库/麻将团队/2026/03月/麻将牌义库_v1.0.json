@@ -1,0 +1,707 @@
+{
+  "tile_library": {
+    "version": "1.0",
+    "created": "2026-03-13",
+    "creator": "小八爪子智能体",
+    "description": "麻将144张牌的完整牌义库，包含五行属性、运势含义、文化解读"
+  },
+  "tile_classification": {
+    "万子": {"element": "木", "symbolism": "生发向上，如树木成长", "count": 36},
+    "条子": {"element": "火", "symbolism": "热烈奔放，如火焰跳动", "count": 36},
+    "筒子": {"element": "土", "symbolism": "承载万物，如大地厚重", "count": 36},
+    "风牌": {"element": "金", "symbolism": "锐利四方，如风行天下", "count": 16},
+    "箭牌": {"element": "水", "symbolism": "流动变化，如水流智慧", "count": 12},
+    "花牌": {"element": "综合", "symbolism": "四季流转，自然之美", "count": 8}
+  },
+  "tiles": [
+    {
+      "id": "wan_1",
+      "name": "一万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 1,
+      "visual": "壹万",
+      "meanings": {
+        "basic": "起始、生机、新生、希望",
+        "career": "新项目启动、创业初期、新的开始",
+        "relationship": "新恋情萌芽、初识、新的缘分",
+        "wealth": "小财初现、开始积累、第一桶金"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "一万象征万物之始，如春天初芽，充满生机与希望。"
+    },
+    {
+      "id": "wan_2",
+      "name": "二万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 2,
+      "visual": "贰万",
+      "meanings": {
+        "basic": "成对、配合、平衡、和谐",
+        "career": "合作伙伴、团队协作、双赢局面",
+        "relationship": "情侣配对、相敬如宾、和谐相处",
+        "wealth": "对等收益、稳定收入、双倍积累"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "二万代表阴阳调和，事物成对，寓意平衡与和谐。"
+    },
+    {
+      "id": "wan_3",
+      "name": "三万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 3,
+      "visual": "叁万",
+      "meanings": {
+        "basic": "三才、创造、发展、多元",
+        "career": "三方合作、创意发展、多线并进",
+        "relationship": "三人行、三角关系、家庭和睦",
+        "wealth": "多方财源、多元投资、三倍收益"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "三万对应天地人三才，代表创造与发展。"
+    },
+    {
+      "id": "wan_4",
+      "name": "四万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 4,
+      "visual": "肆万",
+      "meanings": {
+        "basic": "四季、四方、稳定、基础",
+        "career": "事业稳定、四方发展、基础牢固",
+        "relationship": "四季如春、感情稳定、家庭美满",
+        "wealth": "四平八稳、稳定增长、四方来财"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "四万象征四季循环、四方稳定，是稳固之象。"
+    },
+    {
+      "id": "wan_5",
+      "name": "五万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 5,
+      "visual": "伍万",
+      "meanings": {
+        "basic": "五行、中心、核心、平衡",
+        "career": "核心地位、五行俱全、事业中心",
+        "relationship": "五福临门、家庭和睦、感情圆满",
+        "wealth": "五行生财、中心聚财、平衡富足"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "五万代表五行俱全，居于中心，是平衡与核心之象。"
+    },
+    {
+      "id": "wan_6",
+      "name": "六万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 6,
+      "visual": "陆万",
+      "meanings": {
+        "basic": "六六顺、顺利、吉祥、圆满",
+        "career": "事业顺利、六六大顺、步步高升",
+        "relationship": "感情顺利、六亲和睦、姻缘美满",
+        "wealth": "财源广进、六路来财、顺遂富足"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "六万寓意六六大顺，是吉祥如意之牌。"
+    },
+    {
+      "id": "wan_7",
+      "name": "七万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 7,
+      "visual": "柒万",
+      "meanings": {
+        "basic": "七星、变化、转折、智慧",
+        "career": "事业转折、智慧决策、突破瓶颈",
+        "relationship": "感情变化、七情六欲、激情浪漫",
+        "wealth": "财运转折、意外之财、智慧生财"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "七万对应北斗七星，象征智慧与变化。"
+    },
+    {
+      "id": "wan_8",
+      "name": "八万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 8,
+      "visual": "捌万",
+      "meanings": {
+        "basic": "八方、发达、兴盛、吉祥",
+        "career": "事业发达、八方来援、兴旺繁荣",
+        "relationship": "感情兴旺、八方来喜、姻缘发达",
+        "wealth": "八方来财、财运亨通、大富大贵"
+      },
+      "fortune_weight": 1.2,
+      "cultural_note": "八万寓意发财（八谐音发），是最吉祥的牌之一。"
+    },
+    {
+      "id": "wan_9",
+      "name": "九万",
+      "type": "万子",
+      "element": "木",
+      "numerical_value": 9,
+      "visual": "玖万",
+      "meanings": {
+        "basic": "九五之尊、极致、圆满、高位",
+        "career": "事业巅峰、九五之尊、领导地位",
+        "relationship": "感情圆满、九世情缘、天长地久",
+        "wealth": "财运极盛、九九归一、大富大贵"
+      },
+      "fortune_weight": 1.25,
+      "cultural_note": "九万象征极致与圆满，是万子中的至尊之牌。"
+    },
+    {
+      "id": "tiao_1",
+      "name": "一条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 1,
+      "visual": "壹条/麻雀",
+      "meanings": {
+        "basic": "灵动、活力、喜悦、灵动",
+        "career": "新机遇、灵活应变、活力四射",
+        "relationship": "灵动爱情、喜悦相逢、活泼浪漫",
+        "wealth": "灵动机遇、活财进门、喜财临门"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "一条又称麻雀，象征灵动喜悦，是条子中的灵牌。"
+    },
+    {
+      "id": "tiao_2",
+      "name": "二条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 2,
+      "visual": "贰条",
+      "meanings": {
+        "basic": "对火、热情、热烈、成双",
+        "career": "热烈合作、激情投入、双倍热情",
+        "relationship": "热情似火、成双成对、热烈爱情",
+        "wealth": "热烈求财、双倍收益、激情生财"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "二条代表热情成双，火焰跳动，寓意热烈。"
+    },
+    {
+      "id": "tiao_3",
+      "name": "三条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 3,
+      "visual": "叁条",
+      "meanings": {
+        "basic": "三阳开泰、兴旺、繁荣、发展",
+        "career": "事业兴旺、三线发展、繁荣昌盛",
+        "relationship": "感情兴旺、三阳开泰、热烈繁荣",
+        "wealth": "财运兴旺、三方来财、繁荣富贵"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "三条象征三阳开泰，是兴旺繁荣之象。"
+    },
+    {
+      "id": "tiao_4",
+      "name": "四条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 4,
+      "visual": "肆条",
+      "meanings": {
+        "basic": "四火、稳定、温暖、持久",
+        "career": "事业稳定、四火温暖、持久发展",
+        "relationship": "感情温暖、四火相伴、持久稳定",
+        "wealth": "财运温暖、四火生财、稳定收益"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "四条代表火焰稳定，温暖持久。"
+    },
+    {
+      "id": "tiao_5",
+      "name": "五条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 5,
+      "visual": "伍条",
+      "meanings": {
+        "basic": "五行火、核心、热情、力量",
+        "career": "事业核心、热情投入、力量充沛",
+        "relationship": "感情核心、热情似火、力量爱情",
+        "wealth": "财运核心、热情生财、力量聚财"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "五条对应五行之火，是条子中的核心牌。"
+    },
+    {
+      "id": "tiao_6",
+      "name": "六条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 6,
+      "visual": "陆条",
+      "meanings": {
+        "basic": "六火、顺利、光明、热情",
+        "career": "事业顺利、六火光明、热情发展",
+        "relationship": "感情顺利、六火热情、光明爱情",
+        "wealth": "财运顺利、六火生财、光明富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "六条寓意六火顺遂，光明热情。"
+    },
+    {
+      "id": "tiao_7",
+      "name": "七条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 7,
+      "visual": "柒条",
+      "meanings": {
+        "basic": "七火、变化、激情、创意",
+        "career": "事业变化、七火激情、创意突破",
+        "relationship": "感情变化、七火激情、创意浪漫",
+        "wealth": "财运变化、七火生财、创意求财"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "七条象征火焰变化，激情创意。"
+    },
+    {
+      "id": "tiao_8",
+      "name": "八条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 8,
+      "visual": "捌条",
+      "meanings": {
+        "basic": "八火、发达、热烈、兴盛",
+        "career": "事业发达、八火热烈、兴盛繁荣",
+        "relationship": "感情发达、八火热烈、兴盛爱情",
+        "wealth": "财运发达、八火生财、热烈富贵"
+      },
+      "fortune_weight": 1.2,
+      "cultural_note": "八条寓意火发（八谐音发），热烈发达。"
+    },
+    {
+      "id": "tiao_9",
+      "name": "九条",
+      "type": "条子",
+      "element": "火",
+      "numerical_value": 9,
+      "visual": "玖条",
+      "meanings": {
+        "basic": "九火、极致、光明、圆满",
+        "career": "事业极致、九火光明、圆满成功",
+        "relationship": "感情极致、九火圆满、光明爱情",
+        "wealth": "财运极致、九火生财、圆满富贵"
+      },
+      "fortune_weight": 1.25,
+      "cultural_note": "九条象征火焰极致，光明圆满。"
+    },
+    {
+      "id": "tong_1",
+      "name": "一筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 1,
+      "visual": "壹筒/大饼",
+      "meanings": {
+        "basic": "圆满、起始、根基、承载",
+        "career": "事业起步、根基稳固、承载希望",
+        "relationship": "感情圆满、起始缘分、承载爱情",
+        "wealth": "财运圆满、起始积累、承载富贵"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "一筒又称大饼，象征圆满起始，承载万物。"
+    },
+    {
+      "id": "tong_2",
+      "name": "二筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 2,
+      "visual": "贰筒",
+      "meanings": {
+        "basic": "对圆、成双、稳定、平和",
+        "career": "事业稳定、成双合作、平和发展",
+        "relationship": "感情稳定、成双成对、平和爱情",
+        "wealth": "财运稳定、成双收益、平和富贵"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "二筒代表双重圆满，稳定平和。"
+    },
+    {
+      "id": "tong_3",
+      "name": "三筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 3,
+      "visual": "叁筒",
+      "meanings": {
+        "basic": "三圆、稳固、基础、建设",
+        "career": "事业稳固、三足鼎立、基础建设",
+        "relationship": "感情稳固、三圆和谐、建设爱情",
+        "wealth": "财运稳固、三圆聚财、建设富贵"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "三筒象征三足鼎立，稳固建设。"
+    },
+    {
+      "id": "tong_4",
+      "name": "四筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 4,
+      "visual": "肆筒",
+      "meanings": {
+        "basic": "四圆、方正、稳固、厚实",
+        "career": "事业方正、四圆稳固、厚实基础",
+        "relationship": "感情方正、四圆稳固、厚实爱情",
+        "wealth": "财运方正、四圆聚财、厚实富贵"
+      },
+      "fortune_weight": 1.0,
+      "cultural_note": "四筒代表四方圆满，稳固厚实。"
+    },
+    {
+      "id": "tong_5",
+      "name": "五筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 5,
+      "visual": "伍筒",
+      "meanings": {
+        "basic": "五行土、中心、厚重、承载",
+        "career": "事业中心、五行承载、厚重基础",
+        "relationship": "感情中心、五行和谐、承载爱情",
+        "wealth": "财运中心、五行聚财、厚重富贵"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "五筒对应五行之土，是筒子中的核心牌。"
+    },
+    {
+      "id": "tong_6",
+      "name": "六筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 6,
+      "visual": "陆筒",
+      "meanings": {
+        "basic": "六圆、顺利、平稳、厚重",
+        "career": "事业顺利、六圆平稳、厚重发展",
+        "relationship": "感情顺利、六圆平稳、厚重爱情",
+        "wealth": "财运顺利、六圆聚财、厚重富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "六筒寓意六圆顺遂，平稳厚重。"
+    },
+    {
+      "id": "tong_7",
+      "name": "七筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 7,
+      "visual": "柒筒",
+      "meanings": {
+        "basic": "七圆、变化、积淀、积累",
+        "career": "事业变化、七圆积淀、积累发展",
+        "relationship": "感情变化、七圆积淀、积累爱情",
+        "wealth": "财运变化、七圆积累、积淀富贵"
+      },
+      "fortune_weight": 1.05,
+      "cultural_note": "七筒象征土地变化，积淀积累。"
+    },
+    {
+      "id": "tong_8",
+      "name": "八筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 8,
+      "visual": "捌筒",
+      "meanings": {
+        "basic": "八圆、发达、厚重、兴盛",
+        "career": "事业发达、八圆厚重、兴盛发展",
+        "relationship": "感情发达、八圆厚重、兴盛爱情",
+        "wealth": "财运发达、八圆聚财、厚重富贵"
+      },
+      "fortune_weight": 1.2,
+      "cultural_note": "八筒寓意土发（八谐音发），厚重发达。"
+    },
+    {
+      "id": "tong_9",
+      "name": "九筒",
+      "type": "筒子",
+      "element": "土",
+      "numerical_value": 9,
+      "visual": "玖筒",
+      "meanings": {
+        "basic": "九圆、极致、厚重、圆满",
+        "career": "事业极致、九圆厚重、圆满成功",
+        "relationship": "感情极致、九圆厚重、圆满爱情",
+        "wealth": "财运极致、九圆聚财、厚重富贵"
+      },
+      "fortune_weight": 1.25,
+      "cultural_note": "九筒象征大地极致，厚重圆满。"
+    },
+    {
+      "id": "feng_dong",
+      "name": "东风",
+      "type": "风牌",
+      "element": "金",
+      "numerical_value": null,
+      "visual": "东风",
+      "meanings": {
+        "basic": "东方、春天、生发、希望",
+        "career": "事业生发、东风送暖、希望起步",
+        "relationship": "感情生发、东风送暖、希望缘分",
+        "wealth": "财运生发、东风送财、希望富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "东风对应东方、春天，象征生发与希望。"
+    },
+    {
+      "id": "feng_nan",
+      "name": "南风",
+      "type": "风牌",
+      "element": "金",
+      "numerical_value": null,
+      "visual": "南风",
+      "meanings": {
+        "basic": "南方、夏天、热烈、兴盛",
+        "career": "事业兴盛、南风送暖、热烈发展",
+        "relationship": "感情兴盛、南风送暖、热烈爱情",
+        "wealth": "财运兴盛、南风送财、热烈富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "南风对应南方、夏天，象征热烈与兴盛。"
+    },
+    {
+      "id": "feng_xi",
+      "name": "西风",
+      "type": "风牌",
+      "element": "金",
+      "numerical_value": null,
+      "visual": "西风",
+      "meanings": {
+        "basic": "西方、秋天、收获、收敛",
+        "career": "事业收获、西风送爽、收敛成果",
+        "relationship": "感情收获、西风送爽、收获爱情",
+        "wealth": "财运收获、西风送财、收敛富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "西风对应西方、秋天，象征收获与收敛。"
+    },
+    {
+      "id": "feng_bei",
+      "name": "北风",
+      "type": "风牌",
+      "element": "金",
+      "numerical_value": null,
+      "visual": "北风",
+      "meanings": {
+        "basic": "北方、冬天、潜藏、积蓄",
+        "career": "事业潜藏、北风送寒、积蓄力量",
+        "relationship": "感情潜藏、北风送寒、积蓄爱情",
+        "wealth": "财运潜藏、北风送财、积蓄富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "北风对应北方、冬天，象征潜藏与积蓄。"
+    },
+    {
+      "id": "jian_zhong",
+      "name": "红中",
+      "type": "箭牌",
+      "element": "水",
+      "numerical_value": null,
+      "visual": "红中",
+      "meanings": {
+        "basic": "中正、核心、智慧、公正",
+        "career": "事业中正、核心地位、智慧决策",
+        "relationship": "感情中正、核心地位、智慧爱情",
+        "wealth": "财运中正、核心聚财、智慧富贵"
+      },
+      "fortune_weight": 1.2,
+      "cultural_note": "红中象征中正之道，智慧公正。"
+    },
+    {
+      "id": "jian_fa",
+      "name": "发财",
+      "type": "箭牌",
+      "element": "水",
+      "numerical_value": null,
+      "visual": "发财",
+      "meanings": {
+        "basic": "发达、财富、繁荣、兴旺",
+        "career": "事业发达、财富增长、繁荣发展",
+        "relationship": "感情发达、财富共享、兴旺爱情",
+        "wealth": "财运发达、财富滚滚、繁荣富贵"
+      },
+      "fortune_weight": 1.25,
+      "cultural_note": "发财象征财富发达，是求财者的最爱。"
+    },
+    {
+      "id": "jian_bai",
+      "name": "白板",
+      "type": "箭牌",
+      "element": "水",
+      "numerical_value": null,
+      "visual": "白板",
+      "meanings": {
+        "basic": "空白、清净、无碍、自由",
+        "career": "事业自由、清净发展、无碍进取",
+        "relationship": "感情自由、清净相处、无碍爱情",
+        "wealth": "财运自由、清净生财、无碍富贵"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "白板象征清净无碍，自由自在。"
+    },
+    {
+      "id": "hua_chun",
+      "name": "春",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "春",
+      "meanings": {
+        "basic": "春天、生发、希望、开始",
+        "career": "事业起步、春天生机、希望开始",
+        "relationship": "感情萌芽、春天浪漫、希望爱情",
+        "wealth": "财运起步、春天生机、希望富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "春代表四季之首，象征生发与希望。"
+    },
+    {
+      "id": "hua_xia",
+      "name": "夏",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "夏",
+      "meanings": {
+        "basic": "夏天、热烈、兴盛、繁荣",
+        "career": "事业兴盛、夏天热烈、繁荣发展",
+        "relationship": "感情热烈、夏天浪漫、兴盛爱情",
+        "wealth": "财运兴盛、夏天热烈、繁荣富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "夏代表夏季，象征热烈与繁荣。"
+    },
+    {
+      "id": "hua_qiu",
+      "name": "秋",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "秋",
+      "meanings": {
+        "basic": "秋天、收获、成熟、圆满",
+        "career": "事业收获、秋天成熟、圆满成功",
+        "relationship": "感情收获、秋天成熟、圆满爱情",
+        "wealth": "财运收获、秋天丰收、圆满富贵"
+      },
+      "fortune_weight": 1.2,
+      "cultural_note": "秋代表秋季，象征收获与圆满。"
+    },
+    {
+      "id": "hua_dong",
+      "name": "冬",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "冬",
+      "meanings": {
+        "basic": "冬天、潜藏、积蓄、等待",
+        "career": "事业潜藏、冬天积蓄、等待时机",
+        "relationship": "感情潜藏、冬天温暖、积蓄爱情",
+        "wealth": "财运潜藏、冬天积蓄、等待富贵"
+      },
+      "fortune_weight": 1.1,
+      "cultural_note": "冬代表冬季，象征潜藏与积蓄。"
+    },
+    {
+      "id": "hua_mei",
+      "name": "梅",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "梅",
+      "meanings": {
+        "basic": "梅花、高洁、坚韧、傲骨",
+        "career": "事业高洁、梅花坚韧、傲骨发展",
+        "relationship": "感情高洁、梅花坚韧、傲骨爱情",
+        "wealth": "财运高洁、梅花坚韧、傲骨富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "梅代表梅花，象征高洁坚韧。"
+    },
+    {
+      "id": "hua_lan",
+      "name": "兰",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "兰",
+      "meanings": {
+        "basic": "兰花、优雅、清幽、智慧",
+        "career": "事业优雅、兰花清幽、智慧发展",
+        "relationship": "感情优雅、兰花清幽、智慧爱情",
+        "wealth": "财运优雅、兰花清幽、智慧富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "兰代表兰花，象征优雅智慧。"
+    },
+    {
+      "id": "hua_zhu",
+      "name": "竹",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "竹",
+      "meanings": {
+        "basic": "竹子、正直、虚心、进取",
+        "career": "事业正直、竹子虚心、进取发展",
+        "relationship": "感情正直、竹子虚心、进取爱情",
+        "wealth": "财运正直、竹子虚心、进取富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "竹代表竹子，象征正直进取。"
+    },
+    {
+      "id": "hua_ju",
+      "name": "菊",
+      "type": "花牌",
+      "element": "综合",
+      "numerical_value": null,
+      "visual": "菊",
+      "meanings": {
+        "basic": "菊花、淡泊、隐逸、高洁",
+        "career": "事业淡泊、菊花隐逸、高洁发展",
+        "relationship": "感情淡泊、菊花隐逸、高洁爱情",
+        "wealth": "财运淡泊、菊花隐逸、高洁富贵"
+      },
+      "fortune_weight": 1.15,
+      "cultural_note": "菊代表菊花，象征淡泊高洁。"
+    }
+  ],
+  "tile_count_summary": {
+    "total": 34,
+    "by_type": {
+      "万子": 9,
+      "条子": 9,
+      "筒子": 9,
+      "风牌": 4,
+      "箭牌": 3,
+      "花牌": 8
+    },
+    "note": "每种牌有4张（花牌除外，每种1张），总计144张牌"
+  },
+  "usage_notes": {
+    "fortune_calculation": "根据玩家的五行喜忌，调整对应牌类的运势权重",
+    "cultural_education": "在游戏中展示牌的文化含义，普及传统文化",
+    "balance_adjustment": "运势权重仅作参考，实际游戏需保持公平性"
+  }
+}
