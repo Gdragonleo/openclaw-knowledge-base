@@ -1,0 +1,55 @@
+{
+  "sites": [
+    {
+      "id": "cqggzy",
+      "name": "重庆市公共资源交易中心",
+      "url": "https://www.cqggzy.com",
+      "enabled": true,
+      "priority": 1,
+      "selectors": {
+        "announcementLink": "a[href*='014001001']",
+        "listContainer": ".list-container",
+        "itemTitle": "a",
+        "itemDate": ".date"
+      },
+      "pagination": {
+        "enabled": true,
+        "maxPages": 10
+      }
+    },
+    {
+      "id": "scggzy",
+      "name": "四川省公共资源交易中心",
+      "url": "http://ggzyjy.sc.gov.cn",
+      "enabled": true,
+      "priority": 2,
+      "selectors": {
+        "announcementLink": "a[href*='jyxx']",
+        "listContainer": ".list",
+        "itemTitle": "a",
+        "itemDate": ".date"
+      },
+      "pagination": {
+        "enabled": true,
+        "maxPages": 8
+      }
+    },
+    {
+      "id": "hbggzy",
+      "name": "湖北省公共资源交易中心",
+      "url": "https://www.hbggzyfwpt.cn",
+      "enabled": true,
+      "priority": 2,
+      "selectors": {
+        "announcementLink": "a[href*='招标']",
+        "listContainer": ".list",
+        "itemTitle": "a",
+        "itemDate": ".date"
+      },
+      "pagination": {
+        "enabled": true,
+        "maxPages": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/input/input",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarTitleText": "麻将算命",
+    "navigationBarBackgroundColor": "#2E8B57",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FAF9DE",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

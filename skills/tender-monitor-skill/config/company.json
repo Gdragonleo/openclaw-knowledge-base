@@ -1,0 +1,42 @@
+{
+  "basic": {
+    "name": "【填写公司名称】",
+    "qualifications": [
+      "【填写资质1，如：工程勘察甲级】",
+      "【填写资质2，如：测绘乙级】"
+    ]
+  },
+  "business": {
+    "core": ["【核心业务1】", "【核心业务2】"],
+    "expand": ["【拓展业务1】", "【拓展业务2】"],
+    "exclude": ["【排除业务1】"]
+  },
+  "regions": {
+    "core": ["【核心地区1，如：重庆】", "【核心地区2，如：四川】"],
+    "expand": ["【拓展地区1】"],
+    "exclude": ["【排除地区1】"]
+  },
+  "budget": {
+    "min": 100,
+    "max": 2000,
+    "unit": "万元",
+    "ideal": [500, 1500]
+  },
+  "team": {
+    "seniorEngineers": 0,
+    "juniorEngineers": 0,
+    "advantages": ["【技术优势1】", "【技术优势2】"]
+  },
+  "funds": {
+    "maxBidBond": 50,
+    "maxPerformanceBond": 200,
+    "maxConcurrent": 3
+  },
+  "strategy": {
+    "stage": "stable",
+    "yearlyGoal": {
+      "projects": 10,
+      "amount": 5000
+    }
+  }
+}

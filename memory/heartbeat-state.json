@@ -1,0 +1,134 @@
+{
+  "lastChecks": {
+    "morning_study": {
+      "lastRun": "2026-03-11T06:00:00+08:00",
+      "status": "completed",
+      "tentacles": 15,
+      "newSkills": ["weekly-report-generator", "notification-hub", "project-management-2"],
+      "reportSaved": "知识库/小八爪/2026-03/ClawHub技能探索/早间学习_2026-03-11.md"
+    },
+    "error_review": {
+      "lastRun": "2026-03-11T06:00:00+08:00",
+      "status": "completed",
+      "errorsFound": 4,
+      "reportSaved": "memory/今日提醒.md"
+    },
+    "daily_report": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b543fbf3fc880b292da850559438"
+    },
+    "tender_report": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "projects": 10,
+      "matched": 1,
+      "messageId": "om_x100b543841bb1c44b35bfef3299632f"
+    },
+    "news_summary": {
+      "lastRun": "2026-03-11T09:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b543fb5d294acb34248719069cdc"
+    },
+    "study_plan_query": {
+      "lastRun": "2026-03-11T17:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b5426bdc6a0a0b365a0a37d2904e"
+    },
+    "self_study": {
+      "lastRun": "2026-03-11T22:00:00+08:00",
+      "status": "completed",
+      "topic": "周报生成器实战",
+      "reportSaved": "知识库/小八爪/2026-03/团队管理/周报生成器实战_2026-03-11.md",
+      "messageId": "om_x100b54232dbb24a8b24bef1d7f58eea"
+    }
+  },
+  "notes": "2026-03-12 6:00任务已完成，9:00任务已启动（招标报告、工作汇报、国际新闻）",
+  "2026-03-12": {
+    "morning_study": {
+      "startTime": "2026-03-12T06:00:00+08:00",
+      "sessionKey": "agent:main:subagent:36e080d3-bb07-4653-afce-b404822fe881",
+      "status": "completed",
+      "topic": "项目管理方法论",
+      "reportSaved": "知识库/小八爪/2026-03/项目管理/早间学习_2026-03-12.md",
+      "completedTime": "2026-03-12T06:03:00+08:00",
+      "keyLearnings": ["艾森豪威尔矩阵", "周/日计划仪式", "多项目协同"]
+    },
+    "error_review": {
+      "startTime": "2026-03-12T06:00:30+08:00",
+      "sessionKey": "agent:main:subagent:657ca270-64d3-453f-9b92-550709387c89",
+      "status": "completed",
+      "errorsFound": 14,
+      "highFreqErrors": 7,
+      "reportSaved": "memory/今日提醒.md",
+      "completedTime": "2026-03-12T06:02:00+08:00"
+    },
+    "daily_report_9am": {
+      "startTime": "2026-03-12T09:00:00+08:00",
+      "tasks": {
+        "tender_report": {
+          "sessionKey": "agent:main:subagent:953e2234-ddd3-47c9-a0b3-9070e32844f9",
+          "status": "completed",
+          "messageId": "om_x100b54157e9874a8c2967a8ae5c6952",
+          "projects": 17,
+          "matched": 3,
+          "totalInvestment": "30416万元",
+          "docToken": "FZ36dkNqeo2ZXVxXcHmcLly2n7g",
+          "docUrl": "https://feishu.cn/docx/FZ36dkNqeo2ZXVxXcHmcLly2n7g",
+          "completedTime": "2026-03-12T09:12:00+08:00"
+        }
+        "work_report": {
+          "sessionKey": "agent:main:subagent:a3bdc032-bfdf-40b8-8cfa-5e3af902a38b",
+          "status": "completed",
+          "messageId": "om_x100b54154570ecacc3683e8981f821a",
+          "completedTime": "2026-03-12T09:02:00+08:00"
+        },
+        "news_summary": {
+          "sessionKey": "agent:main:subagent:d5072288-f11a-4977-9ced-ca6c87b00d80",
+          "status": "completed",
+          "messageId": "om_x100b54154006b0b4c4d35e9c1ccbc81",
+          "newsCount": 5,
+          "completedTime": "2026-03-12T09:02:00+08:00"
+        }
+      }
+    },
+    "study_plan_query": {
+      "startTime": "2026-03-12T17:00:00+08:00",
+      "status": "completed",
+      "messageId": "om_x100b541c4541108cb3931497ff4cfda",
+      "completedTime": "2026-03-12T17:00:00+08:00"
+    },
+    "clawhub_explore": {
+      "startTime": "2026-03-12T21:12:00+08:00",
+      "status": "completed",
+      "reportSaved": "知识库/小八爪/2026-03/ClawHub技能探索/探索报告_2026-03-12.md",
+      "recommendedSkills": ["n8n-workflow-automation", "agentic-workflow-automation", "zcloak-ai-agent"],
+      "messageId": "om_x100b54187dcbe0a4c2c046086e8134b",
+      "completedTime": "2026-03-12T21:45:00+08:00"
+    },
+    "github_sync": {
+      "startTime": "2026-03-12T22:45:00+08:00",
+      "status": "partial",
+      "commitSuccess": true,
+      "pushSuccess": false,
+      "filesChanged": 32,
+      "insertions": 6667,
+      "error": "Git push失败：GitHub Token认证问题",
+      "messageId": "om_x100b54187dcbe0a4c2c046086e8134c",
+      "completedTime": "2026-03-12T22:46:00+08:00"
+    },
+    "collaboration_center_query": {
+      "startTime": "2026-03-12T23:00:00+08:00",
+      "status": "completed",
+      "pendingTasks": 0,
+      "completedTime": "2026-03-12T23:00:30+08:00"
+    },
+    "collaboration_center_query_2330": {
+      "startTime": "2026-03-12T23:30:00+08:00",
+      "status": "completed",
+      "pendingTasks": 0,
+      "note": "无待处理任务（所有任务接收者为小鲸鱼）",
+      "completedTime": "2026-03-12T23:30:30+08:00"
+    }
+  }
+}

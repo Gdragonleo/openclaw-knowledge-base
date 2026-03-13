@@ -1,0 +1,25 @@
+{
+  "name": "tender-browser-scraper",
+  "version": "1.0.0",
+  "description": "招标网站自动化爬取工具",
+  "main": "scripts/scrape.js",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "scrape:cqggzy": "node scripts/scrape.js --site cqggzy",
+    "test": "node scripts/scrape.js --site cqggzy --max 5"
+  },
+  "keywords": [
+    "tender",
+    "scraper",
+    "playwright",
+    "bidding"
+  ],
+  "author": "小龙",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright-core": "^1.40.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

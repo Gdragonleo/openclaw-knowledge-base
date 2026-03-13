@@ -1,0 +1,157 @@
+{
+  "cqggzy": {
+    "name": "重庆市公共资源交易中心",
+    "url": "https://www.cqggzy.com",
+    "enabled": true,
+    "priority": 1,
+    "selectors": {
+      "announcementLink": "a[href*='014001001']",
+      "listContainer": ".list-container, ul.list, .tender-list",
+      "itemTitle": "a, .title, .tender-title",
+      "itemDate": ".date, .time, span.time",
+      "itemAmount": ".amount, .money, .budget",
+      "detailPage": {
+        "title": "h1, .title, .tender-title",
+        "content": ".content, .detail-content, .tender-detail, .main-content",
+        "amount": ".amount, .money, .budget, .project-amount",
+        "deadline": ".deadline, .date, .end-date, .bid-deadline",
+        "contact": ".contact, .phone, .contact-person"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next, .page-next, a[rel='next']",
+      "maxPages": 10
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  },
+  "scggzy": {
+    "name": "四川省公共资源交易中心",
+    "url": "http://ggzyjy.sc.gov.cn",
+    "enabled": true,
+    "priority": 2,
+    "selectors": {
+      "announcementLink": "a[href*='jyxx'], a[href*='zbxx']",
+      "listContainer": ".list, ul.info-list, .tender-list",
+      "itemTitle": "a, .title, .info-title",
+      "itemDate": ".date, .time, span",
+      "itemAmount": ".amount, .money, .budget",
+      "detailPage": {
+        "title": "h1, .title, .info-title",
+        "content": ".content, .detail-content, .info-content",
+        "amount": ".amount, .money, .budget",
+        "deadline": ".deadline, .date, .end-date",
+        "contact": ".contact, .phone"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next, a.next",
+      "maxPages": 8
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  },
+  "gzggzy": {
+    "name": "贵州省公共资源交易中心",
+    "url": "http://ggzy.guizhou.gov.cn",
+    "enabled": true,
+    "priority": 2,
+    "selectors": {
+      "announcementLink": "a[href*='交易中心'], a[href*='招标']",
+      "listContainer": ".list, ul.list, .info-list",
+      "itemTitle": "a, .title, .info-title",
+      "itemDate": ".date, .time, span",
+      "itemAmount": ".amount, .money",
+      "detailPage": {
+        "title": "h1, .title, .info-title",
+        "content": ".content, .detail-content",
+        "amount": ".amount, .money",
+        "deadline": ".deadline, .date",
+        "contact": ".contact, .phone"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next, a.next",
+      "maxPages": 8
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  },
+  "ynggzy": {
+    "name": "云南省公共资源交易中心",
+    "url": "https://www.ynggzyxx.gov.cn",
+    "enabled": true,
+    "priority": 3,
+    "selectors": {
+      "announcementLink": "a[href*='jyxx'], a[href*='zbxx']",
+      "listContainer": ".list, ul.list, .info-list",
+      "itemTitle": "a, .title",
+      "itemDate": ".date, .time",
+      "itemAmount": ".amount, .money",
+      "detailPage": {
+        "title": "h1, .title",
+        "content": ".content, .detail",
+        "amount": ".amount",
+        "deadline": ".deadline",
+        "contact": ".contact"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next",
+      "maxPages": 6
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  },
+  "hbggzy": {
+    "name": "湖北省公共资源交易中心",
+    "url": "https://www.hbggzyfwpt.cn",
+    "enabled": true,
+    "priority": 2,
+    "selectors": {
+      "announcementLink": "a[href*='招标'], a[href*='公告']",
+      "listContainer": ".list, ul.list, .tender-list",
+      "itemTitle": "a, .title",
+      "itemDate": ".date, .time",
+      "itemAmount": ".amount, .budget",
+      "detailPage": {
+        "title": "h1, .title",
+        "content": ".content, .detail",
+        "amount": ".amount",
+        "deadline": ".deadline",
+        "contact": ".contact"
+      }
+    },
+    "pagination": {
+      "enabled": true,
+      "nextButton": ".next",
+      "maxPages": 8
+    },
+    "antiDetection": {
+      "randomDelay": true,
+      "mouseMovement": true,
+      "scrolling": true,
+      "userAgentRotation": true
+    }
+  }
+}

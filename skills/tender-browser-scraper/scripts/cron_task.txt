@@ -1,0 +1,17 @@
+# 招标网站爬取任务
+
+请执行以下任务：
+
+1. 切换到tender-browser-scraper skill目录
+2. 执行爬虫脚本，抓取重庆公共资源交易中心的招标公告
+3. 将结果发送到飞书
+
+执行命令：
+```bash
+cd /Users/danxiong/.openclaw/workspace/skills/tender-browser-scraper
+node scripts/scrape.js --site cqggzy --max 50 --notify
+```
+
+完成后：
+- 读取生成的报告文件（output/tenders/YYYY-MM-DD_cqggzy.md）
+- 发送摘要到飞书（飞书用户：ou_d1b6454127592a07176fd36724723172）

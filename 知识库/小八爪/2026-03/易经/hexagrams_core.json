@@ -1,0 +1,123 @@
+{
+  "hexagram_system": {
+    "version": "1.0",
+    "created": "2026-03-11",
+    "description": "易经64卦核心数据结构"
+  },
+  "trigrams": [
+    {"id": 0, "name": "坤", "binary": "000", "symbol": "☷", "element": "土", "nature": "地", "attribute": "顺"},
+    {"id": 1, "name": "震", "binary": "001", "symbol": "☳", "element": "木", "nature": "雷", "attribute": "动"},
+    {"id": 2, "name": "坎", "binary": "010", "symbol": "☵", "element": "水", "nature": "水", "attribute": "陷"},
+    {"id": 3, "name": "兑", "binary": "011", "symbol": "☱", "element": "金", "nature": "泽", "attribute": "悦"},
+    {"id": 4, "name": "艮", "binary": "100", "symbol": "☶", "element": "土", "nature": "山", "attribute": "止"},
+    {"id": 5, "name": "离", "binary": "101", "symbol": "☲", "element": "火", "nature": "火", "attribute": "丽"},
+    {"id": 6, "name": "巽", "binary": "110", "symbol": "☴", "element": "木", "nature": "风", "attribute": "入"},
+    {"id": 7, "name": "乾", "binary": "111", "symbol": "☰", "element": "金", "nature": "天", "attribute": "健"}
+  ],
+  "sample_hexagrams": [
+    {
+      "id": 0,
+      "name": "坤为地",
+      "binary": "000000",
+      "upper_trigram": "坤",
+      "lower_trigram": "坤",
+      "element": "土",
+      "fortune": "平",
+      "meaning": "厚德载物，柔顺包容",
+      "market_signal": "弱势盘整"
+    },
+    {
+      "id": 2,
+      "name": "乾为天",
+      "binary": "111111",
+      "upper_trigram": "乾",
+      "lower_trigram": "乾",
+      "element": "金",
+      "fortune": "大吉",
+      "meaning": "元亨利贞，刚健进取",
+      "market_signal": "强势上涨"
+    },
+    {
+      "id": 11,
+      "name": "泰卦",
+      "binary": "000111",
+      "upper_trigram": "坤",
+      "lower_trigram": "乾",
+      "element": "土金相生",
+      "fortune": "吉",
+      "meaning": "天地交泰，万物通畅",
+      "market_signal": "温和上涨"
+    },
+    {
+      "id": 12,
+      "name": "否卦",
+      "binary": "111000",
+      "upper_trigram": "乾",
+      "lower_trigram": "坤",
+      "element": "金土相生",
+      "fortune": "凶",
+      "meaning": "天地不交，万物不通",
+      "market_signal": "阴跌不止"
+    },
+    {
+      "id": 14,
+      "name": "大有卦",
+      "binary": "101111",
+      "upper_trigram": "离",
+      "lower_trigram": "乾",
+      "element": "火金",
+      "fortune": "大吉",
+      "meaning": "丰收富足，大有收获",
+      "market_signal": "大涨"
+    },
+    {
+      "id": 23,
+      "name": "剥卦",
+      "binary": "000001",
+      "upper_trigram": "艮",
+      "lower_trigram": "坤",
+      "element": "土",
+      "fortune": "凶",
+      "meaning": "剥落衰败，不利进取",
+      "market_signal": "大跌"
+    },
+    {
+      "id": 24,
+      "name": "复卦",
+      "binary": "000010",
+      "upper_trigram": "坤",
+      "lower_trigram": "震",
+      "element": "土木",
+      "fortune": "吉",
+      "meaning": "一阳来复，复兴之象",
+      "market_signal": "触底反弹"
+    },
+    {
+      "id": 63,
+      "name": "既济卦",
+      "binary": "010101",
+      "upper_trigram": "坎",
+      "lower_trigram": "离",
+      "element": "水火",
+      "fortune": "平",
+      "meaning": "水火既济，事成之象",
+      "market_signal": "趋势转换"
+    }
+  ],
+  "five_elements_relations": {
+    "generation": {
+      "木": "火",
+      "火": "土",
+      "土": "金",
+      "金": "水",
+      "水": "木"
+    },
+    "restriction": {
+      "木": "土",
+      "土": "水",
+      "水": "火",
+      "火": "金",
+      "金": "木"
+    }
+  }
+}

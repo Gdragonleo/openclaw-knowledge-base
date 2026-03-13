@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OpenClaw系统文件
+.openclaw/
+.clawhub/
+node_modules/
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 敏感信息（如果有）
+.env
+*.key
+*.pem
+credentials.json
+
+# 媒体文件（可选，根据需求调整）
+# *.jpg
+# *.png
+# *.mp4
+
+# 输出文件（根据需求决定是否排除）
+outputs/*.html
+outputs/*.json
+
+# 归档文件（根据需求决定是否排除）
+# 归档/

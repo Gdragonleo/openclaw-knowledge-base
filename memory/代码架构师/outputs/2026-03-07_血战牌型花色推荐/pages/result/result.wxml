@@ -1,0 +1,240 @@
+<!-- 麻将算命 - 结果展示页 -->
+<view class="result-container">
+  <!-- 头部区域 -->
+  <view class="header">
+    <view class="back-btn" bindtap="goBack">
+      <text class="back-icon">←</text>
+      <text>返回</text>
+    </view>
+    <view class="title">您的牌型命盘</view>
+    <view class="share-btn" bindtap="shareResult">
+      <text class="share-icon">↗</text>
+    </view>
+  </view>
+
+  <!-- 主内容区 -->
+  <scroll-view class="main-content" scroll-y>
+    <!-- 今日吉方方位 -->
+    <view class="lucky-direction-container">
+      <view class="direction-title">🎯 今日宜坐方位</view>
+      <view class="direction-content">
+        <view class="direction-main">
+          <text class="direction-icon">{{luckyDirectionIcon}}</text>
+          <text class="direction-name">{{luckyDirection}}</text>
+        </view>
+        <view class="direction-desc">
+          <text>{{luckyDirectionDesc}}</text>
+        </view>
+      </view>
+      <view class="direction-grid">
+        <view class="direction-item {{item.isLucky ? 'lucky' : ''}}" wx:for="{{allDirections}}" wx:key="name">
+          <text class="dir-name">{{item.name}}</text>
+          <text class="dir-icon">{{item.icon}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 命盘圆形图 -->
+    <view class="fortune-wheel-container">
+      <view class="wheel-title">命盘指示</view>
+      <view class="wheel-wrapper">
+        <!-- 圆形底板 -->
+        <view class="wheel-base">
+          <!-- 三个扇形 -->
+          <view class="color-segment segment-wan" style="transform: rotate(0deg);">
+            <text class="segment-label">万</text>
+          </view>
+          <view class="color-segment segment-tong" style="transform: rotate(120deg);">
+            <text class="segment-label">筒</text>
+          </view>
+          <view class="color-segment segment-tiao" style="transform: rotate(240deg);">
+            <text class="segment-label">条</text>
+          </view>
+          
+          <!-- 花色图标 -->
+          <view class="mahjong-icons">
+            <view class="icon-wan">🀇</view>
+            <view class="icon-tong">🀙</view>
+            <view class="icon-tiao">🀐</view>
+          </view>
+          
+          <!-- 运势指针 -->
+          <view class="fortune-indicator" style="transform: rotate({{indicatorAngle}}deg);">
+            <view class="indicator-line"></view>
+            <view class="indicator-head"></view>
+          </view>
+          
+          <!-- 中心装饰 - 增强视觉效果 -->
+          <view class="wheel-center enhanced">
+            <text class="center-suit">{{recommendedSuit}}</text>
+            <text class="center-score">{{suitScore.value}}分</text>
+          </view>
+        </view>
+      </view>
+      
+      <!-- 花色得分展示 -->
+      <view class="suit-scores">
+        <view class="suit-score-item {{suitScore.wan.active ? 'active' : ''}}" 
+              bindtap="selectSuit" data-suit="wan">
+          <view class="suit-color color-wan"></view>
+          <text class="suit-name">万</text>
+          <text class="suit-score">{{suitScore.wan.value}}分</text>
+        </view>
+        <view class="suit-score-item {{suitScore.tong.active ? 'active' : ''}}" 
+              bindtap="selectSuit" data-suit="tong">
+          <view class="suit-color color-tong"></view>
+          <text class="suit-name">筒</text>
+          <text class="suit-score">{{suitScore.tong.value}}分</text>
+        </view>
+        <view class="suit-score-item {{suitScore.tiao.active ? 'active' : ''}}" 
+              bindtap="selectSuit" data-suit="tiao">
+          <view class="suit-color color-tiao"></view>
+          <text class="suit-name">条</text>
+          <text class="suit-score">{{suitScore.tiao.value}}分</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 牌型信息卡片 -->
+    <view class="hand-type-card">
+      <view class="card-header">
+        <view class="hand-type-icon">
+          <text class="icon">{{patternIcon}}</text>
+        </view>
+        <view class="hand-type-info">
+          <text class="hand-type-name">能胡牌多次的牌型</text>
+          <text class="hand-type-score">{{recommendedPattern}} · 匹配度 {{patternScore}}%</text>
+        </view>
+      </view>
+      
+      <view class="card-body">
+        <view class="hand-type-description">
+          <text>{{patternDescription}}</text>
+        </view>
+        
+        <view class="hand-type-stats">
+          <view class="stat-item">
+            <text class="stat-label">胡牌概率</text>
+            <view class="stat-bar">
+              <view class="stat-fill" style="width: {{winningProbability}}%;"></view>
+            </view>
+            <text class="stat-value">{{winningProbability}}%</text>
+          </view>
+          
+          <view class="stat-item">
+            <text class="stat-label">难度等级</text>
+            <view class="difficulty-stars">
+              <text wx:for="{{difficultyStars}}" wx:key="index" class="star {{item}}">★</text>
+            </view>
+            <text class="stat-value">{{difficultyLevel}}</text>
+          </view>
+        </view>
+      </view>
+      
+      <view class="card-footer">
+        <text class="tips-label">小贴士：</text>
+        <text class="tips-content">{{patternTips}}</text>
+      </view>
+    </view>
+
+    <!-- 备选牌型 -->
+    <view class="alternative-patterns" wx:if="{{alternativePatterns.length > 0}}">
+      <view class="section-title">其他推荐牌型</view>
+      <scroll-view class="patterns-scroll" scroll-x>
+        <view class="patterns-list">
+          <view class="pattern-item" wx:for="{{alternativePatterns}}" wx:key="index" 
+                bindtap="selectAlternative" data-index="{{index}}">
+            <text class="pattern-name">{{item.pattern}}</text>
+            <text class="pattern-score">{{item.score}}%</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- 吃什么喝什么转运建议 -->
+    <view class="food-recommendation">
+      <view class="section-title">🍽️ 今日转运饮食</view>
+      <view class="food-card">
+        <view class="food-header">
+          <text class="food-element">{{fiveElements.preferredElement}} 命</text>
+          <text class="food-tip">根据您的五行喜用神推荐</text>
+        </view>
+        <view class="food-content">
+          <view class="food-main">
+            <text class="food-icon">{{foodRecommendation.icon}}</text>
+            <view class="food-details">
+              <text class="food-name">{{foodRecommendation.name}}</text>
+              <text class="food-desc">{{foodRecommendation.description}}</text>
+            </view>
+          </view>
+          <view class="food-items">
+            <view class="food-item" wx:for="{{foodRecommendation.items}}" wx:key="index">
+              <text class="item-icon">{{item.icon}}</text>
+              <text class="item-name">{{item.name}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="food-advice">
+          <text class="advice-icon">💡</text>
+          <text class="advice-text">{{foodRecommendation.advice}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 运势描述区 -->
+    <view class="fortune-description">
+      <view class="section-title">运势详解</view>
+      
+      <view class="time-range">
+        <text class="time-icon">🕐</text>
+        <text class="time-text">运势有效期: {{fortunePeriod}}</text>
+      </view>
+
+      <view class="calculation-time" wx:if="{{calculationTime}}">
+        <text class="calc-time-icon">⏰</text>
+        <text class="calc-time-text">测算时间: {{calculationTime}}</text>
+      </view>
+      
+      <view class="overall-fortune">
+        <text class="fortune-title">总体运势评价</text>
+        <text class="fortune-text">{{overallFortune}}</text>
+      </view>
+      
+      <view class="detailed-analysis">
+        <view class="analysis-item" wx:for="{{suitAnalysis}}" wx:key="index">
+          <view class="analysis-header">
+            <view class="suit-color-small color-{{item.suit}}"></view>
+            <text class="analysis-suit">{{item.suitName}}花色运势</text>
+          </view>
+          <text class="analysis-text">{{item.analysis}}</text>
+        </view>
+      </view>
+      
+      <view class="recommendations">
+        <text class="rec-title">建议</text>
+        <view class="rec-list">
+          <view class="rec-item" wx:for="{{recommendations}}" wx:key="index">
+            <text class="rec-icon">✓</text>
+            <text class="rec-text">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 底部操作区 -->
+  <view class="footer">
+    <button class="action-btn share-btn" bindtap="shareResult">
+      <text class="btn-icon">↗</text>
+      <text>分享</text>
+    </button>
+    <button class="action-btn save-btn" bindtap="saveResult">
+      <text class="btn-icon">📷</text>
+      <text>保存结果</text>
+    </button>
+    <button class="action-btn retry-btn" bindtap="retryCalculation">
+      <text class="btn-icon">🔄</text>
+      <text>再次测算</text>
+    </button>
+  </view>
+</view>
