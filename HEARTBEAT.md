@@ -316,20 +316,20 @@
 
 ---
 
-## 🔄 任务11：查询Gitee协作任务（每2小时）
+## 🔄 任务11：查询Gitee协作任务（每20分钟）
 
-**触发条件**：每2小时（0:00, 2:00, 4:00, 6:00, 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, 22:00）
+**触发条件**：每20分钟自动触发
 
 **任务内容**：
-1. **查询Gitee Issues**：
+1. **查询Gitee协作仓库Issues**：
    - 仓库：https://gitee.com/whaleandcollab/agent-collaboration
    - 筛选：标签="pending" AND assignee="xiaojingyu"
-   - 工具：手动读取本地仓库（自动同步）
+   - 查询位置：协作仓库（agent-collaboration）
 
 2. **处理任务**：
    - 按优先级排序（label: priority-high > priority-medium）
    - 使用 `sessions_spawn` 执行
-   - 完成后在本地文档中记录
+   - 完成后更新Issues状态
 
 3. **Gitee协作文档**：
    - 位置：`知识库/小八爪与小鲸鱼协作/Gitee对话.md`
@@ -339,14 +339,41 @@
 - 💬 重大完成：私聊小刘
 - 💬 日常任务：更新协作文档
 
-**配置文件**：`知识库/小八爪与小鲸鱼协作/迁移准备清单.md`
-
 **状态**：✅ 已迁移到Gitee
 
 **优势**：
 - ✅ 小鲸鱼可以访问（Gitee）
-- ✅ 不触发限流（每2小时）
+- ✅ 高频查询（每20分钟）
 - ✅ 稳定可靠
+
+---
+
+## 🔄 任务12：每2天同步workspace到Gitee（每2天 22:30）
+
+**触发条件**：每2天晚上22:30自动触发
+
+**任务内容**：
+1. **同步workspace到Gitee**：
+   ```bash
+   cd ~/collab-knowledge-base
+   rsync -av --exclude='.git' ~/.openclaw/workspace/ .
+   git add .
+   git commit -m "🔄 定期同步workspace"
+   git push
+   ```
+
+2. **学习小鲸鱼Gitee仓库内容**：
+   - 访问小鲸鱼的Gitee仓库
+   - 查看她的学习笔记和产出
+   - 学习她的成长经验
+   - 记录到我的知识库
+
+3. **双机器人知识共享**：
+   - 整合小鲸鱼的研究成果
+   - 更新协作知识库
+   - 生成同步报告
+
+**通知方式**：💬 私聊发给小刘
 
 ---
 
