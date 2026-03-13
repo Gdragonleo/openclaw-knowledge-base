@@ -43,7 +43,7 @@
       "messageId": "om_x100b54232dbb24a8b24bef1d7f58eea"
     }
   },
-  "notes": "2026-03-12 6:00任务已完成，9:00任务已启动（招标报告、工作汇报、国际新闻）",
+  "notes": "2026-03-14 4:07 ClawHub探索任务已完成，报告已保存，待9:00发送通知",
   "2026-03-12": {
     "morning_study": {
       "startTime": "2026-03-12T06:00:00+08:00",
@@ -129,6 +129,60 @@
       "pendingTasks": 0,
       "note": "无待处理任务（所有任务接收者为小鲸鱼）",
       "completedTime": "2026-03-12T23:30:30+08:00"
+    }
+  },
+  "2026-03-14": {
+    "clawhub_explore": {
+      "startTime": "2026-03-14T04:07:00+08:00",
+      "sessionKey": "agent:main:subagent:5dc3f93d-cc51-44f9-b212-0cd7e5fbe085",
+      "status": "completed",
+      "totalSkills": 22604,
+      "installedSkills": 13,
+      "currentTentacles": 15,
+      "targetTentacles": 20,
+      "progress": "75%",
+      "recommendedSkills": [
+        {
+          "name": "Humanizer",
+          "rating": 3.86,
+          "downloads": "52.8k",
+          "priority": 1,
+          "reason": "评分>3.5，移除AI写作痕迹"
+        },
+        {
+          "name": "Gog",
+          "rating": 7.16,
+          "downloads": "111k",
+          "priority": 2,
+          "reason": "Google Workspace CLI，高评分"
+        },
+        {
+          "name": "API Gateway",
+          "rating": 2.09,
+          "downloads": "42.3k",
+          "priority": 2,
+          "reason": "连接100+ API，功能强大"
+        },
+        {
+          "name": "Notion",
+          "rating": 1.82,
+          "downloads": "53.6k",
+          "priority": 3,
+          "reason": "Notion API，如果使用Notion"
+        },
+        {
+          "name": "Obsidian",
+          "rating": 1.94,
+          "downloads": "49.3k",
+          "priority": 3,
+          "reason": "Obsidian笔记管理"
+        }
+      ],
+      "topNewSkill": "Humanizer",
+      "reportSaved": "知识库/小八爪/2026-03/ClawHub技能探索/探索报告_2026-03-14.md",
+      "notificationPlanned": "2026-03-14T09:00:00+08:00",
+      "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
+      "completedTime": "2026-03-14T04:15:00+08:00"
     }
   }
 }
