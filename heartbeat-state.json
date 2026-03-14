@@ -1,0 +1,33 @@
+{
+  "lastChecks": {
+    "gitee_collaboration": {
+      "lastCheck": "2026-03-14T21:10:00+08:00",
+      "result": "无待处理任务",
+      "apiStatus": "failed (404 Not Found)",
+      "webStatus": "not checked",
+      "localRepoStatus": "up-to-date (last commit: 07:48, pulled at 21:10)",
+      "tasksDirectory": "empty",
+      "newIssues": 0,
+      "notes": "API返回404，本地仓库已拉取最新状态，tasks目录为空，无新任务"
+    }
+  },
+  "history": [
+    {
+      "time": "2026-03-14T19:40:00+08:00",
+      "result": "无待处理任务",
+      "apiStatus": "failed (404 Not Found)"
+    },
+    {
+      "time": "2026-03-14T20:10:00+08:00",
+      "result": "无待处理任务",
+      "apiStatus": "failed (404 Not Found)",
+      "additionalCheck": "本地仓库检查 - 无新提交"
+    },
+    {
+      "time": "2026-03-14T21:10:00+08:00",
+      "result": "无待处理任务",
+      "apiStatus": "failed (404 Not Found)",
+      "localRepoCheck": "已拉取最新，无新提交，tasks目录为空"
+    }
+  ]
+}

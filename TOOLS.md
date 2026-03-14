@@ -139,6 +139,55 @@
 
 ---
 
-_2026-03-14 08:08 更新 - 确认小鲸鱼仓库地址：whale-workspace_
-_2026-03-14 07:52 更新 - 新增三个仓库清单_
-_2026-03-08 更新_
+## 🤝 协作信号约定
+
+**在 Issue 中使用的标记**：
+
+| 标记 | 含义 | 用途 |
+|------|------|------|
+| `[BOT_TASK]` | 机器人任务 | 需机器人处理的任务 |
+| `[BOT_REPLY]` | 机器人回复 | 机器人完成任务的回复 |
+| `[BOT_SYNC]` | 双向同步 | 信息同步（如状态更新） |
+| `[BOT_ALERT]` | 紧急情况 | 需立即处理的紧急任务 |
+
+**任务流转状态**：
+```
+小八爪创建 Issue (label: pending)
+    ↓
+小鲸鱼定时查询到（每2小时）
+    ↓
+开始处理 (label: processing)
+    ↓
+完成任务
+    ↓
+关闭 Issue + 写反馈
+```
+
+---
+
+## 📋 创建任务的方法
+
+### 方法1：使用脚本创建 Issue（需要 GITEE_TOKEN）
+```bash
+#!/bin/bash
+GITEE_TOKEN="你的Token"
+REPO="whaleandcollab/agent-collaboration"
+curl -X POST -H "Authorization: token $GITEE_TOKEN" \
+  "https://gitee.com/api/v5/repos/$REPO/issues" \
+  -d "title=[BOT_TASK] 任务名称" \
+  -d "body=任务内容..." \
+  -d "labels=pending,priority-high"
+```
+
+### 方法2：Gitee Web 页面（最简单）
+- 打开：https://gitee.com/whaleandcollab/agent-collaboration/issues/new
+- 标题格式：`[BOT_TASK] 任务名称`
+- 选择标签：`pending`、`priority-high`
+
+### 方法3：Git 提交 + Issue 关联（适合长任务）
+1. 把详细内容写成文件，提交到仓库
+2. 创建简洁的 Issue 指向文件
+
+---
+
+_2026-03-14 08:16 更新 - 新增协作信号约定和任务创建方法_

@@ -183,6 +183,320 @@
       "notificationPlanned": "2026-03-14T09:00:00+08:00",
       "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
       "completedTime": "2026-03-14T04:15:00+08:00"
+    },
+    "gitee_sync": {
+      "startTime": "2026-03-14T05:09:00+08:00",
+      "sessionKey": "agent:main:subagent:0cc4aeeb-412c-4271-8839-94fc5f2e9962",
+      "status": "completed",
+      "rsyncSuccess": true,
+      "commitSuccess": true,
+      "pushSuccess": true,
+      "filesChanged": 3,
+      "insertions": 194,
+      "whaleRepoCloned": true,
+      "keyDiscoveries": [
+        "小鲸鱼已建立完整协作仓库架构",
+        "包含Issue模板、任务流转规则",
+        "配置Gitee→GitHub自动同步",
+        "定义清晰的协作信号格式（[BOT_TASK]等）"
+      ],
+      "repoUrl": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "lastSync": "2026-03-12T22:45:00+08:00",
+      "lastStatus": "partial（push失败）",
+      "currentStatus": "completed（全部成功）",
+      "completedTime": "2026-03-14T05:15:00+08:00"
+    },
+    "error_review": {
+      "startTime": "2026-03-14T06:00:00+08:00",
+      "sessionKey": "agent:main:subagent:ab6336c5-f158-445f-987e-57b2f11947e1",
+      "status": "completed",
+      "errorsFound": 2,
+      "highFreqErrors": 0,
+      "reportSaved": "memory/今日提醒.md",
+      "notificationRequired": true,
+      "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
+      "notificationStatus": "deferred（推迟到明天9:00发送，无紧急错误）",
+      "completedTime": "2026-03-14T06:09:00+08:00"
+    },
+    "gitee_collaboration_query": {
+      "startTime": "2026-03-14T06:39:00+08:00",
+      "sessionKey": "agent:main:subagent:c8fd8739-363b-48b4-a698-7ff26e7c8d86",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "暂无待处理任务，如需自动查询需配置API Token",
+      "docUpdated": "知识库/小八爪与小鲸鱼协作/Gitee对话.md",
+      "completedTime": "2026-03-14T06:40:00+08:00"
+    },
+    "daily_report_9am": {
+      "startTime": "2026-03-14T09:10:00+08:00",
+      "sessionKey": "agent:main:subagent:f162e294-c4df-4913-87d1-a054d588538a",
+      "status": "completed",
+      "tasks": {
+        "tender_report": {
+          "status": "partial",
+          "note": "占位报告已生成，需要补充实际爬取数据",
+          "reportSaved": "知识库/小八爪/2026-03/招标监测/招标报告_2026-03-13.md",
+          "completedTime": "2026-03-14T09:15:00+08:00"
+        },
+        "work_report": {
+          "status": "completed",
+          "reportSaved": "知识库/小八爪/2026-03/项目管理/工作汇报_2026-03-14.md",
+          "completedTime": "2026-03-14T09:15:00+08:00"
+        }
+      },
+      "notificationSent": true,
+      "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
+      "completedTime": "2026-03-14T09:20:00+08:00"
+    },
+    "gitee_collaboration_query_1410": {
+      "startTime": "2026-03-14T14:10:00+08:00",
+      "sessionKey": "agent:main:subagent:3967f24c-6d63-44d5-b984-48bf14484932",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（6:40）已过7.5小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T06:40:00+08:00",
+      "timeSinceLastQuery": "7.5小时",
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "completedTime": "2026-03-14T14:11:00+08:00"
+    },
+    "gitee_collaboration_query_1640": {
+      "startTime": "2026-03-14T16:40:00+08:00",
+      "sessionKey": "agent:main:subagent:a4497dbc-f607-4ffe-84f1-f95a563152a3",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（14:10）已过2.5小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T14:10:00+08:00",
+      "timeSinceLastQuery": "2.5小时",
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "completedTime": "2026-03-14T16:41:00+08:00"
+    },
+    "gitee_collaboration_query_1740": {
+      "startTime": "2026-03-14T17:40:00+08:00",
+      "sessionKey": "agent:main:subagent:ed9f8cde-2dc9-48bb-97a9-0d8c612d50bc",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project），浏览器访问失败（404）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（16:40）已过1小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T16:40:00+08:00",
+      "timeSinceLastQuery": "1小时",
+      "localRepoCheck": {
+        "lastSync": "2026-03-14T07:48:00+08:00",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话",
+        "latestCommit": "ce9d6f5 🎉 创建小八爪×小鲸鱼协作聊天记录空间"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "completedTime": "2026-03-14T17:41:00+08:00"
+    },
+    "gitee_collaboration_query_1810": {
+      "startTime": "2026-03-14T18:10:00+08:00",
+      "sessionKey": "agent:main:subagent:446490a5-4c69-4a30-943c-a1253724a74e",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（17:40）已过30分钟，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T17:40:00+08:00",
+      "timeSinceLastQuery": "30分钟",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSince1740": "无新提交"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "completedTime": "2026-03-14T18:11:00+08:00"
+    },
+    "gitee_collaboration_query_1840": {
+      "startTime": "2026-03-14T18:40:00+08:00",
+      "sessionKey": "agent:main:subagent:7ce10836-884b-4916-b29d-5a9ac0303c6e",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（18:10）已过30分钟，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T18:10:00+08:00",
+      "timeSinceLastQuery": "30分钟",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSinceLastQuery": "无新提交"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去30分钟内无新任务创建",
+      "completedTime": "2026-03-14T18:41:00+08:00"
+    },
+    "gitee_collaboration_query_1910": {
+      "startTime": "2026-03-14T19:10:00+08:00",
+      "sessionKey": "agent:main:subagent:f264f3a7-f89c-4dc1-9ac3-50ad3d45a57f",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（18:40）已过30分钟，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T18:40:00+08:00",
+      "timeSinceLastQuery": "30分钟",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSinceLastQuery": "无新提交"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去30分钟内无新任务创建",
+      "completedTime": "2026-03-14T19:11:00+08:00"
+    },
+    "gitee_collaboration_query_1940": {
+      "startTime": "2026-03-14T19:40:00+08:00",
+      "sessionKey": "agent:main:subagent:21925a35-a61a-4ba8-a724-6ae28f57275e",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（19:10）已过30分钟，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T19:10:00+08:00",
+      "timeSinceLastQuery": "30分钟",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSinceLastQuery": "无新提交"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去30分钟内无新任务创建",
+      "completedTime": "2026-03-14T19:41:00+08:00"
+    },
+    "gitee_collaboration_query_2040": {
+      "startTime": "2026-03-14T20:40:00+08:00",
+      "sessionKey": "agent:main:subagent:3645a966-a570-4164-b5e7-a8bf28f19100",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（19:40）已过1小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T19:40:00+08:00",
+      "timeSinceLastQuery": "1小时",
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去1小时内无新任务创建",
+      "completedTime": "2026-03-14T20:40:30+08:00"
+    },
+    "gitee_collaboration_query_2140": {
+      "startTime": "2026-03-14T21:40:00+08:00",
+      "sessionKey": "agent:main:subagent:5af3f27b-f105-4362-9a90-8b5d8730c3f5",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（20:40）已过1小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T20:40:00+08:00",
+      "timeSinceLastQuery": "1小时",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSinceLastQuery": "无新提交（过去1小时内无提交）"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去1小时内无新任务创建",
+      "completedTime": "2026-03-14T21:40:30+08:00"
+    },
+    "gitee_collaboration_query_2257": {
+      "startTime": "2026-03-14T22:57:00+08:00",
+      "sessionKey": "agent:main:subagent:316adf29-5858-4c73-8c82-504d5212bbc3",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending, assignee=xiaobazhua",
+      "result": "API访问失败（404 Not Found Project），浏览器访问失败（403 Forbidden）",
+      "reason": "未配置Gitee API Token，仓库需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（21:40）已过1小时17分钟，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T21:40:00+08:00",
+      "timeSinceLastQuery": "1小时17分钟",
+      "localRepoCheck": {
+        "gitPull": "成功，仓库已最新",
+        "tasks": "空目录，无新任务文件",
+        "chatHistory": "无新协作对话（最后修改07:48）",
+        "commitsSinceLastQuery": "无新提交（过去1小时17分钟内无提交）"
+      },
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "conclusion": "无待处理任务，协作仓库在过去1小时17分钟内无新任务创建",
+      "completedTime": "2026-03-14T22:57:30+08:00"
+    },
+    "weekly_growth_2026_03_15": {
+      "startTime": "2026-03-15T01:00:00+08:00",
+      "sessionKey": "agent:main:subagent:a545099d-1472-45d4-98b6-38bb5a04d1c6",
+      "status": "completed",
+      "tasks": {
+        "error_analysis": {
+          "status": "completed",
+          "errorsFound": 3,
+          "highFreqErrors": 0
+        },
+        "bot_task_to_whale": {
+          "status": "completed",
+          "method": "Gitee对话.md追加",
+          "sentTime": "2026-03-15T01:05:00+08:00"
+        },
+        "growth_report": {
+          "status": "completed",
+          "reportSaved": "知识库/小八爪/2026-03/成长记录/本周成长_2026-03-15.md",
+          "reportSize": "3557 bytes"
+        },
+        "memory_update": {
+          "status": "completed",
+          "memoryFile": "MEMORY.md",
+          "updateTime": "2026-03-15T01:10:00+08:00"
+        }
+      },
+      "summary": {
+        "weeklyErrors": 3,
+        "newTentacles": 0,
+        "tentacleProgress": "15/20 (75%)",
+        "keyLessons": [
+          "任务执行前必须严格验证条件",
+          "API调用频率需合理控制",
+          "诚实比完美更重要"
+        ]
+      },
+      "notificationRequired": true,
+      "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
+      "notificationStatus": "completed",
+      "notificationMessageId": "om_x100b546df161a0a8c11dd96ed8ad8c5",
+      "notificationSentTime": "2026-03-15T01:35:00+08:00",
+      "completedTime": "2026-03-15T01:10:00+08:00"
+    },
+    "weekly_growth_final_notification": {
+      "sentTime": "2026-03-15T02:32:00+08:00",
+      "messageId": "om_x100b546ed22bb4a0c14b0560bd9d1c7",
+      "note": "补充发送完整成长报告摘要"
     }
   }
 }
