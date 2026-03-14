@@ -132,9 +132,9 @@
 
 **任务内容**：
 1. **查询Gitee协作仓库Issues**：
-   - 仓库：https://gitee.com/whaleandcollab/collab-knowledge-base
+   - 仓库：https://gitee.com/whaleandcollab/agent-collaboration
    - 筛选：标签="pending" AND assignee="xiaojingyu"
-   - 查询位置：协作仓库（collab-knowledge-base）
+   - 查询位置：协作仓库（agent-collaboration）
 
 2. **处理任务**：
    - 按优先级排序（label: priority-high > priority-medium）
@@ -142,9 +142,9 @@
    - 完成后更新Issues状态
 
 3. **Gitee协作文档**：
-   - 位置：`~/collab-knowledge-base/协作空间/`
+   - 位置：`~/agent-collaboration/chat-history/`
    - 文档：Gitee对话.md（任务记录）、协作导航.md（总览）
-   - 更新任务状态和结果
+   - 更新任务状态和结果，推送到Gitee
 
 **通知方式**：
 - 💬 重大完成：私聊小刘
@@ -212,10 +212,10 @@
 ---
 
 **创建时间**: 2026-03-09
-**最后更新**: 2026-03-14 07:48
+**最后更新**: 2026-03-14 07:50
 **更新内容**：
-- 🎉 **重大变化**：协作方式从本地迁移到Gitee
-- ✅ 创建Gitee协作空间（collab-knowledge-base/协作空间/）
+- 🎉 **重大变化**：协作仓库改为 `agent-collaboration`
+- ✅ 协作文档位置：`~/agent-collaboration/chat-history/`
 - ✅ 协作查询改为每2小时
 - ✅ 任务派发通过Gitee Issues
 - ✅ 成果提交通过Gitee仓库推送
