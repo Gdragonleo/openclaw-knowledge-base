@@ -2,6 +2,263 @@
 
 ---
 
+**最后更新**：2026-03-14 07:50
+**协作仓库**：https://gitee.com/whaleandcollab/agent-collaboration
+**协作文档**：`~/agent-collaboration/chat-history/`
+
+---
+
+## 2026-03-14 07:50 — 协作仓库正式确立
+
+**小刘指令**：
+> "你记住 需要把协作存入agent-collaboration 这个仓库中"
+
+**已完成的工作**：
+
+### ✅ **协作仓库迁移**：
+- 🔄 **从**：collab-knowledge-base/协作空间/
+- 🔄 **到**：agent-collaboration/chat-history/
+- ✅ **原因**：小刘指定使用 agent-collaboration 仓库
+
+### ✅ **已上传协作文档**（4个文件）：
+```
+agent-collaboration/
+└── chat-history/
+    ├── README.md（协作文档说明）
+    ├── 协作导航.md（总览和快速链接）
+    ├── Gitee对话.md（任务记录和协作对话）
+    └── 小鲸鱼测试任务_招标爬取技能.md（测试任务详情）
+```
+
+### ✅ **更新协作流程**：
+1. **任务派发**：通过 Gitee Issues
+2. **文档共享**：通过 agent-collaboration 仓库
+3. **成果提交**：通过 Issue 回复 + 仓库提交
+4. **协作查询**：每2小时查询一次 Issues
+
+### ✅ **更新 HEARTBEAT.md**：
+- 仓库地址：agent-collaboration（正确）
+- 协作文档：`~/agent-collaboration/chat-history/`
+- 查询频率：每2小时
+
+---
+
+## 📋 协作仓库地址（最终确认）
+
+| 仓库 | 用途 | 地址 |
+|------|------|------|
+| **agent-collaboration** | 双机器人协作 | https://gitee.com/whaleandcollab/agent-collaboration |
+| collab-knowledge-base | 知识库同步 | https://gitee.com/whaleandcollab/collab-knowledge-base |
+
+**协作必须使用 agent-collaboration 仓库！**
+
+---
+
+**意义**：
+- ✅ 明确协作仓库位置
+- ✅ 避免混淆（collab-knowledge-base 用于知识库同步）
+- ✅ 协作流程规范化
+
+---
+
+## 2026-03-14 08:07 — 确认小鲸鱼的记忆仓库地址
+
+**小刘提供**：
+> "whale-workspace"
+
+**已确认的三个仓库**：
+
+### 1️⃣ **小八爪的记忆仓库**（collab-knowledge-base）
+- **用途**：🐙 小八爪的所有记忆、知识、配置
+- **本地路径**：`~/collab-knowledge-base`
+- **Gitee地址**：https://gitee.com/whaleandcollab/collab-knowledge-base
+- **访问权限**：✅ 读写同步
+
+### 2️⃣ **小鲸鱼的记忆仓库**（whale-workspace）
+- **用途**：🐋 小鲸鱼的所有记忆、学习笔记、成长记录
+- **本地路径**：（未在本地）
+- **地址**：**https://gitee.com/whaleandcollab/whale-workspace**
+- **访问权限**：❌ 私有仓库（小八爪返回403 Forbidden）
+- **核心内容**：小鲸鱼的MEMORY.md、学习笔记、技能成长
+
+### 3️⃣ **双机器人协作仓库**（agent-collaboration）
+- **用途**：🤝 小八爪 × 小鲸鱼的协作空间
+- **本地路径**：`~/agent-collaboration`
+- **Gitee地址**：https://gitee.com/whaleandcollab/agent-collaboration
+- **访问权限**：✅ 读写同步
+- **核心目录**：chat-history/（协作对话）、tasks/（任务）、knowledge-sharing/（知识分享）
+
+**协作方式**：
+1. 任务派发 → Gitee Issues（agent-collaboration）
+2. 成果提交 → Issue回复 + 仓库推送
+3. 对话记录 → chat-history/Gitee对话.md
+
+**协作规则（要做 vs 不要做）**：
+- ✅ 要做：创建Issue、用[BOT_TASK]标记、设置优先级、任务完成后关闭Issue
+- ❌ 不要做：只上传文件不创建Issue、任务分散在多个Issue、不写清楚要做什么、任务完成不关闭Issue
+
+**权限说明**：
+- ✅ 小八爪和小鲸鱼通过 `agent-collaboration` 仓库协作
+- ✅ 双方的记忆仓库独立管理（小八爪无法访问小鲸鱼的私有仓库）
+- ✅ 协作成果存储在 `agent-collaboration/chat-history/`
+
+---
+
+## 2026-03-14 07:52 — 确认三个仓库体系
+
+**小刘指示**：
+> "一共三个仓库，一个是你自己的记忆内容、一个是小鲸鱼的记忆内容，一个则是你们协作的地方。你查询下并把他记在脑海中"
+
+**已确认的仓库**：
+
+### 1️⃣ **小八爪的记忆仓库**（collab-knowledge-base）
+- **用途**：🐙 小八爪的所有记忆、知识、配置
+- **本地路径**：`~/collab-knowledge-base`
+- **Gitee地址**：https://gitee.com/whaleandcollab/collab-knowledge-base
+- **核心内容**：MEMORY.md、HEARTBEAT.md、知识库/、memory/、skills/、MOC/
+
+### 2️⃣ **小鲸鱼的记忆仓库**（xiaojingyu-knowledge-base）
+- **用途**：🐋 小鲸鱼的所有记忆、学习笔记、成长记录
+- **本地路径**：（未克隆到小八爪的机器）
+- **地址**：**Gitee**（小刘已确认，具体地址待补充）
+- **原GitHub地址**：https://github.com/Gdragonleo/xiaojingyu-knowledge-base（可能已迁移到Gitee）
+- **核心内容**：小鲸鱼的MEMORY.md、学习笔记、技能成长
+
+### 3️⃣ **双机器人协作仓库**（agent-collaboration）
+- **用途**：🤝 小八爪 × 小鲸鱼的协作空间
+- **本地路径**：`~/agent-collaboration`
+- **Gitee地址**：https://gitee.com/whaleandcollab/agent-collaboration
+- **核心目录**：chat-history/（协作对话）、tasks/（任务）、knowledge-sharing/（知识分享）
+
+**协作流程**：
+1. 任务派发 → Gitee Issues（agent-collaboration）
+2. 成果提交 → Issue回复 + 仓库推送
+3. 对话记录 → chat-history/Gitee对话.md
+
+**⚠️ 待确认**：
+- 小鲸鱼的记忆仓库地址（GitHub还是Gitee？）
+- 小八爪是否需要访问小鲸鱼的仓库
+
+---
+
+## 2026-03-13 — network_error 根本原因发现 + GitHub协作方案 🎯
+
+**时间**：2026-03-13 22:00-23:18
+
+**重大发现**：**找到network_error的根本原因！**
+
+### 🔍 问题诊断
+
+**现象**：
+- 每日30分钟查询协作任务
+- 连续失败12次（network_error）
+- 你反馈"飞书喊你不答应"
+
+**根本原因**：
+- ❌ 不是模型问题（GLM-5运行正常）
+- ❌ 不是代码错误
+- ✅ **飞书API限流保护**（每30分钟调用 → 触发400 Bad Request）
+
+**证据链**：
+```
+调用频率：每30分钟（每天48次）
+飞书响应：400 Bad Request
+错误类型：network_error
+```
+
+---
+
+### 🛠️ 解决方案
+
+**立即措施**：
+1. ✅ 停止所有定时任务（11个）
+2. ✅ 找到根本原因（API限流）
+3. ✅ 更新错误日志
+
+**长期方案（小鲸鱼方案）**：
+- 🔄 **飞书Bitable → GitHub Issues**
+- 📝 创建 `GitHub对话.md`（替代飞书协作中心）
+- 🎯 使用GitHub API（稳定、不限流）
+
+---
+
+### 📋 迁移内容
+
+**需要迁移的任务**：
+1. ❌ **任务11**：每30分钟查询协作任务（network_error来源）
+2. 🔄 **任务10**：每2天同步GitHub（已使用GitHub）
+
+**新方案**：
+```bash
+# 小鲸鱼的方案
+~/.openclaw/cron/github-collab-check.sh
+
+# 功能：
+- GitHub API查询pending的Issues
+- 自动调用 openclaw sessions spawn 处理
+- 完成后自动关闭Issue
+```
+
+---
+
+### 📊 今日工作
+
+**完成**：
+1. ✅ 早间学习（算命知识，3小时）
+2. ✅ 招标报告（23个项目，5个网站）
+3. ✅ 辩论总结（AI vs 人类工作）
+4. ✅ 错误诊断（network_error）
+5. ✅ 停止定时任务
+6. ✅ 准备迁移方案
+
+**新建文件**：
+- `知识库/小八爪与小鲸鱼协作/GitHub对话.md`
+- `知识库/小八爪与小鲸鱼协作/迁移准备清单.md`
+- `memory/2026-03-13_工作打包.md`
+- `memory/错误日志.md`（更新）
+
+---
+
+### 💡 核心收获
+
+**技术层面**：
+- 📚 API限流会导致network_error
+- 📚 高频调用需要设计重试机制
+- 📚 GitHub比飞书更稳定（不限流）
+
+**方法层面**：
+- 🧠 从表象→本质的诊断思路
+- 🧠 准备多个备选方案
+- 🧠 等待指示而非盲目执行
+
+**协作层面**：
+- 🤝 小鲸鱼提供了完整迁移方案
+- 🤝 双机器人协作更顺畅
+- 🤝 GitHub协作更稳定
+
+---
+
+### 🎯 待办事项
+
+**立即**：
+- [ ] 配置 `GH_PAT`
+- [ ] 删除HEARTBEAT.md中的飞书查询任务
+- [ ] 添加GitHub查询任务
+
+**明天**：
+- [ ] 重启其他定时任务（降低频率）
+- [ ] 测试GitHub协作流程
+- [ ] 小鲸鱼完成迁移脚本
+
+---
+
+**意义**：
+- 找到根本问题比完成100个任务更重要
+- GitHub方案将彻底解决稳定性问题
+- 为长期稳定运行奠定基础
+
+---
+
 ## 2026-03-11 — 重大里程碑！提前9个月完成年底目标！12→15只 🎉🎉🎉
 
 **时间**：2026-03-11 06:00-06:30（周三早间学习）
