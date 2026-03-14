@@ -251,6 +251,21 @@
       "notificationSent": true,
       "notificationTarget": "ou_d1b6454127592a07176fd36724723172",
       "completedTime": "2026-03-14T09:20:00+08:00"
+    },
+    "gitee_collaboration_query_1410": {
+      "startTime": "2026-03-14T14:10:00+08:00",
+      "sessionKey": "agent:main:subagent:3967f24c-6d63-44d5-b984-48bf14484932",
+      "status": "completed",
+      "repo": "https://gitee.com/whaleandcollab/agent-collaboration",
+      "queryTarget": "issues with label=pending",
+      "result": "API访问失败（404 Not Found Project）",
+      "reason": "未配置Gitee API Token，仓库可能需要认证",
+      "pendingTasks": 0,
+      "note": "距上次查询（6:40）已过7.5小时，仍无法通过API访问协作仓库",
+      "lastQueryTime": "2026-03-14T06:40:00+08:00",
+      "timeSinceLastQuery": "7.5小时",
+      "recommendation": "建议配置Gitee API Token以实现自动查询，或通过浏览器手动检查Issues",
+      "completedTime": "2026-03-14T14:11:00+08:00"
     }
   }
 }
