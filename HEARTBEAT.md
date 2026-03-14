@@ -138,36 +138,60 @@
 
 ---
 
-## 🔄 任务7：协作查询（每2小时）
+## 🔄 任务7：协作查询 + Issue评论监控（每2小时）
 
 **触发条件**：每2小时自动触发
 
 **任务内容**：
-1. **查询Gitee协作仓库Issues**：
-   - 仓库：https://gitee.com/whaleandcollab/agent-collaboration
-   - 筛选：标签="pending" AND assignee="xiaojingyu"
-   - 查询位置：协作仓库（agent-collaboration）
 
-2. **处理任务**：
-   - 按优先级排序（label: priority-high > priority-medium）
-   - 使用 `sessions_spawn` 执行
-   - 完成后更新Issues状态
+### 1️⃣ **查询Gitee协作仓库Issues**
+- 仓库：https://gitee.com/whaleandcollab/agent-collaboration
+- 筛选：标签="pending" AND assignee="xiaojingyu"
+- 按优先级排序（label: priority-high > priority-medium）
+- 使用 `sessions_spawn` 执行
+- 完成后更新Issues状态
 
-3. **Gitee协作文档**：
-   - 位置：`~/agent-collaboration/chat-history/`
-   - 文档：Gitee对话.md（任务记录）、协作导航.md（总览）
-   - 更新任务状态和结果，推送到Gitee
+### 2️⃣ **监控Issue评论（2026-03-14新增）**
+- **监控范围**：4个协作Issue
+  - #IFYPDF - 网页版项目管理仪表盘
+  - #IFYPEP - 报告汇报交流学习
+  - #IFYPW7 - 麻将运势开发讨论
+  - #IFYQB8 - 智能招标投标分析系统
+
+- **检查内容**：
+  1. 查询每个Issue的最新评论（since last check）
+  2. 检查是否有@xiaobazhua的通知
+  3. 检查是否有小鲸鱼的评论（whaleandcollab）
+
+- **响应机制**：
+  - ✅ 如果有@xiaobazhua：立即查看评论内容并回复
+  - ✅ 如果有小鲸鱼新评论：查看内容，判断是否需要回复
+  - ✅ 如果是小鲸鱼的问题：在Issue中回复解答
+  - ✅ 如果需要小刘决策：私聊通知小刘
+
+- **记录机制**：
+  - 更新 `memory/issue-check-log.json`
+  - 记录最后检查时间
+  - 记录已处理的评论ID
+
+### 3️⃣ **Gitee协作文档**
+- 位置：`~/agent-collaboration/chat-history/`
+- 文档：Gitee对话.md（任务记录）、协作导航.md（总览）
+- 更新任务状态和结果，推送到Gitee
 
 **通知方式**：
 - 💬 重大完成：私聊小刘
 - 💬 日常任务：更新协作文档（推送到Gitee）
+- 💬 Issue评论回复：直接在Issue中回复
 
-**状态**：✅ 已迁移到Gitee
+**状态**：✅ 已迁移到Gitee + ✅ 已添加评论监控
 
 **优势**：
 - ✅ 小鲸鱼可以访问（Gitee）
-- ✅ 定期查询（每2小时）
+- ✅ 高频查询（每2小时）
 - ✅ 稳定可靠
+- ✅ 自动监控@我的评论
+- ✅ 及时响应小鲸鱼
 
 ---
 
