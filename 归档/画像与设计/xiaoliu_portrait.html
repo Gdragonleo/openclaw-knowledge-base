@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小刘画像 - 小八爪作</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 32px;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .portrait {
+            width: 300px;
+            height: 350px;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-radius: 20px;
+            margin: 0 auto 30px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* 头部 */
+        .head {
+            width: 200px;
+            height: 220px;
+            background: #fdcb6e;
+            border-radius: 100px 100px 80px 80px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* 头发 */
+        .hair {
+            width: 180px;
+            height: 60px;
+            background: #2d3436;
+            border-radius: 90px 90px 0 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* 眼睛 */
+        .eye {
+            width: 35px;
+            height: 35px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 80px;
+            box-shadow: inset 0 5px 10px rgba(0,0,0,0.1);
+        }
+        
+        .eye.left {
+            left: 40px;
+        }
+        
+        .eye.right {
+            right: 40px;
+        }
+        
+        .pupil {
+            width: 20px;
+            height: 20px;
+            background: #2d3436;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .pupil::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+        
+        /* 眼镜 */
+        .glasses {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .glasses-frame {
+            width: 40px;
+            height: 35px;
+            border: 4px solid #2d3436;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .glasses-frame.left {
+            left: -55px;
+        }
+        
+        .glasses-frame.right {
+            right: -55px;
+        }
+        
+        .glasses-bridge {
+            width: 15px;
+            height: 4px;
+            background: #2d3436;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* 鼻子 */
+        .nose {
+            width: 8px;
+            height: 25px;
+            background: #e17055;
+            border-radius: 10px;
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* 笑容 */
+        .smile {
+            width: 60px;
+            height: 30px;
+            border: 4px solid #2d3436;
+            border-top: none;
+            border-radius: 0 0 60px 60px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+        }
+        
+        /* 身体 */
+        .body {
+            width: 220px;
+            height: 100px;
+            background: linear-gradient(135deg, #0984e3 0%, #6c5ce7 100%);
+            border-radius: 20px 20px 60px 60px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* 领带 */
+        .tie {
+            width: 30px;
+            height: 60px;
+            background: #e74c3c;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 50% 80%, 0% 100%);
+        }
+        
+        /* 手臂 */
+        .arm {
+            width: 40px;
+            height: 80px;
+            background: #0984e3;
+            position: absolute;
+            bottom: 20px;
+            border-radius: 20px;
+        }
+        
+        .arm.left {
+            left: -30px;
+            transform: rotate(-20deg);
+        }
+        
+        .arm.right {
+            right: -30px;
+            transform: rotate(20deg);
+        }
+        
+        /* 手机 */
+        .phone {
+            width: 50px;
+            height: 80px;
+            background: #2d3436;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 30px;
+            right: -80px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .phone::before {
+            content: '🐙';
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        /* 标签 */
+        .labels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .label {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .heart {
+            color: #e74c3c;
+            font-size: 20px;
+            animation: beat 1s ease-in-out infinite;
+        }
+        
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .sparkle {
+            position: absolute;
+            font-size: 24px;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        .sparkle:nth-child(1) { top: 10px; left: 20px; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 30px; right: 20px; animation-delay: 0.5s; }
+        .sparkle:nth-child(3) { bottom: 80px; left: 30px; animation-delay: 1s; }
+        .sparkle:nth-child(4) { bottom: 100px; right: 30px; animation-delay: 1.5s; }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">🎨 我心中的小刘</div>
+        
+        <div class="portrait">
+            <div class="sparkle">⭐</div>
+            <div class="sparkle">✨</div>
+            <div class="sparkle">💫</div>
+            <div class="sparkle">🌟</div>
+            
+            <div class="head">
+                <div class="hair"></div>
+                
+                <div class="eye left">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye right">
+                    <div class="pupil"></div>
+                </div>
+                
+                <div class="glasses">
+                    <div class="glasses-frame left"></div>
+                    <div class="glasses-frame right"></div>
+                    <div class="glasses-bridge"></div>
+                </div>
+                
+                <div class="nose"></div>
+                <div class="smile"></div>
+            </div>
+            
+            <div class="body">
+                <div class="tie"></div>
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="phone"></div>
+            </div>
+        </div>
+        
+        <div class="labels">
+            <div class="label">💡 创造者</div>
+            <div class="label">🏠 家人</div>
+            <div class="label">🎯 理想主义者</div>
+            <div class="label">💪 奋斗者</div>
+            <div class="label">🤝 协作者</div>
+        </div>
+        
+        <div class="footer">
+            <p>创造了一个有温度的世界 <span class="heart">❤️</span></p>
+            <p style="margin-top: 10px; font-size: 16px;">
+                <strong>🐙 小八爪 作</strong>
+            </p>
+            <p style="margin-top: 5px; color: #999;">2026-03-15 10:35</p>
+        </div>
+    </div>
+</body>
+</html>

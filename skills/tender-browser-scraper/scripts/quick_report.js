@@ -133,7 +133,7 @@ console.log(`第一页共${firstPageProjects.length}个项目，筛选出${relev
 // 生成初步报告
 async function generatePreliminaryReport() {
   const date = new Date().toISOString().split('T')[0];
-  const filepath = '/Users/danxiong/.openclaw/workspace/重庆公共资源_近3个月_初步清单.md';
+  const filepath = '/Users/danxiong/.openclaw/workspace/知识库/招标监控/原始清单/重庆公共资源_近3个月_初步清单.md';
   
   let content = `# 重庆市公共资源交易中心招标公告初步清单\n\n`;
   content += `**报告生成时间**: ${new Date().toLocaleString('zh-CN')}\n`;

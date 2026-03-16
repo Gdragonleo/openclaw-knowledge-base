@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "total": 12,
+    "excluded": 0,
+    "high_match": 0,
+    "avg_score": 72,
+    "budget_sum": 4818,
+    "sources": [
+      "重庆市公共资源交易中心"
+    ]
+  },
+  "top_projects": [
+    {
+      "name": "【字号 大 中 小 】 江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目",
+      "type_name": "工程项目",
+      "region": "江津区四面山镇",
+      "amount_wan": 436,
+      "recommendation_score": 76,
+      "win_probability": 68,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/6b2c7659-254c-4726-bbf9-dc275b810a94.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 北碚区麻柳河山洪沟治理工程（二期）",
+      "type_name": "市政/水利工程",
+      "region": "北碚区柳荫镇",
+      "amount_wan": 0,
+      "recommendation_score": 74,
+      "win_probability": 67,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/c49e2818-e62f-4c01-bc6b-5d0a22648bab.html"
+    },
+    {
+      "name": "多用途泊位后方陆域堆场（一期）第二次",
+      "type_name": "工程项目",
+      "region": "重庆市涪陵区龙桥街道北拱社区",
+      "amount_wan": 370,
+      "recommendation_score": 74,
+      "win_probability": 67,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/21293ee6-78aa-4d59-aa43-6fe6106ad1ae.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 合川区2026年补家项目区小流域综合治理提质增效项目",
+      "type_name": "市政/水利工程",
+      "region": "合川区龙凤镇",
+      "amount_wan": 1112,
+      "recommendation_score": 73,
+      "win_probability": 66,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/87951221-bbfa-423b-96ed-a733c73a6ce7.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 西城映画项目改造工程",
+      "type_name": "工程项目",
+      "region": "重庆市九龙坡区九龙街道上游三村",
+      "amount_wan": 0,
+      "recommendation_score": 71,
+      "win_probability": 64,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/f57cb6e1-f820-4b8f-8807-ad5cae2911fd.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）",
+      "type_name": "机电/能源工程",
+      "region": "重庆市两江新区",
+      "amount_wan": 0,
+      "recommendation_score": 71,
+      "win_probability": 64,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/495a2222-ddf7-426a-9b02-f489cae343b2.html"
+    },
+    {
+      "name": "180段）等2个工程（第二次）",
+      "type_name": "工程项目",
+      "region": "重庆两江新区水土新城",
+      "amount_wan": 0,
+      "recommendation_score": 71,
+      "win_probability": 64,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/76cb1ff9-29bb-45c9-8d15-ac5cf54ae65b.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 C标准分区路网三期工程（第二次）",
+      "type_name": "工程项目",
+      "region": "重庆两江新区水土新城",
+      "amount_wan": 0,
+      "recommendation_score": 71,
+      "win_probability": 64,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/fba4ec2b-7665-4063-aed2-241bc2a5afdb.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 石柱县城镇生活垃圾治理项目（二期）",
+      "type_name": "市政/水利工程",
+      "region": "石柱县下路街道",
+      "amount_wan": 0,
+      "recommendation_score": 71,
+      "win_probability": 64,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/745b8d03-9b97-4d9c-aca6-6158a1e4f661.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）",
+      "type_name": "市政/水利工程",
+      "region": "重庆市九龙坡区",
+      "amount_wan": 2900,
+      "recommendation_score": 70,
+      "win_probability": 63,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/dfb6f955-c4e5-42fe-ab4e-44d90d888228.html"
+    },
+    {
+      "name": "【字号 大 中 小 】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）",
+      "type_name": "工程项目",
+      "region": "重庆市人民医院",
+      "amount_wan": 0,
+      "recommendation_score": 69,
+      "win_probability": 62,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/5d0f5b9a-63c7-4bd6-b9b1-2f767cf39e72.html"
+    },
+    {
+      "name": "发布公告的媒介 本次",
+      "type_name": "工程项目",
+      "region": "重庆市自主招标",
+      "amount_wan": 0,
+      "recommendation_score": 69,
+      "win_probability": 62,
+      "notice_url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/99fafebd-38a2-4826-b43b-c801f0409759.html"
+    }
+  ],
+  "excluded_projects": []
+}

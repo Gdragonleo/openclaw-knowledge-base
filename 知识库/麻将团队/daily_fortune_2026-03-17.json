@@ -1,0 +1,147 @@
+{
+  "date": "2026-03-17",
+  "birthday": null,
+  "hexagram": {
+    "number": 6,
+    "name": "第6卦",
+    "nature": "未知",
+    "fortune_score": 60,
+    "description": "运势平稳"
+  },
+  "overall_fortune": {
+    "score": 60,
+    "level": "平",
+    "summary": "运势平稳"
+  },
+  "fengshui": {
+    "best_direction": "东南",
+    "worst_direction": "北",
+    "all_directions": {
+      "西北": {
+        "gua": "乾",
+        "element": "金",
+        "score": 68,
+        "level": "次选"
+      },
+      "西南": {
+        "gua": "坤",
+        "element": "土",
+        "score": 63,
+        "level": "次选"
+      },
+      "东": {
+        "gua": "震",
+        "element": "木",
+        "score": 73,
+        "level": "次选"
+      },
+      "东南": {
+        "gua": "巽",
+        "element": "木",
+        "score": 78,
+        "level": "最佳"
+      },
+      "北": {
+        "gua": "坎",
+        "element": "水",
+        "score": 58,
+        "level": "忌讳"
+      },
+      "南": {
+        "gua": "离",
+        "element": "火",
+        "score": 68,
+        "level": "次选"
+      },
+      "东北": {
+        "gua": "艮",
+        "element": "土",
+        "score": 66,
+        "level": "次选"
+      },
+      "西": {
+        "gua": "兑",
+        "element": "金",
+        "score": 70,
+        "level": "次选"
+      }
+    },
+    "placement_tips": [
+      "靠墙摆放，背后有靠山",
+      "灯光明亮，阳气充足",
+      "避免对门，防止气流直冲",
+      "今日最佳座位：东南方"
+    ]
+  },
+  "hourly_fortune": [
+    {
+      "name": "早晨",
+      "time_range": "05:00-09:00",
+      "gua": "震",
+      "score": 85,
+      "level": "黄金时段",
+      "advice": "运势最佳，适合做大牌，勇往直前！"
+    },
+    {
+      "name": "上午",
+      "time_range": "09:00-11:00",
+      "gua": "巽",
+      "score": 86,
+      "level": "黄金时段",
+      "advice": "运势最佳，适合做大牌，勇往直前！"
+    },
+    {
+      "name": "中午",
+      "time_range": "11:00-13:00",
+      "gua": "离",
+      "score": 57,
+      "level": "避坑",
+      "advice": "运势一般，保守为上，小赌怡情"
+    },
+    {
+      "name": "下午",
+      "time_range": "13:00-17:00",
+      "gua": "坤",
+      "score": 55,
+      "level": "避坑",
+      "advice": "运势一般，保守为上，小赌怡情"
+    },
+    {
+      "name": "傍晚",
+      "time_range": "17:00-19:00",
+      "gua": "兑",
+      "score": 67,
+      "level": "适宜",
+      "advice": "运势平稳，稳扎稳打，不宜冒险"
+    },
+    {
+      "name": "晚上",
+      "time_range": "19:00-23:00",
+      "gua": "乾",
+      "score": 70,
+      "level": "适宜",
+      "advice": "运势不错，可以积极进攻，但保持冷静"
+    }
+  ],
+  "strategy": {
+    "overall": "运势平稳",
+    "playing_style": "保守型",
+    "bet_strategy": "小注怡情，不贪大牌",
+    "risk_level": "低",
+    "psychological": "心态平和，输赢看淡",
+    "when_to_stop": "小输即止，不要追回"
+  },
+  "warnings": [
+    "麻将娱乐为主，切勿赌博",
+    "保持良好心态，输赢乃兵家常事",
+    "运势平平，不宜久战",
+    "小赌怡情，大赌伤身",
+    "避开北方座位"
+  ],
+  "share_card": {
+    "title": "今日麻将运势 第6卦",
+    "score": 60,
+    "tagline": "运势平稳",
+    "lucky_direction": "东南"
+  }
+}
