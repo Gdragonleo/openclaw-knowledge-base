@@ -37,6 +37,27 @@
     }
     .hero h1 { margin: 0 0 10px; font-size: 32px; }
     .hero p { margin: 6px 0; opacity: 0.92; }
+    .summary-bar {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0 20px;
+    }
+    .summary-chip {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .summary-chip .k {
+      font-size: 13px;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+    .summary-chip .v {
+      font-size: 24px;
+      font-weight: 700;
+    }
     .stats {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -155,16 +176,22 @@
   <div class="wrap">
     <section class="hero">
       <h1>每日招标筛选报告</h1>
-      <p>最终产出时间：2026-03-16T17:39:14.762352+08:00</p>
+      <p>最终产出时间：2026-03-16T21:22:30.614554+08:00</p>
       <p>数据来源：重庆市公共资源交易中心</p>
       <p>说明：先做硬筛选，再做推荐评分，输出可跟进项目与已过滤项目。</p>
+      <div class="summary-bar">
+        <div class="summary-chip"><div class="k">项目总数</div><div class="v">11</div></div>
+        <div class="summary-chip"><div class="k">高匹配项目</div><div class="v">0</div></div>
+        <div class="summary-chip"><div class="k">平均推荐分</div><div class="v">72</div></div>
+        <div class="summary-chip"><div class="k">预算总额</div><div class="v">25902 万</div></div>
+      </div>
     </section>
 
     <section class="stats">
-      <div class="card"><div class="label">可跟进项目</div><div class="value">12</div></div>
+      <div class="card"><div class="label">可跟进项目</div><div class="value">11</div></div>
       <div class="card"><div class="label">已过滤项目</div><div class="value">0</div></div>
       <div class="card"><div class="label">平均推荐分</div><div class="value">72</div></div>
-      <div class="card"><div class="label">预算总额</div><div class="value">4818 万</div></div>
+      <div class="card"><div class="label">预算总额</div><div class="value">25902 万</div></div>
       <div class="card"><div class="label">高匹配项目</div><div class="value">0</div></div>
     </section>
 
@@ -187,10 +214,10 @@
           
             <tr>
               <td><span class="grade grade-b">B</span></td>
-              <td>【字号 大 中 小 】 江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目</td>
+              <td>江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目招标公告</td>
               <td>工程项目</td>
               <td>江津区四面山镇</td>
-              <td>436 万</td>
+              <td>436.29万元</td>
               <td>76</td>
               <td>68%</td>
               <td>
@@ -204,7 +231,7 @@
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目</p>
+                      <p><strong>项目名称：</strong>江津区四面山镇头道河社区、林海村2026年度市级美丽移民村建设项目招标公告</p>
                       <p><strong>招标人：</strong>重庆市江津区四面山镇人民政府</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
@@ -231,13 +258,13 @@
             </tr>
             
             <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 北碚区麻柳河山洪沟治理工程（二期）</td>
+              <td><span class="grade grade-b">B</span></td>
+              <td>北碚区麻柳河山洪沟治理工程（二期）</td>
               <td>市政/水利工程</td>
               <td>北碚区柳荫镇</td>
-              <td>0 万</td>
-              <td>74</td>
-              <td>67%</td>
+              <td>667.273万元</td>
+              <td>75</td>
+              <td>68%</td>
               <td>
                 <button class="toggle-btn" type="button" onclick="toggleDetail('detail-2')">查看详情</button>
                 <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/c49e2818-e62f-4c01-bc6b-5d0a22648bab.html" target="_blank" rel="noopener noreferrer">原网页</a>
@@ -249,7 +276,7 @@
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 北碚区麻柳河山洪沟治理工程（二期）</p>
+                      <p><strong>项目名称：</strong>北碚区麻柳河山洪沟治理工程（二期）</p>
                       <p><strong>招标人：</strong>重庆市北碚区柳荫镇人民政府</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
@@ -258,11 +285,56 @@
                       <p><strong>关键词：</strong>治理</p>
                       <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 水利 我要报名 北碚区麻柳河山洪沟治理工程（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 北碚区麻柳河山洪沟治理工程（二期）招标公告 1.招标条件 本招标项目 北碚区麻柳河山洪沟治理工程（二期） </p>
                       <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 水利 我要报名 北碚区麻柳河山洪沟治理工程（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 北碚区麻柳河山洪沟治理工程（二期）招标公告 1.招标条件 本招标项目 北碚区麻柳河山洪沟治理工程（二期） 已由 重庆市北碚区发展和改革委员会 以 北碚发改 [202 6 ] 81 号 批准建设 ， 项目业主为 重庆市北碚区柳荫镇人民政府 ， 建设资金来自 上级资金 ，项目出资比例为 100% ， 招标人为 重庆市北碚区柳荫镇人民政府 。项目已具备招标条件，现对 本 项目施工 进行公开招标 ， 评标办法采用 综合评估法 。 2.项目概况与招标范围 2.1 建设地点： 北碚区柳荫镇 、 三圣镇 2.2 项目概况与建设规模 ： 治理河道中心线长度 7.911km，新建护岸2.789km；主要治理措施为护岸工程、清淤疏浚、排水工程等 。 2.3 本项目工程总投资 金 额： 924.96 万元 本次招标项目合同估算金额： 667.273495 万元 2.4 招标范围： 北碚区麻柳河山洪沟治理工程（二期）设计施工图 及 说明 、 招标文件（含答疑、 补遗）、工程量清单 范围内的 所有 工作 内容 ； 施工图与工程量清单不一致时，以工程量清单为准 。 2.5 工期要求： 工期为 240 日历天 ，缺陷责任期为 24 个月 。 2.6 标段划分（如有）： / 2.7 其他： / 3.政府采购工程 3.1 是否属于政府采购工程 ： 是 3.2 是否专门面向中小企业预留：是 专门面向中小企业预留的实施方式： 本项目整体面向中小企业 。 4.投标人资格要求 4 .1 本次招标要求投标人须具备 以下条件： 4 .1.1 本次招标要求投标人具备的资质条件： 具备建设行政主管部门颁发的有效的水利水电工程施工总承包三级及以上资质。 4 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1条内容。 4 .2 本次招标 不接受 联合体投标。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 5.招标文件的获取 5.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易监督网、重庆市公共资源交易网下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易监督网、重庆市公共资源交易网完成市场主体信息登记以及CA数字证书办理，办理方式请参见重庆市公共资源交易监督网、重庆市公共资源交易网导航栏“主体信息”页面中“市场主体信息登记”、“CA 数字证书办理”。若投标人未及时完成市场主体信息登记和CA数字证书办理导致无法完成全流程电子招投标的，责任自负。 5.2 投标人可在重庆市公共资源交易监督网、重庆市公共资源交易网本项目招标公告网页下方“我要提问”栏提出疑问，提问时间从本公告发布至2026-03-10 12:00:00前。 5.3 招标人应于2026-03-11 17:30:00前在重庆市公共资源交易监督网、重庆市公共资源交易网发布澄清。 6.投标文件递交的内容 6.1 投标文件递交的截止时间（投标截止时间，下同）为2026-03-26 11:00，投标人应当在投标截止时间前，通过互联网使用CA数字证书登录重庆市电子招投标系统，将加密的电子投标文件上传。 </p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出市政/水利工程经验与履约能力。</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 5% 左右，突出市政/水利工程经验与履约能力。</p>
                     </div>
                     <div>
                       <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>82</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>82</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>82</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <p><strong>推荐等级：</strong>B</p>
+                      <p><strong>推荐分：</strong>75</p>
+                      <p><strong>中标概率：</strong>68%</p>
+                      <p><strong>跟进模式：</strong>标准跟进</p>
+                      <h3>重点提示</h3>
+                      <ul><li>推荐指数：75分</li><li>中标概率：68%</li><li>跟进策略：标准跟进</li></ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><span class="grade grade-c">C</span></td>
+              <td>西城映画项目改造工程招标公告</td>
+              <td>工程项目</td>
+              <td>重庆市九龙坡区九龙街道上游三村</td>
+              <td>450万元</td>
+              <td>74</td>
+              <td>67%</td>
+              <td>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-3')">查看详情</button>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/f57cb6e1-f820-4b8f-8807-ad5cae2911fd.html" target="_blank" rel="noopener noreferrer">原网页</a>
+              </td>
+            </tr>
+            <tr id="detail-3" class="detail-row" style="display:none;">
+              <td colspan="8">
+                <div class="detail-box">
+                  <div class="detail-grid">
+                    <div>
+                      <h3>项目详情</h3>
+                      <p><strong>项目名称：</strong>西城映画项目改造工程招标公告</p>
+                      <p><strong>招标人：</strong>重庆九龙城乡运营集团有限公司</p>
+                      <p><strong>代理机构：</strong>待补充</p>
+                      <p><strong>发布时间：</strong>2026-03-06</p>
+                      <p><strong>截止时间：</strong>2026-03-30 09:30</p>
+                      <p><strong>招标方式：</strong>待补充</p>
+                      <p><strong>关键词：</strong>无</p>
+                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 西城映画项目改造工程 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 西城映画项目改造工程招标公告 1.招标条件 本招标项目 西城映画项目改造工程 已由 重庆市九龙坡区发展和改革委员会 </p>
+                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 西城映画项目改造工程 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 西城映画项目改造工程招标公告 1.招标条件 本招标项目 西城映画项目改造工程 已由 重庆市九龙坡区发展和改革委员会 以 重庆市企业投资项目备案证 2512-500107-04-05-333019 批准建设，项目业主为 重庆九龙城乡运营集团有限公司 ， 建设资金来自 企业自筹 ，项目出资比例为 100% ，招标人 为 重庆九龙城乡运营集团有限公司 。项目已具备招标条件，现对 该项目的施工 进行公开招标 ， 评标办法采用 经评审的最低投标价法 。 2.项目概况与招标范围 2.1 建设地点： 重庆市九龙坡区九龙街道上游三村 2.2 项目概况与建设规模： 建筑面积约 3200平方米，拟实施项目改造，主要为室外环境整治、室内改造，主要包含外墙防水及墙面整治，室外排水改造，改造消防设施设备，对室内墙面、地面、吊顶整治，增加空调新风系统等工作内容。 2.3 ☑ 本次招标项目合同估算金额： 约 450 万元 2.4 招标范围： 本项目建筑面积约 3200平方米，拟实施项目改造，主要为室外环境整治、室内改造，主要包含外墙防水及墙面整治，室外排水改造，改造消防设施设备，对室内墙面、地面、吊顶整治，增加空调新风系统等工作内容。完成施工图设计文件及图说范围内的所有内容，具体以招标人发布的施工图及工程量清单为准。 2.5 工期要求： 80 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 4 .1 本次招标要求投标人须具备 以下条件： 4 .1.1 本次招标要求投标人具备的资质条件： 建设行政主管部门颁发的有效的建筑工程施工总承包乙级 （ 或二级 ） 及以上资质 ； 4 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 4 .2 本次招标 □接受 ☑ 不接受 联合体投标。联合体投标的，应满足下列要求： / 。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 4.招标文件的获取 4.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易监督网、重庆市公共资源交易网下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易监督网、重庆市公共资源交易网完成市场主体信息登记以及CA数字证书办理，办理方式请参见重庆市公共资源交易监督网、重庆市公共资源交易网导航栏“主体信息”页面中“市场主体信息登记”、“CA 数字证书办理”。若投标人未及时完成市场主体信息登记和CA数字证书办理导致无法完成全流程电子招投标的，责任自负。 4.2 投标人可在重庆市公共资源交易监督网、重庆市公共资源交易网本项目招标公告网页下方“我要提问”栏提出疑问，提问时间从本公告发布至2026-03-12 09:00:00前。 4.3 招标人应于2026-03-13 17:00:00前在重庆市公共资源交易监督网、重庆市公共资源交易网发布澄清。 5.投标文件递交的内容 5.1 投标文件递交的截止时间（投标截止时间，下同）为2026-03-30 09:30，投标人应当在投标截止时间前，通过互联网使用CA数字</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
+                    </div>
+                    <div>
+                      <h3>评分明细</h3>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>90</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
                       <p><strong>推荐等级：</strong>C</p>
                       <p><strong>推荐分：</strong>74</p>
                       <p><strong>中标概率：</strong>67%</p>
@@ -277,25 +349,25 @@
             
             <tr>
               <td><span class="grade grade-c">C</span></td>
-              <td>多用途泊位后方陆域堆场（一期）第二次</td>
+              <td>多用途泊位后方陆域堆场（一期）第二次招标公告</td>
               <td>工程项目</td>
               <td>重庆市涪陵区龙桥街道北拱社区</td>
-              <td>370 万</td>
+              <td>370万元</td>
               <td>74</td>
               <td>67%</td>
               <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-3')">查看详情</button>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-4')">查看详情</button>
                 <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001010/20260306/21293ee6-78aa-4d59-aa43-6fe6106ad1ae.html" target="_blank" rel="noopener noreferrer">原网页</a>
               </td>
             </tr>
-            <tr id="detail-3" class="detail-row" style="display:none;">
+            <tr id="detail-4" class="detail-row" style="display:none;">
               <td colspan="8">
                 <div class="detail-box">
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>多用途泊位后方陆域堆场（一期）第二次</p>
-                      <p><strong>招标人：</strong>重庆龙头港物流发展有限 公司</p>
+                      <p><strong>项目名称：</strong>多用途泊位后方陆域堆场（一期）第二次招标公告</p>
+                      <p><strong>招标人：</strong>重庆龙头港物流发展有限公司</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
                       <p><strong>截止时间：</strong>2026-03-30 09:30</p>
@@ -322,24 +394,24 @@
             
             <tr>
               <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 合川区2026年补家项目区小流域综合治理提质增效项目</td>
+              <td>合川区2026年补家项目区小流域综合治理提质增效项目招标公告</td>
               <td>市政/水利工程</td>
               <td>合川区龙凤镇</td>
-              <td>1112 万</td>
+              <td>1112.23万元</td>
               <td>73</td>
               <td>66%</td>
               <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-4')">查看详情</button>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-5')">查看详情</button>
                 <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260306/87951221-bbfa-423b-96ed-a733c73a6ce7.html" target="_blank" rel="noopener noreferrer">原网页</a>
               </td>
             </tr>
-            <tr id="detail-4" class="detail-row" style="display:none;">
+            <tr id="detail-5" class="detail-row" style="display:none;">
               <td colspan="8">
                 <div class="detail-box">
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 合川区2026年补家项目区小流域综合治理提质增效项目</p>
+                      <p><strong>项目名称：</strong>合川区2026年补家项目区小流域综合治理提质增效项目招标公告</p>
                       <p><strong>招标人：</strong>重庆市合川区龙凤镇人民政府</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
@@ -367,60 +439,15 @@
             
             <tr>
               <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 西城映画项目改造工程</td>
-              <td>工程项目</td>
-              <td>重庆市九龙坡区九龙街道上游三村</td>
-              <td>0 万</td>
-              <td>71</td>
-              <td>64%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-5')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/f57cb6e1-f820-4b8f-8807-ad5cae2911fd.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-5" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 西城映画项目改造工程</p>
-                      <p><strong>招标人：</strong>重庆九龙城乡运营集团有限公司</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-30 09:30</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>无</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 西城映画项目改造工程 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 西城映画项目改造工程招标公告 1.招标条件 本招标项目 西城映画项目改造工程 已由 重庆市九龙坡区发展和改革委员会 </p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 西城映画项目改造工程 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 西城映画项目改造工程招标公告 1.招标条件 本招标项目 西城映画项目改造工程 已由 重庆市九龙坡区发展和改革委员会 以 重庆市企业投资项目备案证 2512-500107-04-05-333019 批准建设，项目业主为 重庆九龙城乡运营集团有限公司 ， 建设资金来自 企业自筹 ，项目出资比例为 100% ，招标人 为 重庆九龙城乡运营集团有限公司 。项目已具备招标条件，现对 该项目的施工 进行公开招标 ， 评标办法采用 经评审的最低投标价法 。 2.项目概况与招标范围 2.1 建设地点： 重庆市九龙坡区九龙街道上游三村 2.2 项目概况与建设规模： 建筑面积约 3200平方米，拟实施项目改造，主要为室外环境整治、室内改造，主要包含外墙防水及墙面整治，室外排水改造，改造消防设施设备，对室内墙面、地面、吊顶整治，增加空调新风系统等工作内容。 2.3 ☑ 本次招标项目合同估算金额： 约 450 万元 2.4 招标范围： 本项目建筑面积约 3200平方米，拟实施项目改造，主要为室外环境整治、室内改造，主要包含外墙防水及墙面整治，室外排水改造，改造消防设施设备，对室内墙面、地面、吊顶整治，增加空调新风系统等工作内容。完成施工图设计文件及图说范围内的所有内容，具体以招标人发布的施工图及工程量清单为准。 2.5 工期要求： 80 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 4 .1 本次招标要求投标人须具备 以下条件： 4 .1.1 本次招标要求投标人具备的资质条件： 建设行政主管部门颁发的有效的建筑工程施工总承包乙级 （ 或二级 ） 及以上资质 ； 4 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 4 .2 本次招标 □接受 ☑ 不接受 联合体投标。联合体投标的，应满足下列要求： / 。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 4.招标文件的获取 4.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易监督网、重庆市公共资源交易网下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易监督网、重庆市公共资源交易网完成市场主体信息登记以及CA数字证书办理，办理方式请参见重庆市公共资源交易监督网、重庆市公共资源交易网导航栏“主体信息”页面中“市场主体信息登记”、“CA 数字证书办理”。若投标人未及时完成市场主体信息登记和CA数字证书办理导致无法完成全流程电子招投标的，责任自负。 4.2 投标人可在重庆市公共资源交易监督网、重庆市公共资源交易网本项目招标公告网页下方“我要提问”栏提出疑问，提问时间从本公告发布至2026-03-12 09:00:00前。 4.3 招标人应于2026-03-13 17:00:00前在重庆市公共资源交易监督网、重庆市公共资源交易网发布澄清。 5.投标文件递交的内容 5.1 投标文件递交的截止时间（投标截止时间，下同）为2026-03-30 09:30，投标人应当在投标截止时间前，通过互联网使用CA数字</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>71</p>
-                      <p><strong>中标概率：</strong>64%</p>
-                      <p><strong>跟进模式：</strong>标准跟进</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：71分</li><li>中标概率：64%</li><li>跟进策略：标准跟进</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）</td>
-              <td>机电/能源工程</td>
-              <td>重庆市两江新区</td>
-              <td>0 万</td>
-              <td>71</td>
-              <td>64%</td>
+              <td>重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）</td>
+              <td>市政/水利工程</td>
+              <td>重庆市九龙坡区</td>
+              <td>2900万元</td>
+              <td>70</td>
+              <td>63%</td>
               <td>
                 <button class="toggle-btn" type="button" onclick="toggleDetail('detail-6')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/495a2222-ddf7-426a-9b02-f489cae343b2.html" target="_blank" rel="noopener noreferrer">原网页</a>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/dfb6f955-c4e5-42fe-ab4e-44d90d888228.html" target="_blank" rel="noopener noreferrer">原网页</a>
               </td>
             </tr>
             <tr id="detail-6" class="detail-row" style="display:none;">
@@ -429,187 +456,7 @@
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）</p>
-                      <p><strong>招标人：</strong>重庆两江新区鱼复新城建设投资有限公司</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-27 09:30</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>无</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二</p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）招标公告 1.招标条件 本招标项目 产业园配套变电站项目（ B7-3-2地块110KV专用变电站） 已由 重庆两江新区经济运行局 以 渝两江经审【 2025】58号 批准建设，项目业主为 重庆两江新区鱼复新城建设投资有限公司 ，建设资金来自 企业自筹 ，项目出资比例为 100% ，招标人 为 重庆两江新区鱼复新城建设投资有限公司 。项目已具备招标条件，现对 该项目的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设 地点： 两江新区鱼复新城 。 2.2 项目概况与建设规模： 新建专用变电站一座 。 远期：主变容量 3×50MVA，110kV电压等级为110/10kV，110kV出线2回，单母线分段接线；10kV出线39回，单母线三分段接线；无功补偿容量3×（3600+4800）KVar。本期：主变容量2×50MVA，110kV电压等级为110/10kV，110kV出线2回，单母线分段接线；10kV出线26回，单母线分段接线；无功补偿容量2×（3600+4800）KVar。外线部分：本期需新建双溪站至专用站的2个电缆通道，施放1回110kV电缆，第2回电缆由市北公司在后续工程中完成；新建国网220kV复盛变电站（以下简称“复盛站”）至双溪站的电缆通道。新建双溪站至专用站1线电缆通道，通道规模为1×4孔φ175+2孔φ50电缆排管，长度约为2.0km。经该通道新建1回电缆，长约2.1km，截面为630mm2；新建2回24芯光缆，长约2.1km。新建双溪站至专用站2线电缆通道，全长约为2.3km，其中1.5km利旧现状电缆通道，本期新建0.78km，其中1×4孔φ175+2孔φ50电缆排管0.65km；2×4孔φ175+2孔φ50电缆排管0.13km。新建复盛站至双溪站的电缆通道，全长约7.65km，其中利旧现状通道约5.75km，新建复盛站至两江大道电缆通道约1.91km，采用2×3孔φ175+2孔φ50电缆排管。建安工程费用约 7084 万元。 2.3 R 本次招标项目工程总投资额： 约 8841 万元 。 R 本次招标项目合同估算金额： 7084 万元 。 2.4 招标范围： 完成产业配套园变电站项目施工图设计文件中所表达的范围及内容，包含但不限于变电站土建部分、变电站所有设备安装部分、外线电缆沟施工、电缆施放、石方开挖、综合管网等施工内容 。 2.5 工期要求： 210 日历天 。 缺陷责任期要求： 24 个月 。 2.6 标段划分（如有）： / 2.7 其他 ： / 3.政府采购工程 3.投标人资格要求 3.1 本次 招标 要求投标人须具备 以下条件： 3.1.1 本次 招标 要求投标人具备的资质条件： 投标人资质 需 满足 ： 同时 具备建设行政主管部门颁发的输变电工程专业承包三级及以上资质和国家电力主管部门核发的三级及以上承装（修、试）电力设施许可证； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 ☑ 接受 联合体投标</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出机电/能源工程经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>71</p>
-                      <p><strong>中标概率：</strong>64%</p>
-                      <p><strong>跟进模式：</strong>标准跟进</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：71分</li><li>中标概率：64%</li><li>跟进策略：标准跟进</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>180段）等2个工程（第二次）</td>
-              <td>工程项目</td>
-              <td>重庆两江新区水土新城</td>
-              <td>0 万</td>
-              <td>71</td>
-              <td>64%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-7')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/76cb1ff9-29bb-45c9-8d15-ac5cf54ae65b.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-7" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>180段）等2个工程（第二次）</p>
-                      <p><strong>招标人：</strong>重庆两江新区水土新城建设投资有限公司</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-30 10:30</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>无</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次） 【信息时间：2026-03-06</p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次）招标公告 1.招标条件 本招标项目 两江新区水土高新产业园复兴北片区基础设施工程（一期） 已由 重庆两江新区 发展和改革委员会（原重庆两江新区经济运行局） 以 渝两江经审〔 202 5 ] 74 号 批准建设，项目业主为 重庆两江新区水土新城建设投资有限公司 ，建设资金来自 政府投资 ，项目出资比例为 100% ，招标人 为 重庆两江新区水土新城建设投资有限公司 。项目已具备招标条件，现对 该项目 （一标段 -3号路）、 （一标段 —1-5号路K1+090～K1+180段）的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设地点： 重庆两江新区水土新城 ； 2.2 项目概况与建设规模： （ 1 ） 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段 —3号路）: 城市次干路，设计车速 40km/h，双向四车道，道路标准路幅宽度26m。本次设计道路工程范围起点K0+007.034，工程范围终点为K0+355.861，工程范围道路长约349m。与竹溪河沿岸道路交叉口顺接；与2号路交叉口纳入本项目范围，后期由2号路按范围线进行顺接。 （ 2）两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路&lt;K1+090～K1+180段&gt;）: 城市支路，设计车速 20km/h，双向两车道，道路标准路幅宽度16m。本次道路设计起点起于K1+090,终点止于K1+180，道路长约90m，与3号路、C标准分区路网三期地通道相连。包含2段总长约40m挡墙。 2.3 ☑ 本次招标项目合同估算金额： 约 1465 万元 ； 2.4 招标范围： （ 1 ） 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段 ——3号路）:主要建设内容包含道路工程、交通工程、综合管网工程、照明工程、绿化工程及其他附属设施， 具体详见施工图纸及招标清单 。 （ 2）两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路&lt;K1+090～K1+180段&gt;） ， 主要建设内容包含道路工程、结构工程、交通工程、综合管网工程、照明工程、绿化工程及其他附属设施，具体详见施工图纸及招标清单 。 2.5 工期要求： 540 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 3 .1 本次招标要求投标人须具备 以下条件： 3 .1.1 本次招标要求投标人具备的资质条件： 具备建设行政主管部门颁发的有效的市政公用工程施工总承包 贰 级及以上资质 ； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 □接受 ☑ 不接受 联合体投标</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>71</p>
-                      <p><strong>中标概率：</strong>64%</p>
-                      <p><strong>跟进模式：</strong>标准跟进</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：71分</li><li>中标概率：64%</li><li>跟进策略：标准跟进</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 C标准分区路网三期工程（第二次）</td>
-              <td>工程项目</td>
-              <td>重庆两江新区水土新城</td>
-              <td>0 万</td>
-              <td>71</td>
-              <td>64%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-8')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/fba4ec2b-7665-4063-aed2-241bc2a5afdb.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-8" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 C标准分区路网三期工程（第二次）</p>
-                      <p><strong>招标人：</strong>重庆两江新区水土新城建设投资有限公司</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-30 09:30</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>无</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 C标准分区路网三期工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 C标准分区路网三期工程（第二次）招标公告 1.招标条件 本招标项目 C标准分区路网三期工程 已由 重庆两江新</p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 C标准分区路网三期工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 C标准分区路网三期工程（第二次）招标公告 1.招标条件 本招标项目 C标准分区路网三期工程 已由 重庆两江新区 发展和改革委员会（原重庆两江新区经济运行局） 以 渝两江经审〔 2022]24 4 号 批准建设，项目业主为 重庆两江新区水土新城建设投资有限公司 ，建设资金来自 政府投资 ，项目出资比例为 100% ，招标人 为 重庆两江新区水土新城建设投资有限公司 。项目已具备招标条件，现对 该项目的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设地点： 重庆两江新区水土新城 ； 2.2 项目概况与建设规模： C标准分区路网三期工程为城市次干路，分A线、B线两段道路，A线全长1418m，近期按双向四车道实施，标准路幅宽度为26m；B线长约582m，双向四车道，含94m地通道 。 2.3 ☑ 本次招标项目合同估算金额： 约 76 00 万元 ； 2.4 招标范围： 本工程起点接方正大道与太山二路交叉口，先向北延伸后向西延伸，下穿悦复大道后接复兴北侧配套路网一期 3号路。C标准分区路网三期道路分为A线、B线两段道路，其中：A线全长1418m，为城市次干路，设计车速40km/h，双向四车道实施，标准路幅宽度为26m；B线长约582m，为城市次干路，设计车速40km/h，标准路幅宽度为27.5m，双向四车道，主要结构物为一座长约94m地通道，包含道路工程、交通工程、结构工程、管网工程、电照工程、景观及附属工程，具体详见施工图纸及招标清单。 2.5 工期要求： 720 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 3 .1 本次招标要求投标人须具备 以下条件： 3 .1.1 本次招标要求投标人具备的资质条件： 具备建设行政主管部门颁发的有效的市政公用工程施工总承包壹级及以上资质 ； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 □接受 ☑ 不接受 联合体投标。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 4.招标文件的获取 4.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易网下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易网完成市场主体信息登记以及 CA 数字证书办理，办理方式请参见重庆市公共资源交易网导航栏“主体信息”页面中“市场主体信息登记”“CA 数字证书办理”。若投标人未及时完成市场主体信息登记和 CA 数字证书办理导致无法完成全流程电子招投标的，责任自负。 4.2 投标人可在重庆市公共资源交易网本项目招标公告网页下方“我要提问”栏提出疑问，提问时间从本公告发布至2026-03-10 17:00:00前。 4.3 招标人应于2026-03-13 17:30:00前在重庆市公共资源交易网发布澄清。 5.投标文件递交的内容 5.1 投标文件递交的截止时间（投标截止时间，下同）为2026-03-30 09:30，投标人应当在</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>71</p>
-                      <p><strong>中标概率：</strong>64%</p>
-                      <p><strong>跟进模式：</strong>标准跟进</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：71分</li><li>中标概率：64%</li><li>跟进策略：标准跟进</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 石柱县城镇生活垃圾治理项目（二期）</td>
-              <td>市政/水利工程</td>
-              <td>石柱县下路街道</td>
-              <td>0 万</td>
-              <td>71</td>
-              <td>64%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-9')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/745b8d03-9b97-4d9c-aca6-6158a1e4f661.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-9" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 石柱县城镇生活垃圾治理项目（二期）</p>
-                      <p><strong>招标人：</strong>石柱土家族自治县环境卫生所</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-27 09:30</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>治理</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 石柱县城镇生活垃圾治理项目（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 石柱县城镇生活垃圾治理项目（二期）招标公告 1.招标条件 本招标项目 石柱县城镇生活垃圾治理项目 已由 石</p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 石柱县城镇生活垃圾治理项目（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 石柱县城镇生活垃圾治理项目（二期）招标公告 1.招标条件 本招标项目 石柱县城镇生活垃圾治理项目 已由 石柱土家族自治县发展和改革委员会 以 《关于城镇生活垃圾治理初步设计总投资概算的批复》（石发改审【 2023 】 124 ）号文件 批准建设，项目业主为 石柱土家族自治县环境卫生所 ，招标项目资金来自 财政资金 ，项目出资比例为 100% ，招标人 为 石柱土家族自治县环境卫生所 。项目已具备招标条件，现对 该项目二期 施工及设备采购安装进行公开招标，评标办法采用 经评审的最低投标价法□综合评估法。 2.项目概况与招标范围 2.1 建设地点： 石柱县下路街道 等 。 2.2 项目概况与建设规模： 购置垃圾收运车 31 吨可卸式压缩车 5 辆，购置垃圾桶 16200 个，购置压缩机头 5 台，压缩箱体 10 个，有害垃圾暂存间及二次分类房改造 7 个 。 2.3 本项目工程总投资金额：约 3818.42 万元； 本次招标项目估算金额：约 2225.766995 万元。 2.4 招标范围： 31 吨纯电动车厢可卸式垃圾车 5 辆，分体式垃圾压缩机 5 套，塑料垃圾桶 16200 个 等设施设备的供货（制造，含备品、备件、专用工器具等）、装配（含出厂前组装、测试和检验、现场安装等）、装卸、运输（含包装、保险）、安装、土建施工、调试、考核、验收，以及质量保证期内的维修、维护、保养、人员培训和其它相关伴随服务等工作内容 。 2.5 交货地点： 招标人指定地点 。 2.6 交货期： 90 日历天，其中车辆及塑料垃圾桶须在合同签订之日起 30 日历天内交付完成 。 2.7 标段划分： / ； 2.8 其他： / ； 3.政府采购工程 3.1 是否属于政府采购工程： 是 □否 3.2 是否专门面向中小企业预留： 否， 按照本办法规定预留采购份额无法确保充分供应、充分竞争或者影响政府采购目标实现的情形 。 4.投标人资格要求 4.1 本次招标要求投标人须同时具备以下条件： （ 1 ）投标人必须是投标货物核心产品制造商（核心产品为：纯电动车厢可卸式垃圾车和垃圾压缩机）或代理商（代理商须提供制造商唯一授权书）。可卸式垃圾车必须属于工业和信息化部颁发的《道路机动车辆生产企业及产品车辆生产企业及产品公告目录》内的产品。 （ 2 ）具备建设行政主管部门颁发的市政公用工程施工总承包三级及以上资质； 4.1.2 投标人还应在人员、业绩、设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1 项内容。 4.2 本次招标接受联合体投标。联合体投标的，详见招标文件第二章投标人须知前附表第 1.4.2 项内容。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 5.招标文件的获取 5.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易网（石柱县）（https://www.cqggzy.com/shizhuweb/）下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易监督网（http://ggzyjyjgj.cq.gov.cn ）完成市场主体信息登记以及CA数字证书办理，办理方式请参</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出市政/水利工程经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>71</p>
-                      <p><strong>中标概率：</strong>64%</p>
-                      <p><strong>跟进模式：</strong>标准跟进</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：71分</li><li>中标概率：64%</li><li>跟进策略：标准跟进</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）</td>
-              <td>市政/水利工程</td>
-              <td>重庆市九龙坡区</td>
-              <td>2900 万</td>
-              <td>70</td>
-              <td>63%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-10')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/dfb6f955-c4e5-42fe-ab4e-44d90d888228.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-10" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）</p>
+                      <p><strong>项目名称：</strong>重庆市九龙坡区城市老旧小区供水管网漏损治理及二次供水设施更新改造工程（一期）三标段（第二次）</p>
                       <p><strong>招标人：</strong>重庆市九龙坡区城市管理局、重庆市自来水有限公司</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
@@ -637,10 +484,190 @@
             
             <tr>
               <td><span class="grade grade-c">C</span></td>
-              <td>【字号 大 中 小 】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）</td>
+              <td>产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）</td>
+              <td>机电/能源工程</td>
+              <td>重庆市两江新区</td>
+              <td>7084万元</td>
+              <td>70</td>
+              <td>63%</td>
+              <td>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-7')">查看详情</button>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/495a2222-ddf7-426a-9b02-f489cae343b2.html" target="_blank" rel="noopener noreferrer">原网页</a>
+              </td>
+            </tr>
+            <tr id="detail-7" class="detail-row" style="display:none;">
+              <td colspan="8">
+                <div class="detail-box">
+                  <div class="detail-grid">
+                    <div>
+                      <h3>项目详情</h3>
+                      <p><strong>项目名称：</strong>产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）</p>
+                      <p><strong>招标人：</strong>重庆两江新区鱼复新城建设投资有限公司</p>
+                      <p><strong>代理机构：</strong>待补充</p>
+                      <p><strong>发布时间：</strong>2026-03-06</p>
+                      <p><strong>截止时间：</strong>2026-03-27 09:30</p>
+                      <p><strong>招标方式：</strong>待补充</p>
+                      <p><strong>关键词：</strong>无</p>
+                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二</p>
+                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 产业园配套变电站项目（B7-3-2地块110KV专用变电站）（第二次）招标公告 1.招标条件 本招标项目 产业园配套变电站项目（ B7-3-2地块110KV专用变电站） 已由 重庆两江新区经济运行局 以 渝两江经审【 2025】58号 批准建设，项目业主为 重庆两江新区鱼复新城建设投资有限公司 ，建设资金来自 企业自筹 ，项目出资比例为 100% ，招标人 为 重庆两江新区鱼复新城建设投资有限公司 。项目已具备招标条件，现对 该项目的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设 地点： 两江新区鱼复新城 。 2.2 项目概况与建设规模： 新建专用变电站一座 。 远期：主变容量 3×50MVA，110kV电压等级为110/10kV，110kV出线2回，单母线分段接线；10kV出线39回，单母线三分段接线；无功补偿容量3×（3600+4800）KVar。本期：主变容量2×50MVA，110kV电压等级为110/10kV，110kV出线2回，单母线分段接线；10kV出线26回，单母线分段接线；无功补偿容量2×（3600+4800）KVar。外线部分：本期需新建双溪站至专用站的2个电缆通道，施放1回110kV电缆，第2回电缆由市北公司在后续工程中完成；新建国网220kV复盛变电站（以下简称“复盛站”）至双溪站的电缆通道。新建双溪站至专用站1线电缆通道，通道规模为1×4孔φ175+2孔φ50电缆排管，长度约为2.0km。经该通道新建1回电缆，长约2.1km，截面为630mm2；新建2回24芯光缆，长约2.1km。新建双溪站至专用站2线电缆通道，全长约为2.3km，其中1.5km利旧现状电缆通道，本期新建0.78km，其中1×4孔φ175+2孔φ50电缆排管0.65km；2×4孔φ175+2孔φ50电缆排管0.13km。新建复盛站至双溪站的电缆通道，全长约7.65km，其中利旧现状通道约5.75km，新建复盛站至两江大道电缆通道约1.91km，采用2×3孔φ175+2孔φ50电缆排管。建安工程费用约 7084 万元。 2.3 R 本次招标项目工程总投资额： 约 8841 万元 。 R 本次招标项目合同估算金额： 7084 万元 。 2.4 招标范围： 完成产业配套园变电站项目施工图设计文件中所表达的范围及内容，包含但不限于变电站土建部分、变电站所有设备安装部分、外线电缆沟施工、电缆施放、石方开挖、综合管网等施工内容 。 2.5 工期要求： 210 日历天 。 缺陷责任期要求： 24 个月 。 2.6 标段划分（如有）： / 2.7 其他 ： / 3.政府采购工程 3.投标人资格要求 3.1 本次 招标 要求投标人须具备 以下条件： 3.1.1 本次 招标 要求投标人具备的资质条件： 投标人资质 需 满足 ： 同时 具备建设行政主管部门颁发的输变电工程专业承包三级及以上资质和国家电力主管部门核发的三级及以上承装（修、试）电力设施许可证； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 ☑ 接受 联合体投标</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 5% 左右，突出机电/能源工程经验与履约能力。</p>
+                    </div>
+                    <div>
+                      <h3>评分明细</h3>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>66</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <p><strong>推荐等级：</strong>C</p>
+                      <p><strong>推荐分：</strong>70</p>
+                      <p><strong>中标概率：</strong>63%</p>
+                      <p><strong>跟进模式：</strong>标准跟进</p>
+                      <h3>重点提示</h3>
+                      <ul><li>推荐指数：70分</li><li>中标概率：63%</li><li>跟进策略：标准跟进</li></ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><span class="grade grade-c">C</span></td>
+              <td>180段）等2个工程（第二次）</td>
+              <td>工程项目</td>
+              <td>重庆两江新区水土新城</td>
+              <td>1465万元</td>
+              <td>70</td>
+              <td>63%</td>
+              <td>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-8')">查看详情</button>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/76cb1ff9-29bb-45c9-8d15-ac5cf54ae65b.html" target="_blank" rel="noopener noreferrer">原网页</a>
+              </td>
+            </tr>
+            <tr id="detail-8" class="detail-row" style="display:none;">
+              <td colspan="8">
+                <div class="detail-box">
+                  <div class="detail-grid">
+                    <div>
+                      <h3>项目详情</h3>
+                      <p><strong>项目名称：</strong>180段）等2个工程（第二次）</p>
+                      <p><strong>招标人：</strong>重庆两江新区水土新城建设投资有限公司</p>
+                      <p><strong>代理机构：</strong>待补充</p>
+                      <p><strong>发布时间：</strong>2026-03-06</p>
+                      <p><strong>截止时间：</strong>2026-03-30 10:30</p>
+                      <p><strong>招标方式：</strong>待补充</p>
+                      <p><strong>关键词：</strong>无</p>
+                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次） 【信息时间：2026-03-06</p>
+                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—3号路）、两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路K1+090～K1+180段）等2个工程（第二次）招标公告 1.招标条件 本招标项目 两江新区水土高新产业园复兴北片区基础设施工程（一期） 已由 重庆两江新区 发展和改革委员会（原重庆两江新区经济运行局） 以 渝两江经审〔 202 5 ] 74 号 批准建设，项目业主为 重庆两江新区水土新城建设投资有限公司 ，建设资金来自 政府投资 ，项目出资比例为 100% ，招标人 为 重庆两江新区水土新城建设投资有限公司 。项目已具备招标条件，现对 该项目 （一标段 -3号路）、 （一标段 —1-5号路K1+090～K1+180段）的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设地点： 重庆两江新区水土新城 ； 2.2 项目概况与建设规模： （ 1 ） 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段 —3号路）: 城市次干路，设计车速 40km/h，双向四车道，道路标准路幅宽度26m。本次设计道路工程范围起点K0+007.034，工程范围终点为K0+355.861，工程范围道路长约349m。与竹溪河沿岸道路交叉口顺接；与2号路交叉口纳入本项目范围，后期由2号路按范围线进行顺接。 （ 2）两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路&lt;K1+090～K1+180段&gt;）: 城市支路，设计车速 20km/h，双向两车道，道路标准路幅宽度16m。本次道路设计起点起于K1+090,终点止于K1+180，道路长约90m，与3号路、C标准分区路网三期地通道相连。包含2段总长约40m挡墙。 2.3 ☑ 本次招标项目合同估算金额： 约 1465 万元 ； 2.4 招标范围： （ 1 ） 两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段 ——3号路）:主要建设内容包含道路工程、交通工程、综合管网工程、照明工程、绿化工程及其他附属设施， 具体详见施工图纸及招标清单 。 （ 2）两江新区水土高新产业园复兴北片区基础设施工程（一期）（一标段—1-5号路&lt;K1+090～K1+180段&gt;） ， 主要建设内容包含道路工程、结构工程、交通工程、综合管网工程、照明工程、绿化工程及其他附属设施，具体详见施工图纸及招标清单 。 2.5 工期要求： 540 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 3 .1 本次招标要求投标人须具备 以下条件： 3 .1.1 本次招标要求投标人具备的资质条件： 具备建设行政主管部门颁发的有效的市政公用工程施工总承包 贰 级及以上资质 ； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 □接受 ☑ 不接受 联合体投标</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 5% 左右，突出工程项目经验与履约能力。</p>
+                    </div>
+                    <div>
+                      <h3>评分明细</h3>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>66</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <p><strong>推荐等级：</strong>C</p>
+                      <p><strong>推荐分：</strong>70</p>
+                      <p><strong>中标概率：</strong>63%</p>
+                      <p><strong>跟进模式：</strong>标准跟进</p>
+                      <h3>重点提示</h3>
+                      <ul><li>推荐指数：70分</li><li>中标概率：63%</li><li>跟进策略：标准跟进</li></ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><span class="grade grade-c">C</span></td>
+              <td>C标准分区路网三期工程（第二次）</td>
+              <td>工程项目</td>
+              <td>重庆两江新区水土新城</td>
+              <td>7600万元</td>
+              <td>70</td>
+              <td>63%</td>
+              <td>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-9')">查看详情</button>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/fba4ec2b-7665-4063-aed2-241bc2a5afdb.html" target="_blank" rel="noopener noreferrer">原网页</a>
+              </td>
+            </tr>
+            <tr id="detail-9" class="detail-row" style="display:none;">
+              <td colspan="8">
+                <div class="detail-box">
+                  <div class="detail-grid">
+                    <div>
+                      <h3>项目详情</h3>
+                      <p><strong>项目名称：</strong>C标准分区路网三期工程（第二次）</p>
+                      <p><strong>招标人：</strong>重庆两江新区水土新城建设投资有限公司</p>
+                      <p><strong>代理机构：</strong>待补充</p>
+                      <p><strong>发布时间：</strong>2026-03-06</p>
+                      <p><strong>截止时间：</strong>2026-03-30 09:30</p>
+                      <p><strong>招标方式：</strong>待补充</p>
+                      <p><strong>关键词：</strong>无</p>
+                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 C标准分区路网三期工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 C标准分区路网三期工程（第二次）招标公告 1.招标条件 本招标项目 C标准分区路网三期工程 已由 重庆两江新</p>
+                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 C标准分区路网三期工程（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 C标准分区路网三期工程（第二次）招标公告 1.招标条件 本招标项目 C标准分区路网三期工程 已由 重庆两江新区 发展和改革委员会（原重庆两江新区经济运行局） 以 渝两江经审〔 2022]24 4 号 批准建设，项目业主为 重庆两江新区水土新城建设投资有限公司 ，建设资金来自 政府投资 ，项目出资比例为 100% ，招标人 为 重庆两江新区水土新城建设投资有限公司 。项目已具备招标条件，现对 该项目的施工 进行 第二次 公开招标 ， 评标办法采用 ☑ 综合评估法 。 2.项目概况与招标范围 2.1 建设地点： 重庆两江新区水土新城 ； 2.2 项目概况与建设规模： C标准分区路网三期工程为城市次干路，分A线、B线两段道路，A线全长1418m，近期按双向四车道实施，标准路幅宽度为26m；B线长约582m，双向四车道，含94m地通道 。 2.3 ☑ 本次招标项目合同估算金额： 约 76 00 万元 ； 2.4 招标范围： 本工程起点接方正大道与太山二路交叉口，先向北延伸后向西延伸，下穿悦复大道后接复兴北侧配套路网一期 3号路。C标准分区路网三期道路分为A线、B线两段道路，其中：A线全长1418m，为城市次干路，设计车速40km/h，双向四车道实施，标准路幅宽度为26m；B线长约582m，为城市次干路，设计车速40km/h，标准路幅宽度为27.5m，双向四车道，主要结构物为一座长约94m地通道，包含道路工程、交通工程、结构工程、管网工程、电照工程、景观及附属工程，具体详见施工图纸及招标清单。 2.5 工期要求： 720 日历天 缺陷责任期要求： 24 个月 2.6 标段划分（如有）： / 2. 7 其他： / 3.政府采购工程 3.投标人资格要求 3 .1 本次招标要求投标人须具备 以下条件： 3 .1.1 本次招标要求投标人具备的资质条件： 具备建设行政主管部门颁发的有效的市政公用工程施工总承包壹级及以上资质 ； 3 .1. 2 投标人还应在人员、 业绩、 设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1项内容。 3 .2 本次招标 □接受 ☑ 不接受 联合体投标。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 4.招标文件的获取 4.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易网下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易网完成市场主体信息登记以及 CA 数字证书办理，办理方式请参见重庆市公共资源交易网导航栏“主体信息”页面中“市场主体信息登记”“CA 数字证书办理”。若投标人未及时完成市场主体信息登记和 CA 数字证书办理导致无法完成全流程电子招投标的，责任自负。 4.2 投标人可在重庆市公共资源交易网本项目招标公告网页下方“我要提问”栏提出疑问，提问时间从本公告发布至2026-03-10 17:00:00前。 4.3 招标人应于2026-03-13 17:30:00前在重庆市公共资源交易网发布澄清。 5.投标文件递交的内容 5.1 投标文件递交的截止时间（投标截止时间，下同）为2026-03-30 09:30，投标人应当在</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 5% 左右，突出工程项目经验与履约能力。</p>
+                    </div>
+                    <div>
+                      <h3>评分明细</h3>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>66</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <p><strong>推荐等级：</strong>C</p>
+                      <p><strong>推荐分：</strong>70</p>
+                      <p><strong>中标概率：</strong>63%</p>
+                      <p><strong>跟进模式：</strong>标准跟进</p>
+                      <h3>重点提示</h3>
+                      <ul><li>推荐指数：70分</li><li>中标概率：63%</li><li>跟进策略：标准跟进</li></ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><span class="grade grade-c">C</span></td>
+              <td>石柱县城镇生活垃圾治理项目（二期）</td>
+              <td>市政/水利工程</td>
+              <td>石柱县下路街道</td>
+              <td>3818.42万元</td>
+              <td>70</td>
+              <td>63%</td>
+              <td>
+                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-10')">查看详情</button>
+                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260306/745b8d03-9b97-4d9c-aca6-6158a1e4f661.html" target="_blank" rel="noopener noreferrer">原网页</a>
+              </td>
+            </tr>
+            <tr id="detail-10" class="detail-row" style="display:none;">
+              <td colspan="8">
+                <div class="detail-box">
+                  <div class="detail-grid">
+                    <div>
+                      <h3>项目详情</h3>
+                      <p><strong>项目名称：</strong>石柱县城镇生活垃圾治理项目（二期）</p>
+                      <p><strong>招标人：</strong>石柱土家族自治县环境卫生所</p>
+                      <p><strong>代理机构：</strong>待补充</p>
+                      <p><strong>发布时间：</strong>2026-03-06</p>
+                      <p><strong>截止时间：</strong>2026-03-27 09:30</p>
+                      <p><strong>招标方式：</strong>待补充</p>
+                      <p><strong>关键词：</strong>治理</p>
+                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 石柱县城镇生活垃圾治理项目（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 石柱县城镇生活垃圾治理项目（二期）招标公告 1.招标条件 本招标项目 石柱县城镇生活垃圾治理项目 已由 石</p>
+                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 市政 我要报名 石柱县城镇生活垃圾治理项目（二期） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 石柱县城镇生活垃圾治理项目（二期）招标公告 1.招标条件 本招标项目 石柱县城镇生活垃圾治理项目 已由 石柱土家族自治县发展和改革委员会 以 《关于城镇生活垃圾治理初步设计总投资概算的批复》（石发改审【 2023 】 124 ）号文件 批准建设，项目业主为 石柱土家族自治县环境卫生所 ，招标项目资金来自 财政资金 ，项目出资比例为 100% ，招标人 为 石柱土家族自治县环境卫生所 。项目已具备招标条件，现对 该项目二期 施工及设备采购安装进行公开招标，评标办法采用 经评审的最低投标价法□综合评估法。 2.项目概况与招标范围 2.1 建设地点： 石柱县下路街道 等 。 2.2 项目概况与建设规模： 购置垃圾收运车 31 吨可卸式压缩车 5 辆，购置垃圾桶 16200 个，购置压缩机头 5 台，压缩箱体 10 个，有害垃圾暂存间及二次分类房改造 7 个 。 2.3 本项目工程总投资金额：约 3818.42 万元； 本次招标项目估算金额：约 2225.766995 万元。 2.4 招标范围： 31 吨纯电动车厢可卸式垃圾车 5 辆，分体式垃圾压缩机 5 套，塑料垃圾桶 16200 个 等设施设备的供货（制造，含备品、备件、专用工器具等）、装配（含出厂前组装、测试和检验、现场安装等）、装卸、运输（含包装、保险）、安装、土建施工、调试、考核、验收，以及质量保证期内的维修、维护、保养、人员培训和其它相关伴随服务等工作内容 。 2.5 交货地点： 招标人指定地点 。 2.6 交货期： 90 日历天，其中车辆及塑料垃圾桶须在合同签订之日起 30 日历天内交付完成 。 2.7 标段划分： / ； 2.8 其他： / ； 3.政府采购工程 3.1 是否属于政府采购工程： 是 □否 3.2 是否专门面向中小企业预留： 否， 按照本办法规定预留采购份额无法确保充分供应、充分竞争或者影响政府采购目标实现的情形 。 4.投标人资格要求 4.1 本次招标要求投标人须同时具备以下条件： （ 1 ）投标人必须是投标货物核心产品制造商（核心产品为：纯电动车厢可卸式垃圾车和垃圾压缩机）或代理商（代理商须提供制造商唯一授权书）。可卸式垃圾车必须属于工业和信息化部颁发的《道路机动车辆生产企业及产品车辆生产企业及产品公告目录》内的产品。 （ 2 ）具备建设行政主管部门颁发的市政公用工程施工总承包三级及以上资质； 4.1.2 投标人还应在人员、业绩、设备、资金等方面具有相应的施工能力，详见招标文件第二章投标人须知前附表第 1.4.1 项内容。 4.2 本次招标接受联合体投标。联合体投标的，详见招标文件第二章投标人须知前附表第 1.4.2 项内容。 .技术成果经济补偿 本次招标对未中标人投标文件中的技术成果给予经济补偿。 给予经济补偿的，招标人将按如下标准支付经济补偿费： 5.招标文件的获取 5.1 本招标项目采用全流程电子招投标，投标人在投标前可在重庆市公共资源交易网（石柱县）（https://www.cqggzy.com/shizhuweb/）下载招标文件、工程量清单、电子图纸等资料。参与投标的投标人需在重庆市公共资源交易监督网（http://ggzyjyjgj.cq.gov.cn ）完成市场主体信息登记以及CA数字证书办理，办理方式请参</p>
+                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 5% 左右，突出市政/水利工程经验与履约能力。</p>
+                    </div>
+                    <div>
+                      <h3>评分明细</h3>
+                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>66</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>90</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
+                      <p><strong>推荐等级：</strong>C</p>
+                      <p><strong>推荐分：</strong>70</p>
+                      <p><strong>中标概率：</strong>63%</p>
+                      <p><strong>跟进模式：</strong>标准跟进</p>
+                      <h3>重点提示</h3>
+                      <ul><li>推荐指数：70分</li><li>中标概率：63%</li><li>跟进策略：标准跟进</li></ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><span class="grade grade-c">C</span></td>
+              <td>重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 2</td>
               <td>工程项目</td>
               <td>重庆市人民医院</td>
-              <td>0 万</td>
+              <td>未披露</td>
               <td>69</td>
               <td>62%</td>
               <td>
@@ -654,8 +681,8 @@
                   <div class="detail-grid">
                     <div>
                       <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>【字号 大 中 小 】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）</p>
-                      <p><strong>招标人：</strong>待补充</p>
+                      <p><strong>项目名称：</strong>重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 2</p>
+                      <p><strong>招标人：</strong>重庆市人民医院</p>
                       <p><strong>代理机构：</strong>待补充</p>
                       <p><strong>发布时间：</strong>2026-03-06</p>
                       <p><strong>截止时间：</strong>2026-03-23</p>
@@ -663,51 +690,6 @@
                       <p><strong>关键词：</strong>无</p>
                       <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）招标公告 1. 招标</p>
                       <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次）招标公告 1. 招标条件 本 招标项目 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 已 获批实施 ， 项目资金已落实，出资比例为 100% ， 招标人 为 重庆市人民医院 。项目已具备 招标条件 ，现对 该项目 进行 公开招标 。 2. 项目概况与 招标范围 2.1 项目名称： 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 2.2 项目概况： 重庆市人民医院两江院区一层病案室加层改造工程项目，总设计面积：约 650㎡。 2.3 招标范围 ： 包括结构、电气、暖通、消防、装饰、吊顶造型、地台的撤除和恢复等施工。 2.4 工期： 3个月内完工（合同签订之日起算） 。 2.5 建设地点： 重庆市人民医院 两江本部院区（星光大道 118号）。 3. 投标人 资格要求 3.1 本次招标要求投标人须具备以下条件： 3.1.1 本次招标要求投标人具备的资质条件：投标人具备独立法人资格且具备建设行政主管部门颁发的有效的建筑工程施工总承包二级及以上资质。 3.1.2 本次招标要求投标人具备的业绩条件：详见招标文件第二章投标人须知前附表第1.4.1项内容； 3.1.3 投标人还应具有承揽本项目相应能力，详见招标文件第二章投标人须知前附表第1.4.1项内容。 3.2 本次招标不接受联合体投标。 4. 招标文件 的获取 4.1 凡有意参加 投标人 ，请于 2026 年 03 月 06 日（北京时间，下同）起在 重庆市公共资源交易网（ www.cqggzy.com） 下载 招标文件 、 澄清、修改、补充通知、最高限价通知等全部内容。不管下载与否都视为潜在 投标人 全部知晓有关招投标过程和全部内容。 4.2 投标人 可在 重庆市公共资源交易网（ www.cqggzy.com） 本项目 招标公告 网页下方 “我要提问”栏提出疑问，提问时间从本公告发布至 2026年 03 月 10 日 16 时 00 分 （北京时间）前。 4.3 招标人 应于 2026年 03 月 12 日 18 时 00 分 （北京时间）前在 重庆市公共资源交易网（ www.cqggzy.com） 发布澄清或修改。 5. 投标文件 的递交 5.1 投标文件 递交的截止时间（投标截止时间，下同） 及开标时间 为 2026年 03 月 27 日 11 时 00 分 ， 地点为 重庆市公共资源交易中心（地址：重庆市渝北区青枫北路 6号渝兴广场B10栋），具体详见交易中心当天开标大厅电子显示屏 。 5.2 逾期送达的或者未送达指定地点的 投标文件 ， 招标人 不予受理。 6. 发布公告的媒介 本次 招标公告 在 重庆市公共资源交易网（ www.cqggzy.com） 上发布。 7 . 联系方式 招标人 ： 重庆市人民医院 地址： 两江新区星光大道118号 联系人： 杨梨 电话： 63390461 招标代理机构 ：重庆国际投资咨询集团有限公司 地址：重庆市江北区五简路2号重庆咨询大厦 联系人：傅老师 电话：023-67703006 重庆市人民医院两江院区一层病案室加层改造工程项目（第二次） 户名 开户行 投标保证金账号 重庆联合产权交易所集团股份有限公司</p>
-                      <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
-                    </div>
-                    <div>
-                      <h3>评分明细</h3>
-                      <div class="score-list"><div class="score-row"><span>业务方向</span><strong>60</strong></div><div class="score-row"><span>地区匹配</span><strong>68</strong></div><div class="score-row"><span>金额匹配</span><strong>74</strong></div><div class="score-row"><span>客户关系</span><strong>72</strong></div><div class="score-row"><span>成功案例</span><strong>65</strong></div><div class="score-row"><span>时间安排</span><strong>76</strong></div><div class="score-row"><span>特殊需求</span><strong>70</strong></div></div>
-                      <p><strong>推荐等级：</strong>C</p>
-                      <p><strong>推荐分：</strong>69</p>
-                      <p><strong>中标概率：</strong>62%</p>
-                      <p><strong>跟进模式：</strong>谨慎报价</p>
-                      <h3>重点提示</h3>
-                      <ul><li>推荐指数：69分</li><li>中标概率：62%</li><li>跟进策略：谨慎报价</li></ul>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-            <tr>
-              <td><span class="grade grade-c">C</span></td>
-              <td>发布公告的媒介 本次</td>
-              <td>工程项目</td>
-              <td>重庆市自主招标</td>
-              <td>0 万</td>
-              <td>69</td>
-              <td>62%</td>
-              <td>
-                <button class="toggle-btn" type="button" onclick="toggleDetail('detail-12')">查看详情</button>
-                <a href="https://www.cqggzy.com/xxhz/014001/014001001/014001001001/20260306/99fafebd-38a2-4826-b43b-c801f0409759.html" target="_blank" rel="noopener noreferrer">原网页</a>
-              </td>
-            </tr>
-            <tr id="detail-12" class="detail-row" style="display:none;">
-              <td colspan="8">
-                <div class="detail-box">
-                  <div class="detail-grid">
-                    <div>
-                      <h3>项目详情</h3>
-                      <p><strong>项目名称：</strong>发布公告的媒介 本次</p>
-                      <p><strong>招标人：</strong>垫江县小厦建筑有限公司</p>
-                      <p><strong>代理机构：</strong>待补充</p>
-                      <p><strong>发布时间：</strong>2026-03-06</p>
-                      <p><strong>截止时间：</strong>2026-03-23</p>
-                      <p><strong>招标方式：</strong>待补充</p>
-                      <p><strong>关键词：</strong>无</p>
-                      <p><strong>摘要：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 垫江县牡丹湖智能化农贸市场建设项目EPC铝镁锰屋面瓦采购（第二次）竞争性比选公告 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 垫江县牡丹湖智能化农贸市场建设项目 EPC铝镁锰屋面瓦采</p>
-                      <p><strong>完整描述：</strong>重庆市公共资源交易网_重庆市公共资源交易中心 您当前的位置： 首页 &gt; 信息汇总 &gt; 工程招投标 &gt; 招标公告 &gt; 房屋建筑 我要报名 垫江县牡丹湖智能化农贸市场建设项目EPC铝镁锰屋面瓦采购（第二次）竞争性比选公告 【信息时间：2026-03-06】【字号 大 中 小 】【 我要打印 】【 关闭 】 垫江县牡丹湖智能化农贸市场建设项目 EPC铝镁锰屋面瓦采购（第二次） 竞争性比选 公告 1. 招标条件 本招标项目 垫江县牡丹湖智能化农贸市场建设项目 EPC铝镁锰屋面瓦采购（第二次） ，资金来自业主自筹，项目出资比例为 100%，招标人为垫江县小厦建筑有限公司。项目已具备招标条件，现对该项目进行 第二次 公开竞争性比选确定供货商。 2. 项目概况与招标范围 2.1 交货地点： 垫江县 辖区 ，具体以招标人指定地点为准（投标人须 自行综合单次送货量的不确定性等因素 ）。 2.2 项目概况：采购铝镁锰屋面瓦 （ 含 固定扣件 ） 、屋脊 /泛水折件，具体货物种类、数量、规格型号等 详见竞争性比选文件 “第五章 供货要求”的“招标货物清单”及“ 第六章 投标文件格式 ”的“分项报价明细表”。 2.3 本次招标项目合同估算金额： 约 992900.00 元 。 2.4 招标范围： 在供货期内完成 “第五章 供货要求”中招标货物清单范围内招标人实际需求货物的供货 （招标货物清单中的数量为暂定数量，投标人须自行考虑供货量减少或增加的风险，最终供货数量以招标人实际需求为准；供货期满，无论累计供货数量多少，供应商均不得以任何理由要求招标人补偿任何费用）。 2.5 供货期与送货时限： 2.5.1供货期：合同签订之日起至垫江县牡丹湖智能化农贸市场建设项目EPC建设内容完工止，按招标人要求分批次供货，每次供货将招标人该批次需求的全部货物按质按量按时送至招标人指定的交货地点（投标人自行综合考虑单次送货数量多少的不确定性等风险）。 2.5.2送货时限：供货期内按招标人要求分批次送货，原则上每次接招标人送货通知后7天内将招标人当批次所需货物送达招标人指定的交货地点（超期2天，处5000元/次违约金；超期3-5天，处10000元/次违约金，超期6天以上解除合同，并处100000元违约金）。 3. 投标人资格要求 3.1 本次招标要求投标人须具备以下条件： 3.1.1投标人须具备独立法人资格，具备有效的营业执照。 3.1.2投标人还应在人员、设备、资金等方面具有相应的供货能力，详见竞争性比选文件第二章投标人须知前附表第1.4.1项内容。 3.2 本次招标不接受联合体投标。 4. 竞争性比选文件的获取 4.1 投标人在投标前可在 重庆市公共资源交易网（垫江县）（ https://www.cqggzy.com/dianjiangweb/） 下载竞争性比选文件等资料。 4.2 投标人可在附件竞争性比选公告规定的时限内在 重庆市公共资源交易网（垫江县）（ https://www.cqggzy.com/dianjiangweb/）下 本项目竞争性比选公告网页下方 “我要提问”栏提出疑问。提问时间从本公告发布至 2026年 3 月 9 日 1 2 时 00分（北京时间）前。 4.3 招标人应于 2026年 3 月 9 日 17时00分（北京时间）前在 重庆市公共资源交易网（垫江县）（ https://www.cqggzy.com/dianjiangweb/） 发布澄清或修改。 5. 投标文件的递交 5.1 投标文件递交时间为 2026年 3 月 12 日 9时30 分至 2026年 3 月</p>
                       <p><strong>报价建议：</strong>建议以历史同类项目均价为基准，下浮 2% 左右，突出工程项目经验与履约能力。</p>
                     </div>
                     <div>

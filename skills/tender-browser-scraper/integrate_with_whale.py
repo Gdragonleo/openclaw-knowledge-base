@@ -238,46 +238,88 @@ def strip_html(text: str) -> str:
 
 
 def clean_title(title: str) -> str:
-    title = title or ''
-    title = re.sub(r'重庆市公共资源交易网_重庆市公共资源交易中心', '', title)
-    title = re.sub(r'您当前的位置[:：]?.*?工程招投标\s*>?', '', title)
-    title = re.sub(r'\d{4}-\d{2}-\d{2}】?', '', title)
-    title = re.sub(r'【字号\s*大\s*中\s*小】', '', title)
-    title = re.sub(r'【\s*我要打印\s*】', '', title)
-    title = re.sub(r'【\s*关闭\s*】', '', title)
+    title = unescape(title or '')
+    title = re.sub(r'重庆市公共资源交易网_重庆市公共资源交易中心', ' ', title)
+    title = re.sub(r'您当前的位置[:：]?.*?(招标公告\s*>?|工程招投标\s*>?)', ' ', title)
+    title = re.sub(r'首页\s*>?\s*信息汇总\s*>?\s*工程招投标\s*>?\s*招标公告\s*>?\s*', ' ', title)
+    title = re.sub(r'【\s*信息时间[:：]?\s*[^】]+】', ' ', title)
+    title = re.sub(r'\b20\d{2}-\d{2}-\d{2}】?', ' ', title)
+    title = re.sub(r'【\s*字号\s*大\s*中\s*小\s*】', ' ', title)
+    title = re.sub(r'【\s*我要打印\s*】', ' ', title)
+    title = re.sub(r'【\s*关闭\s*】', ' ', title)
+    title = re.sub(r'我要报名', ' ', title)
+    title = re.sub(r'\b(招标公告|比选公告|竞争性比选公告)\b\s*$', '', title)
+    title = re.sub(r'^[\s【】>*-]+|[\s【】>*-]+$', '', title)
     title = re.sub(r'\s+', ' ', title).strip(' 】>-')
     return title
 
 
-def extract_detail_fields(detail_text: str, fallback_title: str) -> dict[str, Any]:
-    title = fallback_title
-    candidates = [
-        re.search(r'([\u4e00-\u9fa5A-Za-z0-9（）()、，\-—《》\[\]【】·\s]{8,}?)招标公告', detail_text),
-        re.search(r'([\u4e00-\u9fa5A-Za-z0-9（）()、，\-—《》\[\]【】·\s]{8,}?)\s+1\.招标条件', detail_text),
+def is_bad_title(title: str) -> bool:
+    title = clean_title(title)
+    if not title or len(title) < 8:
+        return True
+    bad_markers = [
+        '发布公告的媒介', '本次招标公告', '联系方式', '招标条件',
+        '重庆市公共资源交易网', '您当前的位置', '我要打印', '关闭'
     ]
+    return any(marker in title for marker in bad_markers)
+
+
+def extract_detail_fields(detail_text: str, fallback_title: str) -> dict[str, Any]:
+    title = clean_title(fallback_title)
+    candidates = [
+        re.search(r'([\u4e00-\u9fa5A-Za-z0-9（）()、，,\-—《》\[\]【】·\s]{8,}?)招标公告', detail_text),
+        re.search(r'([\u4e00-\u9fa5A-Za-z0-9（）()、，,\-—《》\[\]【】·\s]{8,}?)竞争性比选\s*公告', detail_text),
+        re.search(r'([\u4e00-\u9fa5A-Za-z0-9（）()、，,\-—《》\[\]【】·\s]{8,}?)\s*1\.招标条件', detail_text),
+        re.search(r'项目名称[：:\s]*([\u4e00-\u9fa5A-Za-z0-9（）()、，,\-—《》\[\]【】·\s]{8,})', detail_text),
+    ]
+    valid_titles = []
     for m in candidates:
         if m:
             cand = clean_title(m.group(1))
-            if len(cand) > 8 and '您当前的位置' not in cand:
-                title = cand
-                break
-    title = clean_title(title)
+            if not is_bad_title(cand):
+                valid_titles.append(cand)
+    if valid_titles:
+        valid_titles = sorted(valid_titles, key=lambda x: (len(x), '等' in x, '工程' in x), reverse=True)
+        title = valid_titles[0]
+    if is_bad_title(title):
+        title = clean_title(fallback_title)
     amount = ''
     amount_patterns = [
-        r'本次招标项目合同估算金额[：:\s]*约?([\d\.]+)万元',
-        r'合同估算金额[：:\s]*约?([\d\.]+)万元',
-        r'本项目工程总投资金额[：:\s]*([\d\.]+)万元',
-        r'总投资金额[：:\s]*([\d\.]+)万元',
-        r'招标项目合同估算金额[：:\s]*([\d\.]+)万元',
-        r'([\d\.]+)万元'
+        (r'本次招标项目合同估算金额[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'合同估算金额[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'招标项目合同估算金额[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'本项目工程总投资金\s*额[：:\s]*([\d\s\.]+)\s*万元', 'wan'),
+        (r'本项目工程总投资金额[：:\s]*([\d\s\.]+)\s*万元', 'wan'),
+        (r'总投资金\s*额[：:\s]*([\d\s\.]+)\s*万元', 'wan'),
+        (r'总投资金额[：:\s]*([\d\s\.]+)\s*万元', 'wan'),
+        (r'预算金额[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'投标最高限价[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'投标限价[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'最高限价[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'招标控制价[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'控制价[：:\s]*约?\s*([\d\s\.]+)\s*万元', 'wan'),
+        (r'本次招标项目合同估算金额[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'合同估算金额[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'预算金额[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'投标最高限价[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'投标限价[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'最高限价[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'招标控制价[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'控制价[：:\s]*约?\s*([\d\s\.]+)\s*元', 'yuan'),
+        (r'([\d\s\.]+)\s*万元', 'wan')
     ]
-    for pat in amount_patterns:
+    for pat, unit in amount_patterns:
         mm = re.search(pat, detail_text)
         if mm:
-            amount = f"{mm.group(1)}万元"
+            raw_value = re.sub(r'\s+', '', mm.group(1))
+            value = float(raw_value)
+            if unit == 'yuan':
+                value = round(value / 10000, 4)
+            amount = f"{value:g}万元"
             break
     purchaser = ''
-    for pat in [r'招标人为\s*([^，。\n]+)', r'项目业主为\s*([^，。\n]+)', r'采购人为\s*([^，。\n]+)']:
+    for pat in [r'招标人\s*为\s*([^，。；\n]+)', r'招标人为\s*([^，。；\n]+)', r'项目业主为\s*([^，。；\n]+)', r'采购人为\s*([^，。；\n]+)']:
         mm = re.search(pat, detail_text)
         if mm:
             purchaser = mm.group(1).strip()
@@ -295,7 +337,7 @@ def extract_detail_fields(detail_text: str, fallback_title: str) -> dict[str, An
     summary = detail_text[:180]
     return {
         'title': title,
-        'amount': amount or '0万',
+        'amount': amount or '未披露',
         'purchaser': purchaser,
         'deadline': deadline or (datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d'),
         'date': published_at or datetime.now().strftime('%Y-%m-%d'),
@@ -343,7 +385,7 @@ def parse_quick_report_markdown(md_path: Path) -> list[dict]:
             "title": title,
             "link": url.group(1) if url else "",
             "date": date.group(1) if date else datetime.now().strftime("%Y-%m-%d"),
-            "amount": "0万",
+            "amount": "未披露",
             "deadline": (datetime.now() + timedelta(days=7)).strftime("%Y-%m-%d"),
             "purchaser": "",
             "content": "",
@@ -407,18 +449,20 @@ def convert_scraper_to_whale(scraper_data: list[dict]) -> list[dict]:
             filtered_out += 1
             continue
         # 解析金额
-        amount_text = item.get("amount", "0")
-        amount_wan = 0
-        if "万" in amount_text:
+        amount_text = item.get("amount", "未披露")
+        amount_wan = None
+        if isinstance(amount_text, str) and ("万" in amount_text):
             try:
-                amount_wan = float(amount_text.replace("万元", "").replace("万", ""))
+                amount_wan = float(amount_text.replace("万元", "").replace("万", "").strip())
             except:
                 pass
-        elif "元" in amount_text:
+        elif isinstance(amount_text, str) and ("元" in amount_text):
             try:
-                amount_wan = float(amount_text.replace("元", "")) / 10000
+                amount_wan = float(amount_text.replace("元", "").strip()) / 10000
             except:
                 pass
+        if amount_wan is None:
+            amount_wan = 0
         
         # 构建 whale 格式
         whale_project = {
