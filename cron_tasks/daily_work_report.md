@@ -68,6 +68,10 @@
 - `python3 /Users/danxiong/.openclaw/workspace/scripts/cron/generate_work_report_draft.py`
 
 用于快速汇总当日记忆与 cron 状态，减少空模板风险。
+草稿文件会写入：
+- `知识库/小八爪/2026-03/工作汇报/草稿_YYYY-MM-DD.md`
+状态文件会写入：
+- `运行状态/cron-validation/`
 
 ## 失败处理
 若无法生成有效汇报：

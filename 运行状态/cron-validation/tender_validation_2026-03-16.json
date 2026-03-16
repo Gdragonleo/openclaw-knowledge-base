@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "errors": [],
+  "info": [
+    "markdown exists: /Users/danxiong/.openclaw/workspace/知识库/招标监控/招标日报_whale.md",
+    "html exists: /Users/danxiong/.openclaw/workspace/知识库/招标监控/招标日报_whale.html",
+    "projects exists: /Users/danxiong/.openclaw/workspace/知识库/招标监控/招标日报_whale_projects.json",
+    "summary exists: /Users/danxiong/.openclaw/workspace/知识库/招标监控/招标日报_whale_summary.json",
+    "summary total_projects=None",
+    "projects count=12"
+  ],
+  "meta": {
+    "checkedAt": "2026-03-16T20:10:45.526015",
+    "markdownBytes": 11264,
+    "htmlBytes": 93813,
+    "summaryTotalProjects": null,
+    "projectsCount": 12
+  }
+}

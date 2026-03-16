@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "errors": [],
+  "info": [
+    "exists: /Users/danxiong/.openclaw/workspace/memory/今日提醒.md"
+  ],
+  "meta": {
+    "checkedAt": "2026-03-16T20:10:45.612692",
+    "bytes": 4139
+  }
+}

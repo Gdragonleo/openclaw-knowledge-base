@@ -5,7 +5,15 @@ from datetime import datetime
 import json
 
 workspace = Path('/Users/danxiong/.openclaw/workspace')
+state_dir = workspace / '运行状态/cron-validation'
+state_dir.mkdir(parents=True, exist_ok=True)
 today = datetime.now().strftime('%Y-%m-%d')
+out_dir = workspace / '知识库/小八爪/2026-03/工作汇报'
+out_dir.mkdir(parents=True, exist_ok=True)
+out_file = out_dir / f'草稿_{today}.md'
+state_file = state_dir / 'work_report_draft_latest.json'
+state_history = state_dir / f'work_report_draft_{today}.json'
+
 mem = workspace / 'memory' / f'{today}.md'
 jobs = Path('/Users/danxiong/.openclaw/cron/jobs.json')
 
@@ -46,4 +54,14 @@ report = f'''# 每日工作汇报草稿 - {today}
 ## 今日记忆摘录（供汇报时参考）
 {mem_text if mem_text else '（今日记忆文件暂无内容）'}
 '''
+out_file.write_text(report, encoding='utf-8')
+payload = {
+    'ok': True,
+    'checkedAt': datetime.now().isoformat(),
+    'draftFile': str(out_file),
+    'memoryFileExists': mem.exists(),
+    'jobsFileExists': jobs.exists(),
+}
+state_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+state_history.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(report)

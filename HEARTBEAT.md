@@ -87,6 +87,7 @@
 
 **验证文件生成**（⚠️ 必做）
 - 运行：`python3 /Users/danxiong/.openclaw/workspace/scripts/cron/verify_tender_outputs.py`
+- 校验结果会写入：`运行状态/cron-validation/`
 - 检查 Markdown 与 HTML 文件是否存在
 - 文件大小 > 1KB
 - 包含“招标日报”标题
@@ -141,6 +142,7 @@
 
 **验证要求**：
 - 运行：`python3 /Users/danxiong/.openclaw/workspace/scripts/cron/verify_error_review.py`
+- 校验结果会写入：`运行状态/cron-validation/`
 - `memory/今日提醒.md` 必须存在
 - 文件大小 > 200B
 - 至少包含1条明确可执行的预防措施
