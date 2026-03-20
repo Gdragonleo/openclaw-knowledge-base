@@ -1,0 +1,10 @@
+{
+  "preferred_types": ["勘察", "监测", "测绘", "设计"],
+  "preferred_regions": ["重庆市", "四川省", "湖北省", "贵州省", "云南省"],
+  "preferred_budget_range": [50, 500],
+  "excluded_keywords": ["园林", "绿化", "景观"],
+  "long_term_customers": [],
+  "success_keywords": ["岩土", "地质", "水文地质", "边坡", "基坑", "水利"],
+  "current_capacity": "high",
+  "special_focus": ["水利工程", "市政工程", "边坡治理"]
+}

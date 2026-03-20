@@ -1,0 +1,13 @@
+{
+  "days_range": 30,
+  "max_items": 12,
+  "scrape_timeout_seconds": 180,
+  "detail_fetch_timeout_seconds": 20,
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+  "output_dir": "知识库/招标监控",
+  "archive_subdir": "历史报告",
+  "auto_notify": false,
+  "notify_target": "user:ou_d1b6454127592a07176fd36724723172",
+  "random_delay_min_seconds": 3,
+  "random_delay_max_seconds": 8
+}

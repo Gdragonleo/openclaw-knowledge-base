@@ -40,3 +40,38 @@
 - Last-Seen: 2026-03-16
 
 ---
+
+## [LRN-20260317-001] 区分浏览器登录态权限与 API token 权限
+
+**Logged**: 2026-03-17T15:12:00+08:00
+**Priority**: high
+**Status**: pending
+**Area**: config
+**Category**: correction
+
+### Summary
+浏览器访问 Gitee Issue 返回 403，不代表本地 Gitee token 无效；应优先用 token 走 API 验证读写能力
+
+### Details
+- 用户已提供并保存 Gitee token
+- 我先走浏览器页面访问，因未登录态/页面权限受限返回 403
+- 错误地把页面 403 混同为整体“受限”
+- 后续定位到 `config/gitee_token.sh`，改用 Gitee API 后成功读取 issue 并成功发表评论
+
+### Suggested Action
+1. 涉及外部平台写操作时，先检查本地 token / 凭据文件
+2. 页面失败与 API 失败要分开判断
+3. 优先验证 API 可读可写，再决定是否需要处理浏览器登录态
+4. 对用户汇报时说明具体失败链路，避免笼统说“没权限”
+
+### Metadata
+- Source: user_feedback
+- Related Files: config/gitee_token.sh
+- Tags: gitee, token, api, browser, auth
+- Pattern-Key: harden.auth_path_selection
+- Recurrence-Count: 1
+- First-Seen: 2026-03-17
+- Last-Seen: 2026-03-17
+- See Also: 2026-03-14 08:00 未确认就声称已确认
+
+---
