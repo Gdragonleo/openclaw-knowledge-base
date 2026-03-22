@@ -1,43 +1,10 @@
 {
-  "date": "2026-03-21",
-  "generated_at": "2026-03-21T03:04:37.054360",
-  "source_mode": "detailed",
-  "stats": {
-    "total": 33,
-    "high_match": 0,
-    "avg_score": 78,
-    "budget_sum": 1900.002792
-  },
-  "top_recommendations": [
-    {
-      "name": "【大渡口区】 智能制造产业园标准厂房配套道路工程勘察设计",
-      "score": 83,
-      "amount": "284.4万元",
-      "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260320/7d23fb4b-6238-4638-90ae-e0ccdff73842.html"
-    },
-    {
-      "name": "【两江新区】 悦来污水厂两江新区范围配套污水管网整治工程（一期）设计",
-      "score": 83,
-      "amount": "238.382792万元",
-      "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260318/4d15f7ea-6044-4f10-9f1c-97e30b216eaf.html"
-    },
-    {
-      "name": "【江津区】 重庆枢纽港产业园支坪片区老旧供水管网及设施改造提升工程勘察设计（项目编号：AA202600291）",
-      "score": 83,
-      "amount": "363万元",
-      "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260318/cbc42c36-ef18-4fff-b64b-a19b820b130c.html"
-    },
-    {
-      "name": "【忠县】 三峡水库忠县县城周家溪段消落区综合整治工程勘察设计",
-      "score": 83,
-      "amount": "247.22万元",
-      "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001007/20260316/92525819-74a6-4c63-9474-f2b59edb98ac.html"
-    },
-    {
-      "name": "【江津区】 科学城江津片区老旧供水管网及二次供水设备改造工程勘察设计（AA202600301）",
-      "score": 81,
-      "amount": "577万元",
-      "url": "https://www.cqggzy.com/xxhz/014001/014001001/014001001002/20260319/c96dfef0-bd87-4cc3-bdc1-a1d618c9bed1.html"
-    }
-  ]
+  "date": "2026-03-22",
+  "total_projects": 11,
+  "high_match_projects": 0,
+  "avg_score": 70.8,
+  "total_budget": "25903万元",
+  "source": "重庆市公共资源交易中心",
+  "generated_at": "2026-03-22 03:03",
+  "generated_by": "小八爪 + whale智能系统"
 }
